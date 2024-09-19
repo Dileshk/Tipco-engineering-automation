@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Device">
+      <class name="Test_dashboard">
         <methods>
-          <include name="initializebrowser"/>
-          <include name="Verify_to_create_highspeed_disperser_machine"/>
+          <include name="Verify_that_select_orgnization_device_and_check_data_according_select_date"/>
+          <include name="initialisebrowser"/>
         </methods>
-      </class> <!-- Test_Device -->
+      </class> <!-- Test_dashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -26,10 +26,10 @@ public class UtilityClass {
 		
 		
 	}
-	public static void ss1(WebDriver driver,int TCID) throws IOException
+	public static void take(WebDriver driver,int TCID) throws IOException
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest= new File("C:\\FailedTestcasesscreeenshot\\FailedTCscreenshot\\shot1"+TCID+".jpg");
+		File dest= new File("C:\\Users\\Extern Labs\\eclipse-workspace\\Tipco_Engineerings"+TCID+".jpg");
         FileHandler.copy(src, dest);
 		
 	}
@@ -43,11 +43,12 @@ public class UtilityClass {
 		return value;
 		
 	}
+}
 	
-	    public static String generateRandomEmail() {
-	        String randomString = UUID.randomUUID().toString();
-	        return randomString + "@example.com";
-	    }
-	}
+//	    public static String generateRandomEmail() {
+//	        String randomString = UUID.randomUUID().toString();
+//	        return randomString + "@example.com";
+//	    }
+//	}
 
 

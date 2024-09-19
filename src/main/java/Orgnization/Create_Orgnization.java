@@ -20,6 +20,9 @@ public class Create_Orgnization {
 	@FindBy(xpath = "//input[@placeholder='Pincode']") private WebElement addpin;
 	@FindBy(xpath = "//select[@name='refresh_time']") private WebElement clickrefresht;
 //	@FindBy(xpath = "//option[@value='1']") private WebElement first;
+	@FindBy(xpath = "//input[@name='supervisor_email']")private WebElement supervisor;
+	@FindBy(xpath = "//input[@name='supervisor_name']")private WebElement supervisorname;
+	@FindBy(xpath = "//input[@placeholder='Enter phone number']")private WebElement phoneno;
 	@FindBy(xpath = "//button[text()='Submit']")private WebElement clicksubmit;
 	
 	public Create_Orgnization(WebDriver driver)
@@ -85,5 +88,17 @@ public class Create_Orgnization {
 	public void clickonsubmit()
 	{
 		clicksubmit.click();
+	}
+	public void entersupervisormail(String email)
+	{
+		supervisor.sendKeys(email);
+	}
+	public void enternameofsupername(String name)
+	{
+		supervisorname.sendKeys(name);
+	}
+	public void enterphone(String phone)
+	{
+		phoneno.sendKeys(phone);
 	}
 }
