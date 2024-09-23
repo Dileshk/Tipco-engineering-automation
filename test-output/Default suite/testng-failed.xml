@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_dashboard">
+      <class name="Test_Supervisor">
         <methods>
-          <include name="Verify_that_select_orgnization_device_and_check_data_according_select_date"/>
-          <include name="initialisebrowser"/>
+          <include name="initializebrowser"/>
+          <include name="check_to_update_supervisor_without_select_orgnization_name"/>
         </methods>
-      </class> <!-- Test_dashboard -->
+      </class> <!-- Test_Supervisor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

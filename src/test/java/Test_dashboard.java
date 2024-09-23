@@ -43,7 +43,7 @@ public class Test_dashboard extends Base_class {
 		Thread.sleep(2000);
 		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
 		Thread.sleep(2000);
-	date.sendKeys("2024-09-09");
+	date.sendKeys("09-09-2024");
 		Thread.sleep(1000);
 		date.click();
 		Thread.sleep(8000);

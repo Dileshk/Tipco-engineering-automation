@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 import Liberaryfiles.Base_class;
 import Liberaryfiles.UtilityClass;
 import Orgnization.Create_Orgnization;
-import action.Select;
+
 
 
 public class Test_Orgnization extends Base_class{
@@ -41,9 +41,11 @@ public class Test_Orgnization extends Base_class{
 	        Thread.sleep(3000);
 	        org.clickonorgnizationtab();
 	        Thread.sleep(3000);
+	        
 	        org.addorgnization();
 	        org.enterorgname(UtilityClass.propertiesfile("invalidorg"));
 	        org.entergst(UtilityClass.propertiesfile("validgst"));
+	        Thread.sleep(5000);
 	        org.enteraddress(UtilityClass.propertiesfile("validaddress"));
 	        org.entercity(UtilityClass.propertiesfile("validcity"));
 	        org.enterstate(UtilityClass.propertiesfile("validstate"));
@@ -53,9 +55,9 @@ public class Test_Orgnization extends Base_class{
 	        org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
 	        s.selectByValue("1");
 
-	        org.entersupervisormail(UtilityClass.propertiesfile("validsupervisor"));
+	        org.entersupervisormail(UtilityClass.propertiesfile("validsup"));
 	        org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
-	        org.enterphone(UtilityClass.propertiesfile("numsuperviosr"));
+	        org.enterphone(UtilityClass.propertiesfile("validnumofsuper"));
 	        
 	        Thread.sleep(5000);
 	        org.clickonsubmit();
@@ -90,9 +92,9 @@ public class Test_Orgnization extends Base_class{
 	        org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
 	        s.selectByValue("1");
 
-	        org.entersupervisormail(UtilityClass.propertiesfile("validsupervisor"));
+	        org.entersupervisormail(UtilityClass.propertiesfile("validsup"));
 	        org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
-	        org.enterphone(UtilityClass.propertiesfile("numsuperviosr"));
+	        org.enterphone(UtilityClass.propertiesfile("validnumofsuper"));
 	        
 	        Thread.sleep(5000);
 	        org.clickonsubmit();

@@ -20,7 +20,7 @@ public class Supervisor {
 	@FindBy(xpath = "//input[@placeholder='Please Select Organization']")private WebElement sende;
 	@FindBy(xpath = "//div[text()='extern labs']")private WebElement clickextern;
 	@FindBy(xpath = "//button[@type='submit']")private WebElement clicksubmitbtn;
-	
+	@FindBy(xpath = "(//td[@class='actionIcon']/span)[2]")private WebElement clickonupdate;
 	
 	
 	public Supervisor(WebDriver driver)
@@ -66,7 +66,7 @@ public class Supervisor {
 	}
 	public void sendkey()
 	{
-		sende.sendKeys("e");
+		sende.sendKeys("extern labs");
 	}
 	public void clickexternbtn()
 	{
@@ -75,6 +75,10 @@ public class Supervisor {
 	public void clickonsubmitbutton()
 	{
 		clicksubmitbtn.click();
+	}
+	public void clickonupdate()
+	{
+		clickonupdate.click();
 	}
 	
 

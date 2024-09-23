@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-19T18:03:14 IST" name="Default suite" finished-at="2024-09-19T18:04:29 IST" duration-ms="74512">
+  <suite started-at="2024-09-23T18:30:11 IST" name="Default suite" finished-at="2024-09-23T18:31:23 IST" duration-ms="72014">
     <groups>
     </groups>
-    <test started-at="2024-09-19T18:03:14 IST" name="Default test" finished-at="2024-09-19T18:04:29 IST" duration-ms="74512">
-      <class name="Test_dashboard">
-        <test-method is-config="true" signature="initialisebrowser()[pri:0, instance:Test_dashboard@3f191845]" started-at="2024-09-19T18:03:14 IST" name="initialisebrowser" finished-at="2024-09-19T18:03:24 IST" duration-ms="9942" status="PASS">
+    <test started-at="2024-09-23T18:30:11 IST" name="Default test" finished-at="2024-09-23T18:31:23 IST" duration-ms="72014">
+      <class name="Test_Supervisor">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Supervisor@5f049ea1]" started-at="2024-09-23T18:30:11 IST" name="initializebrowser" finished-at="2024-09-23T18:30:26 IST" duration-ms="15183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="Verify_that_select_orgnization_device_and_check_data_according_select_date()[pri:0, instance:Test_dashboard@3f191845]" started-at="2024-09-19T18:03:24 IST" name="Verify_that_select_orgnization_device_and_check_data_according_select_date" finished-at="2024-09-19T18:04:29 IST" duration-ms="64541" status="PASS">
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="Verify_to_check_and_click_on_next_page_button_of_supervisor()[pri:15, instance:Test_Supervisor@5f049ea1]" started-at="2024-09-23T18:30:26 IST" name="Verify_to_check_and_click_on_next_page_button_of_supervisor" finished-at="2024-09-23T18:31:09 IST" duration-ms="43336" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_select_orgnization_device_and_check_data_according_select_date -->
-      </class> <!-- Test_dashboard -->
+        </test-method> <!-- Verify_to_check_and_click_on_next_page_button_of_supervisor -->
+        <test-method signature="check_to_update_supervisor_without_select_orgnization_name()[pri:18, instance:Test_Supervisor@5f049ea1]" started-at="2024-09-23T18:31:09 IST" name="check_to_update_supervisor_without_select_orgnization_name" finished-at="2024-09-23T18:31:23 IST" duration-ms="13462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_to_update_supervisor_without_select_orgnization_name -->
+      </class> <!-- Test_Supervisor -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
