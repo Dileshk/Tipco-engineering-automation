@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Supervisor">
+      <class name="Test_Device">
         <methods>
           <include name="initializebrowser"/>
-          <include name="check_to_update_supervisor_without_select_orgnization_name"/>
+          <include name="Verify_to_check_the_Device_ID_with_special_characters"/>
         </methods>
-      </class> <!-- Test_Supervisor -->
+      </class> <!-- Test_Device -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
