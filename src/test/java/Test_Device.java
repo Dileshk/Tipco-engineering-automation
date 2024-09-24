@@ -222,7 +222,7 @@ public class Test_Device extends Base_class{
 	    softAssert = new SoftAssert();
 	    try {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-	         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='mainLogo']")));
+	         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='toggle-id']")));
 	       Thread.sleep(2000);
 	        device.clicksbtn();
 	        Thread.sleep(3000);
@@ -269,7 +269,7 @@ public class Test_Device extends Base_class{
 
 //	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
 //	        Thread.sleep(5000);
-driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
 	        // Re-locate and select organization name
 	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
 	        Thread.sleep(3000);
