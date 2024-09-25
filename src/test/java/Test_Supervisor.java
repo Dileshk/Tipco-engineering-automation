@@ -38,7 +38,9 @@ public class Test_Supervisor extends Base_class  {
     	
          softAssert = new SoftAssert();
         try {
-            
+        	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	        Thread.sleep(1000);
             sup.addbtnsupervisor();
             Thread.sleep(3000);
             sup.entersupermail(UtilityClass.propertiesfile("validsupervisor"));
@@ -50,7 +52,7 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(3000);
             sup.clickonsubmitbutton();
             
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully Registered']")));
             System.out.println("Overlay Gone");
             
@@ -73,14 +75,14 @@ public class Test_Supervisor extends Base_class  {
         try {
 //            Thread.sleep(25000);
 //            sup.clicksbtn();
-        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-	         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='toggle-id']")));
+        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	       Thread.sleep(2000);
 	       sup.clicksbtn();
             Thread.sleep(2000);
             sup.clicksuper();
             WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
             Thread.sleep(1000);
             sup.addbtnsupervisor();
             Thread.sleep(4000);
@@ -110,8 +112,8 @@ public class Test_Supervisor extends Base_class  {
     public void Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character() {
         softAssert = new SoftAssert();
         try {
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             sup.addbtnsupervisor();
             Thread.sleep(3000);
@@ -141,8 +143,8 @@ public class Test_Supervisor extends Base_class  {
         softAssert = new SoftAssert();
         try {
         	
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -173,8 +175,8 @@ public class Test_Supervisor extends Base_class  {
         softAssert = new SoftAssert();
         try {
         	
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -238,8 +240,8 @@ public class Test_Supervisor extends Base_class  {
         softAssert = new SoftAssert();
         try {
         	
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -273,8 +275,8 @@ public class Test_Supervisor extends Base_class  {
         
     	
         	
-    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
          Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -300,8 +302,8 @@ public class Test_Supervisor extends Base_class  {
         
     	
         	
-    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
          Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -329,8 +331,8 @@ public class Test_Supervisor extends Base_class  {
         
     	
         	
-    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
          Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -358,8 +360,8 @@ public class Test_Supervisor extends Base_class  {
         softAssert = new SoftAssert();
         try {
         	
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             
             sup.addbtnsupervisor();
@@ -390,8 +392,8 @@ public class Test_Supervisor extends Base_class  {
         	
        
         
-        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
- 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+ 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
              Thread.sleep(1000);
             sup.addbtnsupervisor();
 //            Thread.sleep(3000);
@@ -417,8 +419,8 @@ public class Test_Supervisor extends Base_class  {
        softAssert = new SoftAssert();
       try {
 
-    	  WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+    	  WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
           Thread.sleep(1000);
          sup.addbtnsupervisor();
          Thread.sleep(1000);
@@ -447,8 +449,8 @@ public class Test_Supervisor extends Base_class  {
       public void Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code() {
            softAssert = new SoftAssert();
           try {
-        	  WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-  	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+        	  WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+  	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
               Thread.sleep(1000);
               sup.addbtnsupervisor();
               Thread.sleep(4000);
@@ -478,8 +480,8 @@ public class Test_Supervisor extends Base_class  {
              softAssert = new SoftAssert();
             try {
               
-            	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-     	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+            	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
                  Thread.sleep(1000);
                 sup.addbtnsupervisor();
                 Thread.sleep(4000);
@@ -529,8 +531,8 @@ public class Test_Supervisor extends Base_class  {
   {
 	  softAssert = new SoftAssert();
     try {
-    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
       Thread.sleep(3000);
        sup.clickonupdate();
      WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
@@ -559,8 +561,8 @@ public class Test_Supervisor extends Base_class  {
 	  {
 		  softAssert = new SoftAssert();
 	    try {
-	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-  	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+  	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 		
 		  Thread.sleep(3000);
 	       sup.clickonupdate();
@@ -592,8 +594,8 @@ public class Test_Supervisor extends Base_class  {
 	  {
 		  softAssert = new SoftAssert();
 	    try {
-	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-  	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+  	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 		  Thread.sleep(2000);
 	       sup.clickonupdate();
 	     WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Full Name ']"));
@@ -621,8 +623,8 @@ public class Test_Supervisor extends Base_class  {
 	  {
 		  softAssert = new SoftAssert();
 	    try {
-	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-  	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+  	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 		  Thread.sleep(2000);
 	       sup.clickonupdate();
 	     WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Full Name ']"));
@@ -651,8 +653,8 @@ public class Test_Supervisor extends Base_class  {
 	  {
 		  softAssert = new SoftAssert();
 	    try {
-	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-  	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+  	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 		  Thread.sleep(2000);
 	       sup.clickonupdate();
 	     WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Enter phone number']"));
@@ -685,8 +687,8 @@ public class Test_Supervisor extends Base_class  {
 //	            sup.clicksbtn();
 //	            Thread.sleep(2000);
 //	            sup.clicksuper();
-	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	     	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Supervisor']")));
+	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 	            Thread.sleep(3000);
 	            sup.addbtnsupervisor();
 	            Thread.sleep(3000);
@@ -699,7 +701,7 @@ public class Test_Supervisor extends Base_class  {
 	            Thread.sleep(3000);
 	            sup.clickonsubmitbutton();
 	            
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Email already exists']")));
 	            System.out.println("Overlay Gone");
 	            

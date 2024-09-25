@@ -160,103 +160,103 @@ public class Test_Device extends Base_class{
 //	        softAssert.assertAll();
 //	    }}
 		
-//	@Test(priority = 4)
-//	public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates() throws InterruptedException, IOException {
-//	     softAssert = new SoftAssert();
-//	    try {
-//	    	Thread.sleep(30000);
-//	        device.clicksbtn();
-//	        Thread.sleep(3000);
-//	        device.clickondevicetab();
-//	       
-//	        waitForPageLoad();
-////	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-////	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Device']")));
-////	        device.clickonadddevice();
-////	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-////	     // Wait until the element is clickable
-////	     WebElement addDeviceButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-////	     // Now click on the element after it is clickable
-////	     addDeviceButton.click();
-//	        device.clickonadddevice();
-//	        Thread.sleep(3000);
-//	        device.enterdeviceId(UtilityClass.propertiesfile("alreadyexist"));
-//	        Thread.sleep(3000);
-//	        device.clickondevicetypelistbox();
-//	        Thread.sleep(3000);
-//	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
-//	        Thread.sleep(3000);
-//
-//	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-//	        Thread.sleep(3000);
-//	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-//	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-//	        device.entertimezone(UtilityClass.propertiesfile("zone"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//	       
-//	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-//	        Thread.sleep(3000);
-//	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//
-//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-//	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Id already exists within the organization']")));
-//	        System.out.println("Overlay Gone");
-//
-//	        
-//	        String actual = driver.findElement(By.xpath("//div[text()='Device Id already exists within the organization']")).getText();
-//	        String expected = "Device Id already exists within the organization";
-//	        System.out.println("dhkjfh" + actual);
-//	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
-//                 Thread.sleep(5000);
-//                
-//	    } catch (Exception e) {
-//	        softAssert.fail("Exception  " + e.getMessage());
-//	    } finally {
-//	        softAssert.assertAll();
-//	        driver.navigate().refresh();
-//	    }}
-	@Test(priority = 5)
-	public void Verify_to_check_the_Device_ID_with_special_characters() throws InterruptedException, IOException {
-	    softAssert = new SoftAssert();
+	@Test(priority = 4)
+	public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates() throws InterruptedException, IOException {
+	     softAssert = new SoftAssert();
 	    try {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-	         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='toggle-id']")));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	       Thread.sleep(2000);
 	        device.clicksbtn();
 	        Thread.sleep(3000);
 	        
 	        device.clickondevicetab();
-	        Thread.sleep(3000); // Give some time for the page to load
+	         
+	        Thread.sleep(2000);
+	       
+	        
+//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Device']")));
+//	        device.clickonadddevice();
+//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	     // Wait until the element is clickable
+//	     WebElement addDeviceButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+//	     // Now click on the element after it is clickable
+//	     addDeviceButton.click();
+	        device.clickonadddevice();
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+	        
+	        Thread.sleep(3000);
+	        device.enterdeviceId(UtilityClass.propertiesfile("alreadyexist"));
+	        Thread.sleep(3000);
+	        device.clickondevicetypelistbox();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(3000);
 
-	        // Re-locate the Add Device button after DOM updates
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
-	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Device']")));
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	       
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Id already exists within the organization']")));
 	        System.out.println("Overlay Gone");
 
-	        // Now click on Add Device
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='Device Id already exists within the organization']")).getText();
+	        String expected = "Device Id already exists within the organization";
+	        System.out.println("dhkjfh" + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+                 Thread.sleep(5000);
+                
+	    } catch (Exception e) {
+	        softAssert.fail("Exception  " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 5)
+	public void Verify_to_check_the_Device_ID_with_special_characters() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	       
+
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	       
 	        device.clickonadddevice();
 	        Thread.sleep(3000);
 
 	        device.enterdeviceId(UtilityClass.propertiesfile("Idwithspecialchar"));
 	        Thread.sleep(2000);
 
-	        // Re-locate dropdown and click to avoid stale element issues
+	      
 	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
 	        dropDownIcon.click();
 	        Thread.sleep(2000);
 	        
-	        // Re-fetch the element in case of DOM change and click again
-	        dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
 	        dropDownIcon.click();
-	        Thread.sleep(2000);
+	      
 
-	        // Select device type
+	      
 	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
 	        Thread.sleep(2000);
 
-	        // Continue filling out the form
+	       
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
 	        Thread.sleep(3000);
 	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
@@ -264,20 +264,20 @@ public class Test_Device extends Base_class{
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	        Thread.sleep(5000);
 
-	        // Select timezone
+	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
 //	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
 //	        Thread.sleep(5000);
            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-	        // Re-locate and select organization name
+	        
 	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
 	        Thread.sleep(3000);
 
-	        // Submit the form
+	      
 	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
-	        // Re-locate and verify the error message
+	        
 	        String actual = driver.findElement(By.xpath("//p[text()='Enter only letters and numbers without special characters']")).getText();
 	        String expected = "Enter only letters and numbers without special characters";
 	        
@@ -292,7 +292,7 @@ public class Test_Device extends Base_class{
 	        driver.navigate().refresh();
 	    }
 	}
-}
+
 //	public void waitForPageLoad() {
 //	    JavascriptExecutor js = (JavascriptExecutor) driver;
 //	    for (int i = 0; i < 30; i++) { // Retry up to 30 times (adjust if needed)
@@ -307,3 +307,731 @@ public class Test_Device extends Base_class{
 //	    }
 //	}
 //}
+	@Test(priority = 6)
+	public void Verify_to_check_the_Device_ID_with_spaces() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	       
+
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	       
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("Idwithspace"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	        dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Spaces are not allowed']")).getText();
+	        String expected = "Spaces are not allowed";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(5000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 7)
+	public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	       
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	       
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("mindeviceid"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	        dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Device ID should be between 3 and 15 characters']")).getText();
+	        String expected = "Device ID should be between 3 and 15 characters";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(5000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 8)
+	public void  Verify_that_the_Device_ID_field_does_not_accept_with_max_length() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	       
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	       
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("maxdeviceid"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	        dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Device ID should be between 3 and 15 characters']")).getText();
+	        String expected = "Device ID should be between 3 and 15 characters";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(5000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 9)
+	public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100 () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	        device.maxtemp1(UtilityClass.propertiesfile("maxvalueoftemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
+	        String expected = "Temperature must be between 1 and 100";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 10)
+	public void  Verify_that_temp1_field_should_not_accept_alphabet() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       Thread.sleep(2000);
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	        device.maxtemp1(UtilityClass.propertiesfile("alphabetintemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
+	        String expected = "Temperature must be a whole number";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	
+	@Test(priority = 11)
+	public void  Verify_that_temp1_field_take_blank() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(2000);
+
+	       
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Max temperature is required']")).getText();
+	        String expected = "Max temperature is required";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 12)
+	public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters
+() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("alphaandspeintemp2"));
+	       device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
+	        String expected = "Temperature must be a whole number";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          //Verify that the Max Temperature 2 field accepts numeric values between 1 to 100
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 13)
+	public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100 
+() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("maxvalueoftemp2"));
+	       device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
+	        String expected = "Temperature must be between 1 and 100";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          //Verify that the Max Temperature 2 field accepts numeric values between 1 to 100
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 14)
+	public void  check_maxtemp3_field_does_not_accept_special_and_char
+() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	       device.maxtemp3(UtilityClass.propertiesfile("alphaandspeintemp3"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
+	        String expected = "Temperature must be a whole number";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          //Verify that the Max Temperature 2 field accepts numeric values between 1 to 100
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 15)
+	public void  check_maxtepm3_does_not_accept_greater_than_100
+() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	       device.maxtemp3(UtilityClass.propertiesfile("maxvalueoftemp3"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
+	        String expected = "Temperature must be between 1 and 100";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          //Verify that the Max Temperature 2 field accepts numeric values between 1 to 100
+	        driver.navigate().refresh();
+	    }
+	}
+	@Test(priority = 16)
+	public void  check_maxtepm3_field_blank
+() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	         
+	       
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        Thread.sleep(2000);
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        Thread.sleep(2000);
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(3000);
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+//	        Thread.sleep(5000);
+           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
+	        
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+
+	      
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Max temperature is required']")).getText();
+	        String expected = "Max temperature is required";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          //Verify that the Max Temperature 2 field accepts numeric values between 1 to 100
+	        driver.navigate().refresh();
+	    }
+	}
+}
