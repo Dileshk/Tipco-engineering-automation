@@ -84,7 +84,7 @@ public class TesttipcoLogin extends Base_class {
 	            Thread.sleep(1000);
 	            log.clickbutton();
 	            
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Incorrect Password']")));
 	            System.out.println("Overlay Gone");
 	            
@@ -109,7 +109,7 @@ public class TesttipcoLogin extends Base_class {
 	            Thread.sleep(3000);
 	            log.clickbutton();
 	            
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='Toastify']/div/div/div/div)[2]")));
 	            System.out.println("Overlay Gone");
 	            

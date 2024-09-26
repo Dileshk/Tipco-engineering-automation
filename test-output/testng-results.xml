@@ -1,169 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="20" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T18:16:28 IST" name="Default suite" finished-at="2024-09-25T18:21:07 IST" duration-ms="279370">
+  <suite started-at="2024-09-26T17:17:06 IST" name="Default suite" finished-at="2024-09-26T17:18:12 IST" duration-ms="66088">
     <groups>
     </groups>
-    <test started-at="2024-09-25T18:16:28 IST" name="Default test" finished-at="2024-09-25T18:21:07 IST" duration-ms="279370">
-      <class name="Test_Supervisor">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:16:28 IST" name="initializebrowser" finished-at="2024-09-25T18:16:43 IST" duration-ms="15071" status="PASS">
+    <test started-at="2024-09-26T17:17:06 IST" name="Default test" finished-at="2024-09-26T17:18:12 IST" duration-ms="66088">
+      <class name="Test_Device">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:06 IST" name="initializebrowser" finished-at="2024-09-26T17:17:21 IST" duration-ms="14706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verify_that_createSupervisor_with_invalid_email()[pri:1, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:16:43 IST" name="verify_that_createSupervisor_with_invalid_email" finished-at="2024-09-25T18:17:01 IST" duration-ms="18024" status="PASS">
+        <test-method signature="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu()[pri:25, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:21 IST" name="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu" finished-at="2024-09-26T17:17:49 IST" duration-ms="28106" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_that_createSupervisor_with_invalid_email -->
-        <test-method signature="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character()[pri:2, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:01 IST" name="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character" finished-at="2024-09-25T18:17:13 IST" duration-ms="11643" status="PASS">
+        </test-method> <!-- Verify_that_the_Time_Zone_field_displays_a_dropdown_menu -->
+        <test-method signature="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage()[pri:26, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:49 IST" name="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage" finished-at="2024-09-26T17:18:12 IST" duration-ms="23246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character -->
-        <test-method signature="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:3, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:13 IST" name="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-09-25T18:17:24 IST" duration-ms="11570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
-        <test-method signature="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:4, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:24 IST" name="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-09-25T18:17:34 IST" duration-ms="9527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
-        <test-method signature="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters()[pri:6, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:34 IST" name="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters" finished-at="2024-09-25T18:17:45 IST" duration-ms="11642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters -->
-        <test-method signature="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code()[pri:7, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:45 IST" name="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code" finished-at="2024-09-25T18:17:59 IST" duration-ms="13698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code -->
-        <test-method signature="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code()[pri:8, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:17:59 IST" name="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code" finished-at="2024-09-25T18:18:13 IST" duration-ms="13734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code -->
-        <test-method signature="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu()[pri:9, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:18:13 IST" name="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu" finished-at="2024-09-25T18:18:27 IST" duration-ms="13748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu -->
-        <test-method signature="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown()[pri:10, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:18:27 IST" name="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown" finished-at="2024-09-25T18:18:36 IST" duration-ms="9501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown -->
-        <test-method signature="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled()[pri:11, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:18:36 IST" name="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled" finished-at="2024-09-25T18:18:42 IST" duration-ms="6270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled -->
-        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_full_name()[pri:12, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:18:42 IST" name="Verify_the_maximum_and_minimum_length_of_the_full_name" finished-at="2024-09-25T18:18:52 IST" duration-ms="9624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_full_name -->
-        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code()[pri:13, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:18:52 IST" name="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code" finished-at="2024-09-25T18:19:05 IST" duration-ms="12633" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code -->
-        <test-method signature="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed()[pri:14, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:19:05 IST" name="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed" finished-at="2024-09-25T18:19:26 IST" duration-ms="21796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed -->
-        <test-method signature="Verify_to_check_and_click_on_next_page_button_of_supervisor()[pri:15, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:19:26 IST" name="Verify_to_check_and_click_on_next_page_button_of_supervisor" finished-at="2024-09-25T18:19:32 IST" duration-ms="5131" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a class="page-link " tabindex="-1" role="button" aria-disabled="true" aria-label="... page" rel="next">Next</a> is not clickable at point (824, 660). Other element would receive the click: <li class="page-item disabled">...</li>
-  (Session info: chrome=129.0.6668.59)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97cce6ccf93e4968380e7db02ab5e3e1, clickElement {id=f.91933B8433BD3F842585D3E7257FC136.d.A132CD9B9450D8F8E6D768BF35AC2C4B.e.601}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64625}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64625/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (97cce6ccf93e4968380e7db02ab5e3e1)] -> xpath: //a[text()='Next']]
-Session ID: 97cce6ccf93e4968380e7db02ab5e3e1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="page-link " tabindex="-1" role="button" aria-disabled="true" aria-label="... page" rel="next">Next</a> is not clickable at point (824, 660). Other element would receive the click: <li class="page-item disabled">...</li>
-  (Session info: chrome=129.0.6668.59)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97cce6ccf93e4968380e7db02ab5e3e1, clickElement {id=f.91933B8433BD3F842585D3E7257FC136.d.A132CD9B9450D8F8E6D768BF35AC2C4B.e.601}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64625}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64625/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (97cce6ccf93e4968380e7db02ab5e3e1)] -> xpath: //a[text()='Next']]
-Session ID: 97cce6ccf93e4968380e7db02ab5e3e1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at Test_Supervisor.Verify_to_check_and_click_on_next_page_button_of_supervisor(Test_Supervisor.java:525)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_to_check_and_click_on_next_page_button_of_supervisor -->
-        <test-method signature="check_to_update_supervisor_without_select_orgnization_name()[pri:16, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:19:32 IST" name="check_to_update_supervisor_without_select_orgnization_name" finished-at="2024-09-25T18:19:45 IST" duration-ms="13609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_to_update_supervisor_without_select_orgnization_name -->
-        <test-method signature="check_and_update_superviaor_without_using_attherate()[pri:17, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:19:45 IST" name="check_and_update_superviaor_without_using_attherate" finished-at="2024-09-25T18:20:01 IST" duration-ms="15642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_and_update_superviaor_without_using_attherate -->
-        <test-method signature="check_to_update_supervisor_without_enter_mandatory_field()[pri:18, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:20:01 IST" name="check_to_update_supervisor_without_enter_mandatory_field" finished-at="2024-09-25T18:20:12 IST" duration-ms="11616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_to_update_supervisor_without_enter_mandatory_field -->
-        <test-method signature="Verify_to_update_supervisor_with_max_char_in_full_name_field()[pri:19, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:20:12 IST" name="Verify_to_update_supervisor_with_max_char_in_full_name_field" finished-at="2024-09-25T18:20:24 IST" duration-ms="11587" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_to_update_supervisor_with_max_char_in_full_name_field -->
-        <test-method signature="Verify_to_update_superviosr_with_invalid_number()[pri:20, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:20:24 IST" name="Verify_to_update_superviosr_with_invalid_number" finished-at="2024-09-25T18:20:35 IST" duration-ms="11454" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_to_update_superviosr_with_invalid_number -->
-        <test-method signature="Verify_to_check_createsupervisor_that_are_already_exist()[pri:21, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:20:35 IST" name="Verify_to_check_createsupervisor_that_are_already_exist" finished-at="2024-09-25T18:20:53 IST" duration-ms="17469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_to_check_createsupervisor_that_are_already_exist -->
-        <test-method signature="Create_Supervisor_with_valid_email()[pri:50, instance:Test_Supervisor@1a75e76a]" started-at="2024-09-25T18:20:53 IST" name="Create_Supervisor_with_valid_email" finished-at="2024-09-25T18:21:07 IST" duration-ms="14276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Create_Supervisor_with_valid_email -->
-      </class> <!-- Test_Supervisor -->
+        </test-method> <!-- Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage -->
+      </class> <!-- Test_Device -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

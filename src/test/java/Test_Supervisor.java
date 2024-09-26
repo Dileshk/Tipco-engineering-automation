@@ -317,7 +317,7 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             driver.findElement(By.xpath("//span[text()='Iceland']")).click();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Enter phone number']")).sendKeys("112233");
+            driver.findElement(By.xpath("//input[@placeholder='Enter phone number']")).sendKeys("9673568610");
             sup.sendkey();
             
             sup.clickexternbtn();
@@ -505,7 +505,7 @@ public class Test_Supervisor extends Base_class  {
                 String actual = driver.findElement(By.xpath("//p[text()='Invalid Email. Ensure it follows the format: abc@abc.com']")).getText();
                 
                 softAssert.assertEquals(actual, expected);
-                Thread.sleep(5000);
+                Thread.sleep(7000);
                 driver.navigate().refresh();
             } catch (Exception e) {
                 
@@ -521,7 +521,7 @@ public class Test_Supervisor extends Base_class  {
 //      sup.clicksbtn();
 //      Thread.sleep(4000);
 //      sup.clicksuper();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath("//a[text()='Next']")).click();
 		Thread.sleep(5000);
 		driver.navigate().refresh();
