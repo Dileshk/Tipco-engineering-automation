@@ -1,7 +1,10 @@
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -30,9 +33,9 @@ public class Test_dashboard extends Base_class {
 	try
 	{
 	
-		Thread.sleep(30000);
-		driver.navigate().refresh();
-		Thread.sleep(7000);
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    Thread.sleep(3000);
 		dash.clickonorarrow();
 		Thread.sleep(7000);
 		
@@ -43,9 +46,9 @@ public class Test_dashboard extends Base_class {
 		Thread.sleep(2000);
 		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
 		Thread.sleep(2000);
-	date.sendKeys("09-09-2024");
-		Thread.sleep(1000);
-		date.click();
+	date.sendKeys("20-09-2024");
+//		Thread.sleep(1000);
+//		date.click();
 		Thread.sleep(8000);
 		WebElement nodata = driver.findElement(By.xpath("//ul[@class='graphtlist']/li"));
 		softAssert.assertTrue(nodata.isDisplayed());

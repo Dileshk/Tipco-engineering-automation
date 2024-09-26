@@ -11,8 +11,8 @@ public class Dashboard {
 	@FindBy(xpath = "//input[@name='password']")private WebElement pass;
 	@FindBy(xpath = "//button[text()='Sign in']")private WebElement btn;
 	@FindBy(xpath = "//span[@class='dropDownIcon']")private WebElement clickarrow;
-	@FindBy(xpath = "//div[text()='Saphire Rocks Pvt. Ltd.']")private WebElement clickorgname;
-	@FindBy(xpath = "//div[text()='HighSpeed']")private WebElement selectdev;
+	@FindBy(xpath = "//div[text()='Tipco Engineering']")private WebElement clickorgname;
+	@FindBy(xpath = "//div[text()='THM']")private WebElement selectdev;
 	
 	
 	public Dashboard(WebDriver driver)

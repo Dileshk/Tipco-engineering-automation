@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-26T17:17:06 IST" name="Default suite" finished-at="2024-09-26T17:18:12 IST" duration-ms="66088">
+  <suite started-at="2024-09-26T20:39:24 IST" name="Default suite" finished-at="2024-09-26T20:40:16 IST" duration-ms="51748">
     <groups>
     </groups>
-    <test started-at="2024-09-26T17:17:06 IST" name="Default test" finished-at="2024-09-26T17:18:12 IST" duration-ms="66088">
-      <class name="Test_Device">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:06 IST" name="initializebrowser" finished-at="2024-09-26T17:17:21 IST" duration-ms="14706" status="PASS">
+    <test started-at="2024-09-26T20:39:24 IST" name="Default test" finished-at="2024-09-26T20:40:16 IST" duration-ms="51748">
+      <class name="Test_dashboard">
+        <test-method is-config="true" signature="initialisebrowser()[pri:0, instance:Test_dashboard@3f191845]" started-at="2024-09-26T20:39:24 IST" name="initialisebrowser" finished-at="2024-09-26T20:39:45 IST" duration-ms="21258" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializebrowser -->
-        <test-method signature="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu()[pri:25, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:21 IST" name="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu" finished-at="2024-09-26T17:17:49 IST" duration-ms="28106" status="PASS">
+        </test-method> <!-- initialisebrowser -->
+        <test-method signature="Verify_that_select_orgnization_device_and_check_data_according_select_date()[pri:0, instance:Test_dashboard@3f191845]" started-at="2024-09-26T20:39:45 IST" name="Verify_that_select_orgnization_device_and_check_data_according_select_date" finished-at="2024-09-26T20:40:16 IST" duration-ms="30459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_Time_Zone_field_displays_a_dropdown_menu -->
-        <test-method signature="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage()[pri:26, instance:Test_Device@5f049ea1]" started-at="2024-09-26T17:17:49 IST" name="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage" finished-at="2024-09-26T17:18:12 IST" duration-ms="23246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage -->
-      </class> <!-- Test_Device -->
+        </test-method> <!-- Verify_that_select_orgnization_device_and_check_data_according_select_date -->
+      </class> <!-- Test_dashboard -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

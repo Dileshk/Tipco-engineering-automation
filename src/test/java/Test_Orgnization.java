@@ -36,10 +36,16 @@ public class Test_Orgnization extends Base_class{
 	     softAssert = new SoftAssert();
 	    
 	    try {
-	        Thread.sleep(25000);
-	        org.clicksbtn();
-	        Thread.sleep(3000);
-	        org.clickonorgnizationtab();
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+	       Thread.sleep(2000);
+	       org.clicksbtn();
+	       Thread.sleep(2000);
+	       org.clickonorgnizationtab();
+	       WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
+	      
+	        
 	        Thread.sleep(3000);
 	        
 	        org.addorgnization();
@@ -79,7 +85,9 @@ public class Test_Orgnization extends Base_class{
 	    softAssert = new SoftAssert();
 	    
 	    try {
-	        Thread.sleep(5000);
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
+	       Thread.sleep(2000);
 	        org.addorgnization();
 	        org.enterorgname(UtilityClass.propertiesfile("validorg"));
 	        org.entergst(UtilityClass.propertiesfile("validgst"));
@@ -99,8 +107,8 @@ public class Test_Orgnization extends Base_class{
 	        Thread.sleep(5000);
 	        org.clickonsubmit();
 	        
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Created Successfully']")));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Created Successfully']")));
 	        
 	        String actual = driver.findElement(By.xpath("//div[text()='Organization Created Successfully']")).getText();
 	        String expected = "Organization Created Successfully";

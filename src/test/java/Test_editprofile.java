@@ -32,8 +32,11 @@ public class Test_editprofile extends Base_class {
 	public void Verify_to_check_edit_full_namefield() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	        Thread.sleep(25000); 
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+	       Thread.sleep(2000); 
 	        edit.clicksbtn();
+	        Thread.sleep(2000); 
 	        edit.clickprofiletab();
 	        Thread.sleep(3000); 
 	        edit.editname();
@@ -43,8 +46,8 @@ public class Test_editprofile extends Base_class {
 	        Thread.sleep(3000); 
 	        edit.submit();
 
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Profile Updated Successfully']")));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Profile Updated Successfully']")));
 	        System.out.println("Overlay Gone");
 
 	       
