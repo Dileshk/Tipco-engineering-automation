@@ -63,7 +63,9 @@ public class TesttipcoLogin extends Base_class {
 	            log.entpass(UtilityClass.propertiesfile("validpass"));
 	            Thread.sleep(3000);
 	            log.clickbutton();
-	            Thread.sleep(15000);
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='mainLogo']")));
+	            System.out.println("Overlay Gone");
 	            
 	            WebElement logo = driver.findElement(By.xpath("//span[@class='mainLogo']"));
 	            softAssert.assertTrue(logo.isDisplayed(), "The logo is not displayed after login.");
@@ -175,6 +177,7 @@ public class TesttipcoLogin extends Base_class {
 	        try {
 	            Thread.sleep(4000);
 	            log.entpass(UtilityClass.propertiesfile("validpass"));
+	           
 	            log.clickbutton();
 	            
 	            String expected = "Email is required";
