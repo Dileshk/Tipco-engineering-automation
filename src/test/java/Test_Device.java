@@ -201,7 +201,7 @@ public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplica
 //     // Now click on the element after it is clickable
 //     addDeviceButton.click();
         device.clickonadddevice();
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
         
@@ -251,7 +251,7 @@ public void Verify_to_check_the_Device_ID_with_special_characters() throws Inter
        
 
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -333,7 +333,7 @@ public void Verify_to_check_the_Device_ID_with_spaces() throws InterruptedExcept
        
 
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -399,7 +399,7 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length
     try {
        
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -465,7 +465,7 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_max_length() t
     try {
        
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -530,7 +530,7 @@ public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_betw
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -597,7 +597,7 @@ public void  Verify_that_temp1_field_should_not_accept_alphabet() throws Interru
     	
          
        Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -665,7 +665,7 @@ public void  Verify_that_temp1_field_take_blank() throws InterruptedException, I
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -732,7 +732,7 @@ public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -800,7 +800,7 @@ public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -868,7 +868,7 @@ public void  check_maxtemp3_field_does_not_accept_special_and_char
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -936,7 +936,7 @@ public void  check_maxtepm3_does_not_accept_greater_than_100
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1004,7 +1004,7 @@ public void  check_maxtepm3_field_blank
     	
          
        
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1071,7 +1071,7 @@ public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1138,7 +1138,7 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1205,7 +1205,7 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1272,7 +1272,7 @@ public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1340,7 +1340,7 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_a
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1408,7 +1408,7 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_t
     softAssert = new SoftAssert();
     try {
     	
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1478,7 +1478,7 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than
     	
          
         Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1548,7 +1548,7 @@ public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_messag
     	
          
         Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1624,7 +1624,7 @@ public void  Verify_that_the_Time_Zone_field_displays_a_dropdown_menu
 //        device.clickondevicetab();
 //         
         Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1694,7 +1694,7 @@ public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_erro
     	
          
         Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
 
@@ -1760,7 +1760,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
      
   
     	 Thread.sleep(2000);
-         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
          wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
          System.out.println("Overlay Gone");
 
@@ -1809,7 +1809,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
       	
            
     	  Thread.sleep(2000);
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
         System.out.println("Overlay Gone");
         Thread.sleep(2000);
@@ -1842,7 +1842,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
       try {
       	
     	  Thread.sleep(2000);
-          WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+          WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
           wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
           System.out.println("Overlay Gone");
           Thread.sleep(2000);
@@ -1864,12 +1864,12 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
           softAssert.assertAll();          
          
       }
-  } 
-@AfterClass
-public void closethebrowser()
-{
-	driver.close();
-}
-}
+  } }
+//@AfterClass
+//public void closethebrowser()
+//{
+//	driver.close();
+//}
+//}
 
 		
