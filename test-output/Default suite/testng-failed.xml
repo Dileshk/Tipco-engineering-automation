@@ -6,8 +6,10 @@
       <class name="Device_update_TC">
         <methods>
           <include name="initializebrowser"/>
-          <include name="verify_that_to_update_device_without_enter_temp1"/>
-          <include name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field"/>
+          <include name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field"/>
+          <include name="verify_that_to_update_device_with_maxtemp3_above_the_range"/>
+          <include name="verify_that_to_update_device_with_maxtemp3_below_the_range"/>
+          <include name="verify_that_to_update_device_without_enter_maxtemp3"/>
         </methods>
       </class> <!-- Device_update_TC -->
     </classes>
