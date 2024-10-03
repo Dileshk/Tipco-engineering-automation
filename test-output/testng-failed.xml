@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Device_update_TC">
+      <class name="TesttipcoLogin">
         <methods>
-          <include name="initializebrowser"/>
-          <include name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field"/>
-          <include name="verify_that_to_update_device_with_maxtemp3_above_the_range"/>
-          <include name="verify_that_to_update_device_with_maxtemp3_below_the_range"/>
-          <include name="verify_that_to_update_device_without_enter_maxtemp3"/>
+          <include name="initialise"/>
+          <include name="Verify_to_signin_with_blank_mail_and_passwordfield"/>
+          <include name="Verify_to_login_with_validmail_and_blankpass"/>
+          <include name="Verify_that_not_able_to_login_with_unregisterdmail"/>
+          <include name="verify_to_login_with_valid_mail_and_Password"/>
+          <include name="verify_to_login_with_blankmail_and_valid_password"/>
+          <include name="Verify_to_login_with_invalidmail_and_password"/>
         </methods>
-      </class> <!-- Device_update_TC -->
+      </class> <!-- TesttipcoLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
