@@ -1,393 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T21:37:18 IST" name="Default suite" finished-at="2024-10-03T21:38:25 IST" duration-ms="67393">
+  <suite started-at="2024-10-04T11:59:57 IST" name="Default suite" finished-at="2024-10-04T12:08:48 IST" duration-ms="531145">
     <groups>
     </groups>
-    <test started-at="2024-10-03T21:37:18 IST" name="Default test" finished-at="2024-10-03T21:38:25 IST" duration-ms="67393">
-      <class name="TesttipcoLogin">
-        <test-method is-config="true" signature="initialise()[pri:0, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:37:18 IST" name="initialise" finished-at="2024-10-03T21:37:23 IST" duration-ms="5662" status="PASS">
+    <test started-at="2024-10-04T11:59:57 IST" name="Default test" finished-at="2024-10-04T12:08:48 IST" duration-ms="531145">
+      <class name="Device_update_TC">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T11:59:57 IST" name="initializebrowser" finished-at="2024-10-04T12:00:06 IST" duration-ms="9059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialise -->
-        <test-method signature="Verify_that_not_able_to_Login_with_incorrect_password()[pri:1, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:37:23 IST" name="Verify_that_not_able_to_Login_with_incorrect_password" finished-at="2024-10-03T21:37:57 IST" duration-ms="33329" status="PASS">
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="verify_that_to_update_device_and_enter_min_length_of_device_ID()[pri:1, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:06 IST" name="verify_that_to_update_device_and_enter_min_length_of_device_ID" finished-at="2024-10-04T12:00:20 IST" duration-ms="14193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_not_able_to_Login_with_incorrect_password -->
-        <test-method signature="Verify_that_not_able_to_login_with_unregisterdmail()[pri:2, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:37:57 IST" name="Verify_that_not_able_to_login_with_unregisterdmail" finished-at="2024-10-03T21:38:00 IST" duration-ms="3195" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.Verify_that_not_able_to_login_with_unregisterdmail(TesttipcoLogin.java:124)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_enter_min_length_of_device_ID -->
+        <test-method signature="verify_that_to_update_device_and_enter_max_length_of_device_ID()[pri:2, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:20 IST" name="verify_that_to_update_device_and_enter_max_length_of_device_ID" finished-at="2024-10-04T12:00:28 IST" duration-ms="7638" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_not_able_to_login_with_unregisterdmail -->
-        <test-method signature="Verify_to_signin_with_blank_mail_and_passwordfield()[pri:3, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:38:00 IST" name="Verify_to_signin_with_blank_mail_and_passwordfield" finished-at="2024-10-03T21:38:07 IST" duration-ms="7036" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.Verify_to_signin_with_blank_mail_and_passwordfield(TesttipcoLogin.java:143)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_enter_max_length_of_device_ID -->
+        <test-method signature="verify_that_to_update_device_and_take_deviceId_field_blank()[pri:3, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:28 IST" name="verify_that_to_update_device_and_take_deviceId_field_blank" finished-at="2024-10-04T12:00:35 IST" duration-ms="7593" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_signin_with_blank_mail_and_passwordfield -->
-        <test-method signature="Verify_to_login_with_validmail_and_blankpass()[pri:4, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:38:07 IST" name="Verify_to_login_with_validmail_and_blankpass" finished-at="2024-10-03T21:38:13 IST" duration-ms="6034" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.Verify_to_login_with_validmail_and_blankpass(TesttipcoLogin.java:170)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_take_deviceId_field_blank -->
+        <test-method signature="verify_that_to_update_device_and_enter_temp1_below_the_range()[pri:4, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:35 IST" name="verify_that_to_update_device_and_enter_temp1_below_the_range" finished-at="2024-10-04T12:00:55 IST" duration-ms="20030" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_login_with_validmail_and_blankpass -->
-        <test-method signature="verify_to_login_with_blankmail_and_valid_password()[pri:5, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:38:13 IST" name="verify_to_login_with_blankmail_and_valid_password" finished-at="2024-10-03T21:38:17 IST" duration-ms="4025" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.verify_to_login_with_blankmail_and_valid_password(TesttipcoLogin.java:192)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_enter_temp1_below_the_range -->
+        <test-method signature="verify_that_to_update_device_and_enter_maxtemp1_above_the_range()[pri:5, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:55 IST" name="verify_that_to_update_device_and_enter_maxtemp1_above_the_range" finished-at="2024-10-04T12:01:14 IST" duration-ms="19131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_to_login_with_blankmail_and_valid_password -->
-        <test-method signature="Verify_to_login_with_invalidmail_and_password()[pri:6, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:38:17 IST" name="Verify_to_login_with_invalidmail_and_password" finished-at="2024-10-03T21:38:20 IST" duration-ms="3026" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.Verify_to_login_with_invalidmail_and_password(TesttipcoLogin.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_enter_maxtemp1_above_the_range -->
+        <test-method signature="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field()[pri:6, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:14 IST" name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field" finished-at="2024-10-04T12:01:30 IST" duration-ms="15959" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_login_with_invalidmail_and_password -->
-        <test-method signature="verify_to_login_with_valid_mail_and_Password()[pri:7, instance:TesttipcoLogin@18271936]" started-at="2024-10-03T21:38:20 IST" name="verify_to_login_with_valid_mail_and_Password" finished-at="2024-10-03T21:38:25 IST" duration-ms="5021" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception occurred: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5ccd4ca8acc84d77781341953d4fe46, findElement {using=xpath, value=//input[@name='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59258/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ccd4ca8acc84d77781341953d4fe46
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TesttipcoLogin.verify_to_login_with_valid_mail_and_Password(TesttipcoLogin.java:75)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_temp1()[pri:7, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:30 IST" name="verify_that_to_update_device_without_enter_temp1" finished-at="2024-10-04T12:01:44 IST" duration-ms="13864" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_to_login_with_valid_mail_and_Password -->
-      </class> <!-- TesttipcoLogin -->
+        </test-method> <!-- verify_that_to_update_device_without_enter_temp1 -->
+        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp1_field()[pri:8, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:44 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp1_field" finished-at="2024-10-04T12:02:00 IST" duration-ms="16049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp1_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_below_the_range()[pri:9, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:00 IST" name="verify_that_to_update_device_with_enter_maxtemp2_below_the_range" finished-at="2024-10-04T12:02:16 IST" duration-ms="15858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_below_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_above_the_range()[pri:10, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:16 IST" name="verify_that_to_update_device_with_enter_maxtemp2_above_the_range" finished-at="2024-10-04T12:02:32 IST" duration-ms="15961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_above_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_temp2_field()[pri:11, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:32 IST" name="verify_that_to_update_device_with_enter_alphabet_in_temp2_field" finished-at="2024-10-04T12:02:48 IST" duration-ms="16046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_temp2_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_temp2_field()[pri:12, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:48 IST" name="verify_that_to_update_device_without_enter_temp2_field" finished-at="2024-10-04T12:03:04 IST" duration-ms="16089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_without_enter_temp2_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp2_field()[pri:13, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:04 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp2_field" finished-at="2024-10-04T12:03:17 IST" duration-ms="12990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp2_field -->
+        <test-method signature="verify_that_to_update_device_with_maxtemp3_below_the_range()[pri:14, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:17 IST" name="verify_that_to_update_device_with_maxtemp3_below_the_range" finished-at="2024-10-04T12:03:31 IST" duration-ms="13826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_below_the_range -->
+        <test-method signature="verify_that_to_update_device_with_maxtemp3_above_the_range()[pri:15, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:31 IST" name="verify_that_to_update_device_with_maxtemp3_above_the_range" finished-at="2024-10-04T12:03:45 IST" duration-ms="13852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_above_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field()[pri:16, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:45 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field" finished-at="2024-10-04T12:04:21 IST" duration-ms="36646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_maxtemp3()[pri:17, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:04:21 IST" name="verify_that_to_update_device_without_enter_maxtemp3" finished-at="2024-10-04T12:04:38 IST" duration-ms="16724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_without_enter_maxtemp3 -->
+        <test-method signature="verify_that_to_update_device_maxtemp3_with_special_char()[pri:18, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:04:38 IST" name="verify_that_to_update_device_maxtemp3_with_special_char" finished-at="2024-10-04T12:05:06 IST" duration-ms="27598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_maxtemp3_with_special_char -->
+        <test-method signature="verify_that_to_update_device_with_below_range_of_the_maxpresser()[pri:19, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:06 IST" name="verify_that_to_update_device_with_below_range_of_the_maxpresser" finished-at="2024-10-04T12:05:23 IST" duration-ms="16848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_maxpresser -->
+        <test-method signature="verify_that_to_update_device_with_above_range_of_the_maxpresser()[pri:20, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:23 IST" name="verify_that_to_update_device_with_above_range_of_the_maxpresser" finished-at="2024-10-04T12:05:39 IST" duration-ms="16845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_maxpresser -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field()[pri:21, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:39 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field" finished-at="2024-10-04T12:05:57 IST" duration-ms="17253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with0ut_enter_maxtpresser_field()[pri:22, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:57 IST" name="verify_that_to_update_device_with0ut_enter_maxtpresser_field" finished-at="2024-10-04T12:06:35 IST" duration-ms="38189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with0ut_enter_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field()[pri:23, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:06:35 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field" finished-at="2024-10-04T12:06:52 IST" duration-ms="16853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with_below_range_of_the_vibration()[pri:24, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:06:52 IST" name="verify_that_to_update_device_with_below_range_of_the_vibration" finished-at="2024-10-04T12:07:09 IST" duration-ms="16903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_vibration -->
+        <test-method signature="verify_that_to_update_device_with_above_range_of_the_vibration()[pri:25, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:09 IST" name="verify_that_to_update_device_with_above_range_of_the_vibration" finished-at="2024-10-04T12:07:25 IST" duration-ms="16756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_vibration -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field()[pri:26, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:25 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field" finished-at="2024-10-04T12:07:42 IST" duration-ms="17052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_maxvibration_field()[pri:27, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:42 IST" name="verify_that_to_update_device_without_enter_maxvibration_field" finished-at="2024-10-04T12:08:14 IST" duration-ms="31568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_without_enter_maxvibration_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field()[pri:28, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:14 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field" finished-at="2024-10-04T12:08:31 IST" duration-ms="17077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field -->
+        <test-method signature="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup()[pri:29, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:31 IST" name="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup" finished-at="2024-10-04T12:08:37 IST" duration-ms="6357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup -->
+        <test-method signature="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page()[pri:30, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:37 IST" name="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page" finished-at="2024-10-04T12:08:48 IST" duration-ms="10240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_to_check_clickon_update_device_and_check_the_text_ofthe_page -->
+      </class> <!-- Device_update_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
