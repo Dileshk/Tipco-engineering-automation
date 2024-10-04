@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Device_update_TC">
+      <class name="Device_TC">
         <methods>
+          <include name="Verify_and_check_to_type_on_field_and_select_list_box"/>
           <include name="initializebrowser"/>
-          <include name="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page"/>
         </methods>
-      </class> <!-- Device_update_TC -->
+      </class> <!-- Device_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

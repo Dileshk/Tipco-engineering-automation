@@ -1,137 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-04T11:59:57 IST" name="Default suite" finished-at="2024-10-04T12:08:48 IST" duration-ms="531145">
+  <suite started-at="2024-10-04T17:27:50 IST" name="Default suite" finished-at="2024-10-04T17:28:22 IST" duration-ms="31829">
     <groups>
     </groups>
-    <test started-at="2024-10-04T11:59:57 IST" name="Default test" finished-at="2024-10-04T12:08:48 IST" duration-ms="531145">
-      <class name="Device_update_TC">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T11:59:57 IST" name="initializebrowser" finished-at="2024-10-04T12:00:06 IST" duration-ms="9059" status="PASS">
+    <test started-at="2024-10-04T17:27:50 IST" name="Default test" finished-at="2024-10-04T17:28:22 IST" duration-ms="31829">
+      <class name="Device_TC">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_TC@3f191845]" started-at="2024-10-04T17:27:51 IST" name="initializebrowser" finished-at="2024-10-04T17:28:01 IST" duration-ms="10219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verify_that_to_update_device_and_enter_min_length_of_device_ID()[pri:1, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:06 IST" name="verify_that_to_update_device_and_enter_min_length_of_device_ID" finished-at="2024-10-04T12:00:20 IST" duration-ms="14193" status="PASS">
+        <test-method signature="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox()[pri:5, instance:Device_TC@3f191845]" started-at="2024-10-04T17:28:01 IST" name="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox" finished-at="2024-10-04T17:28:22 IST" duration-ms="21579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_enter_min_length_of_device_ID -->
-        <test-method signature="verify_that_to_update_device_and_enter_max_length_of_device_ID()[pri:2, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:20 IST" name="verify_that_to_update_device_and_enter_max_length_of_device_ID" finished-at="2024-10-04T12:00:28 IST" duration-ms="7638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_enter_max_length_of_device_ID -->
-        <test-method signature="verify_that_to_update_device_and_take_deviceId_field_blank()[pri:3, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:28 IST" name="verify_that_to_update_device_and_take_deviceId_field_blank" finished-at="2024-10-04T12:00:35 IST" duration-ms="7593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_take_deviceId_field_blank -->
-        <test-method signature="verify_that_to_update_device_and_enter_temp1_below_the_range()[pri:4, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:35 IST" name="verify_that_to_update_device_and_enter_temp1_below_the_range" finished-at="2024-10-04T12:00:55 IST" duration-ms="20030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_enter_temp1_below_the_range -->
-        <test-method signature="verify_that_to_update_device_and_enter_maxtemp1_above_the_range()[pri:5, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:00:55 IST" name="verify_that_to_update_device_and_enter_maxtemp1_above_the_range" finished-at="2024-10-04T12:01:14 IST" duration-ms="19131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_enter_maxtemp1_above_the_range -->
-        <test-method signature="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field()[pri:6, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:14 IST" name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field" finished-at="2024-10-04T12:01:30 IST" duration-ms="15959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field -->
-        <test-method signature="verify_that_to_update_device_without_enter_temp1()[pri:7, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:30 IST" name="verify_that_to_update_device_without_enter_temp1" finished-at="2024-10-04T12:01:44 IST" duration-ms="13864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_without_enter_temp1 -->
-        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp1_field()[pri:8, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:01:44 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp1_field" finished-at="2024-10-04T12:02:00 IST" duration-ms="16049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp1_field -->
-        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_below_the_range()[pri:9, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:00 IST" name="verify_that_to_update_device_with_enter_maxtemp2_below_the_range" finished-at="2024-10-04T12:02:16 IST" duration-ms="15858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_below_the_range -->
-        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_above_the_range()[pri:10, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:16 IST" name="verify_that_to_update_device_with_enter_maxtemp2_above_the_range" finished-at="2024-10-04T12:02:32 IST" duration-ms="15961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_above_the_range -->
-        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_temp2_field()[pri:11, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:32 IST" name="verify_that_to_update_device_with_enter_alphabet_in_temp2_field" finished-at="2024-10-04T12:02:48 IST" duration-ms="16046" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_temp2_field -->
-        <test-method signature="verify_that_to_update_device_without_enter_temp2_field()[pri:12, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:02:48 IST" name="verify_that_to_update_device_without_enter_temp2_field" finished-at="2024-10-04T12:03:04 IST" duration-ms="16089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_without_enter_temp2_field -->
-        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp2_field()[pri:13, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:04 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp2_field" finished-at="2024-10-04T12:03:17 IST" duration-ms="12990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp2_field -->
-        <test-method signature="verify_that_to_update_device_with_maxtemp3_below_the_range()[pri:14, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:17 IST" name="verify_that_to_update_device_with_maxtemp3_below_the_range" finished-at="2024-10-04T12:03:31 IST" duration-ms="13826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_below_the_range -->
-        <test-method signature="verify_that_to_update_device_with_maxtemp3_above_the_range()[pri:15, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:31 IST" name="verify_that_to_update_device_with_maxtemp3_above_the_range" finished-at="2024-10-04T12:03:45 IST" duration-ms="13852" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_above_the_range -->
-        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field()[pri:16, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:03:45 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field" finished-at="2024-10-04T12:04:21 IST" duration-ms="36646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field -->
-        <test-method signature="verify_that_to_update_device_without_enter_maxtemp3()[pri:17, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:04:21 IST" name="verify_that_to_update_device_without_enter_maxtemp3" finished-at="2024-10-04T12:04:38 IST" duration-ms="16724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_without_enter_maxtemp3 -->
-        <test-method signature="verify_that_to_update_device_maxtemp3_with_special_char()[pri:18, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:04:38 IST" name="verify_that_to_update_device_maxtemp3_with_special_char" finished-at="2024-10-04T12:05:06 IST" duration-ms="27598" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_maxtemp3_with_special_char -->
-        <test-method signature="verify_that_to_update_device_with_below_range_of_the_maxpresser()[pri:19, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:06 IST" name="verify_that_to_update_device_with_below_range_of_the_maxpresser" finished-at="2024-10-04T12:05:23 IST" duration-ms="16848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_maxpresser -->
-        <test-method signature="verify_that_to_update_device_with_above_range_of_the_maxpresser()[pri:20, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:23 IST" name="verify_that_to_update_device_with_above_range_of_the_maxpresser" finished-at="2024-10-04T12:05:39 IST" duration-ms="16845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_maxpresser -->
-        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field()[pri:21, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:39 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field" finished-at="2024-10-04T12:05:57 IST" duration-ms="17253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field -->
-        <test-method signature="verify_that_to_update_device_with0ut_enter_maxtpresser_field()[pri:22, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:05:57 IST" name="verify_that_to_update_device_with0ut_enter_maxtpresser_field" finished-at="2024-10-04T12:06:35 IST" duration-ms="38189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with0ut_enter_maxtpresser_field -->
-        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field()[pri:23, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:06:35 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field" finished-at="2024-10-04T12:06:52 IST" duration-ms="16853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field -->
-        <test-method signature="verify_that_to_update_device_with_below_range_of_the_vibration()[pri:24, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:06:52 IST" name="verify_that_to_update_device_with_below_range_of_the_vibration" finished-at="2024-10-04T12:07:09 IST" duration-ms="16903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_vibration -->
-        <test-method signature="verify_that_to_update_device_with_above_range_of_the_vibration()[pri:25, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:09 IST" name="verify_that_to_update_device_with_above_range_of_the_vibration" finished-at="2024-10-04T12:07:25 IST" duration-ms="16756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_vibration -->
-        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field()[pri:26, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:25 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field" finished-at="2024-10-04T12:07:42 IST" duration-ms="17052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field -->
-        <test-method signature="verify_that_to_update_device_without_enter_maxvibration_field()[pri:27, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:07:42 IST" name="verify_that_to_update_device_without_enter_maxvibration_field" finished-at="2024-10-04T12:08:14 IST" duration-ms="31568" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_without_enter_maxvibration_field -->
-        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field()[pri:28, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:14 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field" finished-at="2024-10-04T12:08:31 IST" duration-ms="17077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field -->
-        <test-method signature="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup()[pri:29, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:31 IST" name="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup" finished-at="2024-10-04T12:08:37 IST" duration-ms="6357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup -->
-        <test-method signature="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page()[pri:30, instance:Device_update_TC@2767e23c]" started-at="2024-10-04T12:08:37 IST" name="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page" finished-at="2024-10-04T12:08:48 IST" duration-ms="10240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_to_check_clickon_update_device_and_check_the_text_ofthe_page -->
-      </class> <!-- Device_update_TC -->
+        </test-method> <!-- Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox -->
+      </class> <!-- Device_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

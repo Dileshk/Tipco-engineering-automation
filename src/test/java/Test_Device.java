@@ -32,16 +32,11 @@ public class Test_Device extends Base_class{
 		device.entpass(UtilityClass.propertiesfile("validpass"));
 		device.clickbuttonsubmit();
 	}
-//	@Test(priority = 1)
+//	@Test(priority = 31)
 //	public void Verify_to_create_Horizontalbead_mill_machine() throws IOException, InterruptedException {
 //	     softAssert = new SoftAssert();
 //	    try {
-//	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-//	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-//	       Thread.sleep(2000);
-//	        device.clicksbtn();
-//	        Thread.sleep(2000);
-//	        device.clickondevicetab();
+//	    	
 //	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 //	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
 //	        System.out.println("Overlay Gone");
@@ -86,7 +81,7 @@ public class Test_Device extends Base_class{
 //	    }
 //	}
 //
-//	@Test(priority = 2)
+//	@Test(priority = 32)
 //	public void verify_to_create_twinsaftdisperser() throws InterruptedException, IOException {
 //	     softAssert = new SoftAssert();
 //	    try {
@@ -132,7 +127,7 @@ public class Test_Device extends Base_class{
 //	    }
 //	}
 //
-//	@Test(priority = 3)
+//	@Test(priority = 33)
 //	public void Verify_to_create_highspeed_disperser_machine() throws InterruptedException, IOException {
 //	     softAssert = new SoftAssert();
 //	    try {
@@ -176,7 +171,7 @@ public class Test_Device extends Base_class{
 //	        softAssert.fail("Exception  " + e.getMessage());
 //	    } finally {
 //	        softAssert.assertAll();
-//	    }}}
+//	    }}
 @Test(priority = 4)
 public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates() throws InterruptedException, IOException {
      softAssert = new SoftAssert();
@@ -192,18 +187,18 @@ public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplica
         Thread.sleep(2000);
        
         
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add Device']")));
-//        device.clickonadddevice();
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+        device.clickonadddevice();
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 //     // Wait until the element is clickable
 //     WebElement addDeviceButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
 //     // Now click on the element after it is clickable
 //     addDeviceButton.click();
-        device.clickonadddevice();
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-        System.out.println("Overlay Gone");
+//        device.clickonadddevice();
+//        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(60));
+//        wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+//        System.out.println("Overlay Gone");
         
         Thread.sleep(3000);
         device.enterdeviceId(UtilityClass.propertiesfile("alreadyexist"));
@@ -245,7 +240,7 @@ driver.navigate().refresh();
 
     }}
 @Test(priority = 5)
-public void Verify_to_check_the_Device_ID_with_special_characters() throws InterruptedException, IOException {
+public void Verify_to_check__Device_ID_Field_with_special_characters() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
        
@@ -327,7 +322,7 @@ driver.navigate().refresh();
 //}
 //}
 @Test(priority = 6)
-public void Verify_to_check_the_Device_ID_with_spaces() throws InterruptedException, IOException {
+public void Verify_to_check__Device_IDfield_with_spaces() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
        
@@ -659,7 +654,7 @@ driver.navigate().refresh();
 }
 
 @Test(priority = 11)
-public void  Verify_that_temp1_field_take_blank() throws InterruptedException, IOException {
+public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
     	
@@ -861,7 +856,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 14)
-public void  check_maxtemp3_field_does_not_accept_special_and_char
+public void  check_maxtemp3_field_does_not_accept_special_char
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
@@ -997,7 +992,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 16)
-public void  check_maxtepm3_field_blank
+public void  check_to_create_device_with_maxtepm3_field_is_blank
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
