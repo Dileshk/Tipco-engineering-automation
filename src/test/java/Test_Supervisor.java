@@ -75,13 +75,13 @@ public class Test_Supervisor extends Base_class  {
         try {
 //            Thread.sleep(25000);
 //            sup.clicksbtn();
-        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	       Thread.sleep(2000);
 	       sup.clicksbtn();
             Thread.sleep(2000);
             sup.clicksuper();
-            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(25));
+            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
             Thread.sleep(1000);
             sup.addbtnsupervisor();

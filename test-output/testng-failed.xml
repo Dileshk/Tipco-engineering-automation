@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Device_TC">
+      <class name="Test_Supervisor">
         <methods>
-          <include name="Verify_and_check_to_type_on_field_and_select_list_box"/>
+          <include name="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty"/>
+          <include name="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code"/>
+          <include name="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty"/>
+          <include name="Create_Supervisor_with_valid_email"/>
+          <include name="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters"/>
           <include name="initializebrowser"/>
         </methods>
-      </class> <!-- Device_TC -->
+      </class> <!-- Test_Supervisor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,21 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-04T17:27:50 IST" name="Default suite" finished-at="2024-10-04T17:28:22 IST" duration-ms="31829">
+  <suite started-at="2024-10-08T15:36:12 IST" name="Default suite" finished-at="2024-10-08T15:40:56 IST" duration-ms="284599">
     <groups>
     </groups>
-    <test started-at="2024-10-04T17:27:50 IST" name="Default test" finished-at="2024-10-04T17:28:22 IST" duration-ms="31829">
-      <class name="Device_TC">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_TC@3f191845]" started-at="2024-10-04T17:27:51 IST" name="initializebrowser" finished-at="2024-10-04T17:28:01 IST" duration-ms="10219" status="PASS">
+    <test started-at="2024-10-08T15:36:12 IST" name="Default test" finished-at="2024-10-08T15:40:56 IST" duration-ms="284599">
+      <class name="Test_Supervisor">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:36:12 IST" name="initializebrowser" finished-at="2024-10-08T15:36:24 IST" duration-ms="12357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox()[pri:5, instance:Device_TC@3f191845]" started-at="2024-10-04T17:28:01 IST" name="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox" finished-at="2024-10-04T17:28:22 IST" duration-ms="21579" status="PASS">
+        <test-method signature="verify_that_createSupervisor_with_invalid_email()[pri:1, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:36:24 IST" name="verify_that_createSupervisor_with_invalid_email" finished-at="2024-10-08T15:36:42 IST" duration-ms="17675" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox -->
-      </class> <!-- Device_TC -->
+        </test-method> <!-- verify_that_createSupervisor_with_invalid_email -->
+        <test-method signature="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character()[pri:2, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:36:42 IST" name="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character" finished-at="2024-10-08T15:36:54 IST" duration-ms="11694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character -->
+        <test-method signature="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:3, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:36:54 IST" name="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-10-08T15:37:05 IST" duration-ms="11719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
+        <test-method signature="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:4, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:37:05 IST" name="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-10-08T15:37:15 IST" duration-ms="9623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
+        <test-method signature="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters()[pri:6, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:37:15 IST" name="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters" finished-at="2024-10-08T15:37:27 IST" duration-ms="11668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters -->
+        <test-method signature="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code()[pri:7, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:37:27 IST" name="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code" finished-at="2024-10-08T15:37:40 IST" duration-ms="13706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code -->
+        <test-method signature="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code()[pri:8, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:37:40 IST" name="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code" finished-at="2024-10-08T15:37:54 IST" duration-ms="13848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code -->
+        <test-method signature="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu()[pri:9, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:37:54 IST" name="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu" finished-at="2024-10-08T15:38:08 IST" duration-ms="13638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu -->
+        <test-method signature="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown()[pri:10, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:38:08 IST" name="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown" finished-at="2024-10-08T15:38:17 IST" duration-ms="9537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown -->
+        <test-method signature="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled()[pri:11, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:38:17 IST" name="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled" finished-at="2024-10-08T15:38:24 IST" duration-ms="6354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled -->
+        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_full_name()[pri:12, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:38:24 IST" name="Verify_the_maximum_and_minimum_length_of_the_full_name" finished-at="2024-10-08T15:38:33 IST" duration-ms="9627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_full_name -->
+        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code()[pri:13, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:38:33 IST" name="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code" finished-at="2024-10-08T15:38:46 IST" duration-ms="12674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code -->
+        <test-method signature="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed()[pri:14, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:38:46 IST" name="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed" finished-at="2024-10-08T15:39:10 IST" duration-ms="23899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed -->
+        <test-method signature="Verify_to_check_and_click_on_next_page_button_of_supervisor()[pri:15, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:39:10 IST" name="Verify_to_check_and_click_on_next_page_button_of_supervisor" finished-at="2024-10-08T15:39:21 IST" duration-ms="11218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_and_click_on_next_page_button_of_supervisor -->
+        <test-method signature="check_to_update_supervisor_without_select_orgnization_name()[pri:16, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:39:21 IST" name="check_to_update_supervisor_without_select_orgnization_name" finished-at="2024-10-08T15:39:35 IST" duration-ms="13492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_to_update_supervisor_without_select_orgnization_name -->
+        <test-method signature="check_and_update_superviaor_without_using_attherate()[pri:17, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:39:35 IST" name="check_and_update_superviaor_without_using_attherate" finished-at="2024-10-08T15:39:50 IST" duration-ms="15519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_and_update_superviaor_without_using_attherate -->
+        <test-method signature="check_to_update_supervisor_without_enter_mandatory_field()[pri:18, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:39:50 IST" name="check_to_update_supervisor_without_enter_mandatory_field" finished-at="2024-10-08T15:40:02 IST" duration-ms="11497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_to_update_supervisor_without_enter_mandatory_field -->
+        <test-method signature="Verify_to_update_supervisor_with_max_char_in_full_name_field()[pri:19, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:40:02 IST" name="Verify_to_update_supervisor_with_max_char_in_full_name_field" finished-at="2024-10-08T15:40:13 IST" duration-ms="11640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_update_supervisor_with_max_char_in_full_name_field -->
+        <test-method signature="Verify_to_update_superviosr_with_invalid_number()[pri:20, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:40:13 IST" name="Verify_to_update_superviosr_with_invalid_number" finished-at="2024-10-08T15:40:25 IST" duration-ms="11548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_update_superviosr_with_invalid_number -->
+        <test-method signature="Verify_to_check_createsupervisor_that_are_already_exist()[pri:21, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:40:25 IST" name="Verify_to_check_createsupervisor_that_are_already_exist" finished-at="2024-10-08T15:40:42 IST" duration-ms="17448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_createsupervisor_that_are_already_exist -->
+        <test-method signature="Create_Supervisor_with_valid_email()[pri:50, instance:Test_Supervisor@1a75e76a]" started-at="2024-10-08T15:40:42 IST" name="Create_Supervisor_with_valid_email" finished-at="2024-10-08T15:40:56 IST" duration-ms="14138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Supervisor_with_valid_email -->
+      </class> <!-- Test_Supervisor -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
