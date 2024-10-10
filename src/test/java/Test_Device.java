@@ -32,146 +32,146 @@ public class Test_Device extends Base_class{
 		device.entpass(UtilityClass.propertiesfile("validpass"));
 		device.clickbuttonsubmit();
 	}
-//	@Test(priority = 31)
-//	public void Verify_to_create_Horizontalbead_mill_machine() throws IOException, InterruptedException {
-//	     softAssert = new SoftAssert();
-//	    try {
-//	    	
-//	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
-//	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-//	        System.out.println("Overlay Gone");
-//	        Thread.sleep(3000);
-//	       
-//	        device.clickonadddevice();
-//	        Thread.sleep(3000);
-//	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
-//
-//	        device.clickondevicetypelistbox();
-//	        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-//	        Thread.sleep(2000);
-//
-//	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-//	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-//	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-//	        device.entertimezone(UtilityClass.propertiesfile("zone"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-//	        Thread.sleep(3000);
-//	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//
-//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(15));//hamne is xpath ke liye wait kar rahe ye nahi mila toh sab fail hojayege
-//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
-//	        System.out.println("Overlay Gone");
-//
-//	        
-//	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
-//	        String expected = "Device Created Successfully";
-//	        System.out.println("dhkjfh" + actual);
-//	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
-//	  Thread.sleep(5000);
-// driver.navigate().refresh(); 
-//	    } catch (Exception e) {
-//	        softAssert.fail("Exception " + e.getMessage()); 
-//	    } finally {
-//	        softAssert.assertAll(); 
-//	       
-//	    }
-//	}
-//
-//	@Test(priority = 32)
-//	public void verify_to_create_twinsaftdisperser() throws InterruptedException, IOException {
-//	     softAssert = new SoftAssert();
-//	    try {
-//	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
-//	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-//	        System.out.println("Overlay Gone");
-//	        Thread.sleep(3000);
-//	        device.clickonadddevice();
-//	        Thread.sleep(3000);
-//	        device.enterdeviceId(UtilityClass.propertiesfile("TID"));
-//	        device.clickondevicetypelistbox();
-//	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
-//	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-//	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
-//	        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
-//	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-//	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-//	        device.entertimezone(UtilityClass.propertiesfile("zone"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-//	        Thread.sleep(3000);
-//	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//
-//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-//	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
-//	        System.out.println("Overlay Gone");
-//
-//	        
-//	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
-//	        String expected = "Device Created Successfully";
-//	        System.out.println("dhkjfh" + actual);
-//	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
-//    Thread.sleep(5000);
-//	        driver.navigate().refresh();
-//	    } catch (Exception e) {
-//	        softAssert.fail("Exception " + e.getMessage());
-//	    } finally {
-//	        softAssert.assertAll();
-//	        
-//	    }
-//	}
-//
-//	@Test(priority = 33)
-//	public void Verify_to_create_highspeed_disperser_machine() throws InterruptedException, IOException {
-//	     softAssert = new SoftAssert();
-//	    try {
-//	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
-//	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-//	        System.out.println("Overlay Gone");
-//	        Thread.sleep(3000);
-//	      
-//	        device.clickonadddevice();
-//	        Thread.sleep(3000);
-//	        device.enterdeviceId(UtilityClass.propertiesfile("HIID"));
-//	        device.clickondevicetypelistbox();
-//	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
-//	        Thread.sleep(3000);
-//
-//	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-//	        Thread.sleep(3000);
-//	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-//	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-//	        device.entertimezone(UtilityClass.propertiesfile("zone"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-//	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//	        Thread.sleep(5000);
-//	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-//	        Thread.sleep(3000);
-//	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//
-//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-//	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
-//	        System.out.println("Overlay Gone");
-//
-//	        
-//	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
-//	        String expected = "Device Created Successfully";
-//	        System.out.println("dhkjfh" + actual);
-//	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
-//	  Thread.sleep(5000);
-//  driver.navigate().refresh();
-//	    } catch (Exception e) {
-//	        softAssert.fail("Exception  " + e.getMessage());
-//	    } finally {
-//	        softAssert.assertAll();
-//	    }}
+	@Test(priority = 31)
+	public void Verify_to_create_Horizontalbead_mill_machine() throws IOException, InterruptedException {
+	     softAssert = new SoftAssert();
+	    try {
+	    	
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+	        Thread.sleep(3000);
+	       
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+
+	        device.clickondevicetypelistbox();
+	        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	        Thread.sleep(2000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(15));//hamne is xpath ke liye wait kar rahe ye nahi mila toh sab fail hojayege
+	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
+	        System.out.println("Overlay Gone");
+
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
+	        String expected = "Device Created Successfully";
+	        System.out.println("dhkjfh" + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	  Thread.sleep(5000);
+ driver.navigate().refresh(); 
+	    } catch (Exception e) {
+	        softAssert.fail("Exception " + e.getMessage()); 
+	    } finally {
+	        softAssert.assertAll(); 
+	       
+	    }
+	}
+
+	@Test(priority = 32)
+	public void verify_to_create_twinsaftdisperser() throws InterruptedException, IOException {
+	     softAssert = new SoftAssert();
+	    try {
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+	        Thread.sleep(3000);
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+	        device.enterdeviceId(UtilityClass.propertiesfile("TID"));
+	        device.clickondevicetypelistbox();
+	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
+	        System.out.println("Overlay Gone");
+
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
+	        String expected = "Device Created Successfully";
+	        System.out.println("dhkjfh" + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+    Thread.sleep(5000);
+	        driver.navigate().refresh();
+	    } catch (Exception e) {
+	        softAssert.fail("Exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	        
+	    }
+	}
+
+	@Test(priority = 33)
+	public void Verify_to_create_highspeed_disperser_machine() throws InterruptedException, IOException {
+	     softAssert = new SoftAssert();
+	    try {
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+	        Thread.sleep(3000);
+	      
+	        device.clickonadddevice();
+	        Thread.sleep(3000);
+	        device.enterdeviceId(UtilityClass.propertiesfile("HIID"));
+	        device.clickondevicetypelistbox();
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
+	        Thread.sleep(3000);
+
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        Thread.sleep(3000);
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Device Created Successfully']")));
+	        System.out.println("Overlay Gone");
+
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='Device Created Successfully']")).getText();
+	        String expected = "Device Created Successfully";
+	        System.out.println("dhkjfh" + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	  Thread.sleep(5000);
+  driver.navigate().refresh();
+	    } catch (Exception e) {
+	        softAssert.fail("Exception  " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	    }}
 @Test(priority = 4)
 public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates() throws InterruptedException, IOException {
      softAssert = new SoftAssert();

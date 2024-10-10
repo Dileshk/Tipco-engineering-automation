@@ -18,6 +18,7 @@ public class Base_class {
 //		WebDriverManager.chromedriver().clearDriverCache().setup();
 		ChromeOptions op= new ChromeOptions();
 		op.addArguments("--remote-allow-origins=*");
+		
 		driver= new ChromeDriver();
 		//driver= new ChromeDriver();
 		driver.get(UtilityClass.propertiesfile("URL"));
