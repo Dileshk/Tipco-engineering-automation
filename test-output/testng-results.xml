@@ -1,89 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-10T17:55:30 IST" name="Default suite" finished-at="2024-10-10T17:59:20 IST" duration-ms="230147">
+  <suite started-at="2024-10-11T15:15:00 IST" name="Default suite" finished-at="2024-10-11T15:16:47 IST" duration-ms="106713">
     <groups>
     </groups>
-    <test started-at="2024-10-10T17:55:30 IST" name="Default test" finished-at="2024-10-10T17:59:20 IST" duration-ms="230147">
-      <class name="Test_Orgnization">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:55:30 IST" name="initializebrowser" finished-at="2024-10-10T17:55:37 IST" duration-ms="6994" status="PASS">
+    <test started-at="2024-10-11T15:15:00 IST" name="Default test" finished-at="2024-10-11T15:16:47 IST" duration-ms="106713">
+      <class name="Test_Orgnization2">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:00 IST" name="initializebrowser" finished-at="2024-10-11T15:15:08 IST" duration-ms="7392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_an_organization_name()[pri:3, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:55:37 IST" name="Verify_that_an_organization_cannot_be_created_without_an_organization_name" finished-at="2024-10-10T17:55:53 IST" duration-ms="15458" status="PASS">
+        <test-method signature="Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield()[pri:1, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:08 IST" name="Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield" finished-at="2024-10-11T15:15:25 IST" duration-ms="16832" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_an_organization_name -->
-        <test-method signature="Verify_to_add_orgnization_with_special_charcter_in_org_name_field()[pri:4, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:55:53 IST" name="Verify_to_add_orgnization_with_special_charcter_in_org_name_field" finished-at="2024-10-10T17:56:06 IST" duration-ms="12973" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield -->
+        <test-method signature="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields()[pri:2, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:25 IST" name="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields" finished-at="2024-10-11T15:15:37 IST" duration-ms="11935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_add_orgnization_with_special_charcter_in_org_name_field -->
-        <test-method signature="Verify_to_add_orgnization_with_max_length_of_orgname()[pri:5, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:56:06 IST" name="Verify_to_add_orgnization_with_max_length_of_orgname" finished-at="2024-10-10T17:56:18 IST" duration-ms="12011" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_with_max_length_of_address_fields -->
+        <test-method signature="Ensure_that_the_organization_update_fails_without_address_fields()[pri:3, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:37 IST" name="Ensure_that_the_organization_update_fails_without_address_fields" finished-at="2024-10-11T15:15:48 IST" duration-ms="11611" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_add_orgnization_with_max_length_of_orgname -->
-        <test-method signature="Verify_to_add_orgnization_with_minimum_length_of_orgname()[pri:5, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:56:18 IST" name="Verify_to_add_orgnization_with_minimum_length_of_orgname" finished-at="2024-10-10T17:56:29 IST" duration-ms="11943" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_without_address_fields -->
+        <test-method signature="Ensure_that_the_organization_update_fails_with_max_length_Of_city()[pri:4, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:48 IST" name="Ensure_that_the_organization_update_fails_with_max_length_Of_city" finished-at="2024-10-11T15:16:00 IST" duration-ms="11786" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_add_orgnization_with_minimum_length_of_orgname -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format()[pri:7, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:56:29 IST" name="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format" finished-at="2024-10-10T17:56:41 IST" duration-ms="11984" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_with_max_length_Of_city -->
+        <test-method signature="Ensure_that_the_organization_update_fails_without_enter_city()[pri:5, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:00 IST" name="Ensure_that_the_organization_update_fails_without_enter_city" finished-at="2024-10-11T15:16:12 IST" duration-ms="11666" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_GST_number()[pri:8, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:56:41 IST" name="Verify_that_an_organization_cannot_be_created_without_GST_number" finished-at="2024-10-10T17:56:53 IST" duration-ms="11936" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_without_enter_city -->
+        <test-method signature="Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode()[pri:6, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:12 IST" name="Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode" finished-at="2024-10-11T15:16:23 IST" duration-ms="11847" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_GST_number -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number()[pri:9, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:56:53 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number" finished-at="2024-10-10T17:57:05 IST" duration-ms="12010" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode -->
+        <test-method signature="Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode()[pri:7, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:23 IST" name="Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode" finished-at="2024-10-11T15:16:35 IST" duration-ms="11863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field()[pri:10, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:57:05 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field" finished-at="2024-10-10T17:57:18 IST" duration-ms="12134" status="PASS">
+        </test-method> <!-- Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode -->
+        <test-method signature="Ensure_that_the_organization_update_fails_without_enter_pincode()[pri:8, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:35 IST" name="Ensure_that_the_organization_update_fails_without_enter_pincode" finished-at="2024-10-11T15:16:47 IST" duration-ms="11722" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_Address_field()[pri:11, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:57:18 IST" name="Verify_that_an_organization_cannot_be_created_without_Address_field" finished-at="2024-10-10T17:57:29 IST" duration-ms="11872" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_Address_field -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field()[pri:12, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:57:29 IST" name="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field" finished-at="2024-10-10T17:57:42 IST" duration-ms="12185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_enter_city_field()[pri:13, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:57:42 IST" name="Verify_that_an_organization_cannot_be_created_without_enter_city_field" finished-at="2024-10-10T17:57:54 IST" duration-ms="11973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_enter_city_field -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode()[pri:14, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:57:54 IST" name="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode" finished-at="2024-10-10T17:58:06 IST" duration-ms="12083" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode()[pri:15, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:58:06 IST" name="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode" finished-at="2024-10-10T17:58:18 IST" duration-ms="12094" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without__pincode()[pri:16, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:58:18 IST" name="Verify_that_an_organization_cannot_be_created_without__pincode" finished-at="2024-10-10T17:58:30 IST" duration-ms="11820" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without__pincode -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_state()[pri:17, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:58:30 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_state" finished-at="2024-10-10T17:58:42 IST" duration-ms="12085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_state -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state()[pri:18, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:58:42 IST" name="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state" finished-at="2024-10-10T17:58:54 IST" duration-ms="11925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_enter_state()[pri:19, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:58:54 IST" name="Verify_that_an_organization_cannot_be_created_without_enter_state" finished-at="2024-10-10T17:59:06 IST" duration-ms="12056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_enter_state -->
-        <test-method signature="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time()[pri:20, instance:Test_Orgnization@16eb3ea3]" started-at="2024-10-10T17:59:06 IST" name="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time" finished-at="2024-10-10T17:59:20 IST" duration-ms="14515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time -->
-      </class> <!-- Test_Orgnization -->
+        </test-method> <!-- Ensure_that_the_organization_update_fails_without_enter_pincode -->
+      </class> <!-- Test_Orgnization2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

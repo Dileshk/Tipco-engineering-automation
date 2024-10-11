@@ -2,10 +2,11 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -124,13 +125,12 @@ public class Test_Orgnization extends Base_class{
 	    softAssert = new SoftAssert();
 	    
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-	       Thread.sleep(2000);
-	       org.clicksbtn();
-	       Thread.sleep(2000);
-	       org.clickonorgnizationtab();
-	    	
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+      Thread.sleep(2000);
+      org.clicksbtn();
+      Thread.sleep(2000);
+      org.clickonorgnizationtab();
 	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
 	      
@@ -248,7 +248,7 @@ public class Test_Orgnization extends Base_class{
 	        softAssert.assertAll();
 	        driver.navigate().refresh();
 	    }}
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void Verify_to_add_orgnization_with_max_length_of_orgname () throws InterruptedException, IOException {
 	    softAssert = new SoftAssert();
 	    
@@ -897,6 +897,332 @@ public class Test_Orgnization extends Base_class{
 //	        
 	        String actual = driver.findElement(By.xpath("//p[text()='Refresh Time is required']")).getText();
 	        String expected = "Refresh Time is required";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 21)
+	public void Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
+	       Thread.sleep(2000);
+	        org.addorgnization();
+	        org.enterorgname(UtilityClass.propertiesfile("validorg"));
+	        org.entergst(UtilityClass.propertiesfile("validgst"));
+	        org.enteraddress(UtilityClass.propertiesfile("validaddress"));
+	        org.entercity(UtilityClass.propertiesfile("validcity"));
+	        org.enterstate(UtilityClass.propertiesfile("validstate"));
+	        org.enterpin(UtilityClass.propertiesfile("validpin"));
+
+//	        WebElement time = driver.findElement(By.xpath("//select[@name='refresh_time']"));
+//	        org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
+//	        s.selectByValue("1");
+
+	        org.entersupervisormail(UtilityClass.propertiesfile("validsup"));
+	        org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
+	        org.enterphone(UtilityClass.propertiesfile("validnumofsuper"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(15));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Created Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Refresh Time is required']")).getText();
+	        String expected = "Refresh Time is required";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 22)
+	public void Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
+	       Thread.sleep(2000);
+	        org.addorgnization();
+	        org.enterorgname(UtilityClass.propertiesfile("orgnameforncity"));
+	        org.entergst(UtilityClass.propertiesfile("GSTforncity"));
+	        org.enteraddress(UtilityClass.propertiesfile("validaddress"));
+	        org.entercity(UtilityClass.propertiesfile("numericcity"));
+	        org.enterstate(UtilityClass.propertiesfile("validstate"));
+	        org.enterpin(UtilityClass.propertiesfile("validpin"));
+
+	        WebElement time = driver.findElement(By.xpath("//select[@name='refresh_time']"));
+	        org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
+	        s.selectByValue("1");
+
+	        org.entersupervisormail(UtilityClass.propertiesfile("validsup"));
+	        org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
+	        org.enterphone(UtilityClass.propertiesfile("validnumofsuper"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+	        
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='City can only contain alphabetic characters, single spaces, ampersand(&), hyphen(-), and period.']")));
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='City can only contain alphabetic characters, single spaces, ampersand(&), hyphen(-), and period.']")).getText();
+	        String expected = "City can only contain alphabetic characters, single spaces, ampersand(&), hyphen(-), and period.";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 23)
+	public void Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+	        
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+	        
+	        String actual = driver.findElement(By.xpath("//div[text()='Organization Updated Successfully']")).getText();
+	        String expected = "Organization Updated Successfully";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 24)
+	public void Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Organization Name']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Organization Name is required']")).getText();
+	        String expected = "Organization Name is required";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 25)
+	public void Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Organization Name']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+          org.enterorgname(UtilityClass.propertiesfile("orgnamespechar"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Organization Name can only contain alphabets, numbers, single spaces, periods, commas, and ampersands (&)']")).getText();
+	        String expected = "Organization Name can only contain alphabets, numbers, single spaces, periods, commas, and ampersands (&)";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 26)
+	public void Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Organization Name']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+          org.enterorgname(UtilityClass.propertiesfile("minorg"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Organization name should be between 3 and 50 characters']")).getText();
+	        String expected = "Organization name should be between 3 and 50 characters";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 27)
+	public void Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='Organization Name']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+          org.enterorgname(UtilityClass.propertiesfile("maxorg"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Organization name should be between 3 and 50 characters']")).getText();
+	        String expected = "Organization name should be between 3 and 50 characters";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 28)
+	public void Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='GST Number']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+         org.entergst(UtilityClass.propertiesfile("specialcharingst"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='GST must be exactly 15 characters.']")).getText();
+	        String expected = "GST must be exactly 15 characters.";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 29)
+	public void Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='GST Number']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+         org.entergst(UtilityClass.propertiesfile("invalidgst"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='GST must be exactly 15 characters.']")).getText();
+	        String expected = "GST must be exactly 15 characters.";
+	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
+	        Thread.sleep(4000);
+	    } catch (Exception e) {
+	        softAssert.fail("An exception " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll(); 
+	        driver.navigate().refresh();
+	    }}
+	@Test(priority = 30)
+	public void Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield () throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    
+	    try {
+	    	
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
+	       Thread.sleep(2000);
+	       driver.findElement(By.xpath("//td[@class='actionIcon']")).click();
+          WebElement orgname = driver.findElement(By.xpath("//input[@placeholder='GST Number']"));
+          orgname.sendKeys(Keys.CONTROL+"a");
+          orgname.sendKeys(Keys.DELETE);
+//         org.entergst(UtilityClass.propertiesfile("invalidgst"));
+	        
+	        Thread.sleep(5000);
+	        org.clickonsubmit();
+//	        
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Updated Successfully']")));
+//	        
+	        String actual = driver.findElement(By.xpath("//p[text()='GST is required']")).getText();
+	        String expected = "GST is required";
 	        softAssert.assertEquals(actual, expected, "Maximum allowed length should be of 100 characters.");
 	        Thread.sleep(4000);
 	    } catch (Exception e) {

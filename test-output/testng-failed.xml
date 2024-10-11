@@ -3,26 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Orgnization">
+      <class name="Test_Orgnization2">
         <methods>
-          <include name="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without__pincode"/>
-          <include name="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without_GST_number"/>
-          <include name="Verify_to_add_orgnization_with_special_charcter_in_GST_No_field"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without_enter_city_field"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_max_length_of_state"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format"/>
+          <include name="Ensure_that_the_organization_update_fails_without_enter_city"/>
+          <include name="Ensure_that_the_organization_update_fails_without_address_fields"/>
+          <include name="Ensure_that_the_organization_update_fails_with_max_length_Of_city"/>
           <include name="initializebrowser"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without_Address_field"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state"/>
-          <include name="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number"/>
-          <include name="Verify_that_an_organization_cannot_be_created_without_enter_state"/>
+          <include name="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields"/>
         </methods>
-      </class> <!-- Test_Orgnization -->
+      </class> <!-- Test_Orgnization2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
