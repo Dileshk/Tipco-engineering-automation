@@ -1,49 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="24" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T15:15:00 IST" name="Default suite" finished-at="2024-10-11T15:16:47 IST" duration-ms="106713">
+  <suite started-at="2024-10-14T16:36:00 IST" name="Default suite" finished-at="2024-10-14T16:41:35 IST" duration-ms="334142">
     <groups>
     </groups>
-    <test started-at="2024-10-11T15:15:00 IST" name="Default test" finished-at="2024-10-11T15:16:47 IST" duration-ms="106713">
-      <class name="Test_Orgnization2">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:00 IST" name="initializebrowser" finished-at="2024-10-11T15:15:08 IST" duration-ms="7392" status="PASS">
+    <test started-at="2024-10-14T16:36:00 IST" name="Default test" finished-at="2024-10-14T16:41:35 IST" duration-ms="334142">
+      <class name="Test_Orgnization">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:36:00 IST" name="initializebrowser" finished-at="2024-10-14T16:36:09 IST" duration-ms="8583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield()[pri:1, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:08 IST" name="Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield" finished-at="2024-10-11T15:15:25 IST" duration-ms="16832" status="PASS">
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_an_organization_name()[pri:3, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:36:09 IST" name="Verify_that_an_organization_cannot_be_created_without_an_organization_name" finished-at="2024-10-14T16:36:46 IST" duration-ms="36946" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield -->
-        <test-method signature="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields()[pri:2, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:25 IST" name="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields" finished-at="2024-10-11T15:15:37 IST" duration-ms="11935" status="PASS">
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_an_organization_name -->
+        <test-method signature="Verify_to_add_orgnization_with_special_charcter_in_org_name_field()[pri:4, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:36:46 IST" name="Verify_to_add_orgnization_with_special_charcter_in_org_name_field" finished-at="2024-10-14T16:36:59 IST" duration-ms="13023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_with_max_length_of_address_fields -->
-        <test-method signature="Ensure_that_the_organization_update_fails_without_address_fields()[pri:3, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:37 IST" name="Ensure_that_the_organization_update_fails_without_address_fields" finished-at="2024-10-11T15:15:48 IST" duration-ms="11611" status="PASS">
+        </test-method> <!-- Verify_to_add_orgnization_with_special_charcter_in_org_name_field -->
+        <test-method signature="Verify_to_add_orgnization_with_minimum_length_of_orgname()[pri:5, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:36:59 IST" name="Verify_to_add_orgnization_with_minimum_length_of_orgname" finished-at="2024-10-14T16:37:11 IST" duration-ms="12147" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_without_address_fields -->
-        <test-method signature="Ensure_that_the_organization_update_fails_with_max_length_Of_city()[pri:4, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:15:48 IST" name="Ensure_that_the_organization_update_fails_with_max_length_Of_city" finished-at="2024-10-11T15:16:00 IST" duration-ms="11786" status="PASS">
+        </test-method> <!-- Verify_to_add_orgnization_with_minimum_length_of_orgname -->
+        <test-method signature="Verify_to_add_orgnization_with_max_length_of_orgname()[pri:6, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:37:11 IST" name="Verify_to_add_orgnization_with_max_length_of_orgname" finished-at="2024-10-14T16:37:23 IST" duration-ms="11990" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_with_max_length_Of_city -->
-        <test-method signature="Ensure_that_the_organization_update_fails_without_enter_city()[pri:5, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:00 IST" name="Ensure_that_the_organization_update_fails_without_enter_city" finished-at="2024-10-11T15:16:12 IST" duration-ms="11666" status="PASS">
+        </test-method> <!-- Verify_to_add_orgnization_with_max_length_of_orgname -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format()[pri:7, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:37:23 IST" name="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format" finished-at="2024-10-14T16:37:35 IST" duration-ms="12040" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_without_enter_city -->
-        <test-method signature="Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode()[pri:6, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:12 IST" name="Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode" finished-at="2024-10-11T15:16:23 IST" duration-ms="11847" status="PASS">
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_GST_number()[pri:8, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:37:35 IST" name="Verify_that_an_organization_cannot_be_created_without_GST_number" finished-at="2024-10-14T16:37:47 IST" duration-ms="11843" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode -->
-        <test-method signature="Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode()[pri:7, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:23 IST" name="Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode" finished-at="2024-10-11T15:16:35 IST" duration-ms="11863" status="PASS">
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_GST_number -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number()[pri:9, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:37:47 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number" finished-at="2024-10-14T16:37:59 IST" duration-ms="12100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode -->
-        <test-method signature="Ensure_that_the_organization_update_fails_without_enter_pincode()[pri:8, instance:Test_Orgnization2@48075da3]" started-at="2024-10-11T15:16:35 IST" name="Ensure_that_the_organization_update_fails_without_enter_pincode" finished-at="2024-10-11T15:16:47 IST" duration-ms="11722" status="PASS">
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field()[pri:10, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:37:59 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field" finished-at="2024-10-14T16:38:11 IST" duration-ms="12048" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ensure_that_the_organization_update_fails_without_enter_pincode -->
-      </class> <!-- Test_Orgnization2 -->
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_Address_field()[pri:11, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:38:11 IST" name="Verify_that_an_organization_cannot_be_created_without_Address_field" finished-at="2024-10-14T16:38:23 IST" duration-ms="11887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_Address_field -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field()[pri:12, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:38:23 IST" name="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field" finished-at="2024-10-14T16:38:35 IST" duration-ms="12117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_enter_city_field()[pri:13, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:38:35 IST" name="Verify_that_an_organization_cannot_be_created_without_enter_city_field" finished-at="2024-10-14T16:38:47 IST" duration-ms="11852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_enter_city_field -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode()[pri:14, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:38:47 IST" name="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode" finished-at="2024-10-14T16:38:59 IST" duration-ms="11839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode()[pri:15, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:38:59 IST" name="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode" finished-at="2024-10-14T16:39:11 IST" duration-ms="11952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without__pincode()[pri:16, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:11 IST" name="Verify_that_an_organization_cannot_be_created_without__pincode" finished-at="2024-10-14T16:39:23 IST" duration-ms="11864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without__pincode -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_max_length_of_state()[pri:17, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:23 IST" name="Verify_that_an_organization_cannot_be_created_with_max_length_of_state" finished-at="2024-10-14T16:39:35 IST" duration-ms="12175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_state -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state()[pri:18, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:35 IST" name="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state" finished-at="2024-10-14T16:39:47 IST" duration-ms="11912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_enter_state()[pri:19, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:47 IST" name="Verify_that_an_organization_cannot_be_created_without_enter_state" finished-at="2024-10-14T16:39:50 IST" duration-ms="3114" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_state(Test_Orgnization.java:864)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_enter_state -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time()[pri:20, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:50 IST" name="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time" finished-at="2024-10-14T16:39:53 IST" duration-ms="3101" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time(Test_Orgnization.java:905)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists()[pri:21, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:53 IST" name="Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists" finished-at="2024-10-14T16:39:56 IST" duration-ms="3141" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists(Test_Orgnization.java:946)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists -->
+        <test-method signature="Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name()[pri:22, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:56 IST" name="Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name" finished-at="2024-10-14T16:39:59 IST" duration-ms="3138" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+An exception element click intercepted: Element <button class="">...</button> is not clickable at point (1380, 151). Other element would receive the click: <div class="loader">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -> xpath: //button[text()='Add Organization']]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name(Test_Orgnization.java:987)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name -->
+        <test-method signature="Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address()[pri:23, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:39:59 IST" name="Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address" finished-at="2024-10-14T16:40:13 IST" duration-ms="14097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing()[pri:24, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:40:13 IST" name="Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing" finished-at="2024-10-14T16:40:25 IST" duration-ms="11569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field()[pri:25, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:40:25 IST" name="Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field" finished-at="2024-10-14T16:40:37 IST" duration-ms="11640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field()[pri:26, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:40:37 IST" name="Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field" finished-at="2024-10-14T16:40:48 IST" duration-ms="11584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field()[pri:27, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:40:48 IST" name="Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field" finished-at="2024-10-14T16:41:00 IST" duration-ms="11679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield()[pri:28, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:41:00 IST" name="Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield" finished-at="2024-10-14T16:41:12 IST" duration-ms="11643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield -->
+        <test-method signature="Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield()[pri:29, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:41:12 IST" name="Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield" finished-at="2024-10-14T16:41:23 IST" duration-ms="11552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield -->
+        <test-method signature="Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield()[pri:30, instance:Test_Orgnization@402c4085]" started-at="2024-10-14T16:41:23 IST" name="Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield" finished-at="2024-10-14T16:41:35 IST" duration-ms="11454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield -->
+      </class> <!-- Test_Orgnization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

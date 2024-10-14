@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Orgnization2">
+      <class name="Test_Orgnization">
         <methods>
-          <include name="Ensure_that_the_organization_update_fails_without_enter_city"/>
-          <include name="Ensure_that_the_organization_update_fails_without_address_fields"/>
-          <include name="Ensure_that_the_organization_update_fails_with_max_length_Of_city"/>
           <include name="initializebrowser"/>
-          <include name="Ensure_that_the_organization_update_fails_with_max_length_of_address_fields"/>
+          <include name="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time"/>
+          <include name="Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists"/>
+          <include name="Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name"/>
+          <include name="Verify_that_an_organization_cannot_be_created_without_enter_state"/>
         </methods>
-      </class> <!-- Test_Orgnization2 -->
+      </class> <!-- Test_Orgnization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

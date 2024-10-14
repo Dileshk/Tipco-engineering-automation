@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>24/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 11 15:15:00 IST 2024</td>
+<td>Started on:</td><td>Mon Oct 14 16:36:00 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>106 seconds (106713 ms)</td>
+<tr><td>Total time:</td><td>334 seconds (334142 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,367 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time()'><b>Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time</b><br>Test class: Test_Orgnization</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time(Test_Orgnization.java:905)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1419794148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1419794148'><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time(Test_Orgnization.java:905)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name()'><b>Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name</b><br>Test class: Test_Orgnization</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name(Test_Orgnization.java:987)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2061011390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061011390'><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name(Test_Orgnization.java:987)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_state()'><b>Verify_that_an_organization_cannot_be_created_without_enter_state</b><br>Test class: Test_Orgnization</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_state(Test_Orgnization.java:864)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace488063551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace488063551'><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_state(Test_Orgnization.java:864)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists()'><b>Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists</b><br>Test class: Test_Orgnization</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists(Test_Orgnization.java:946)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1795804759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795804759'><pre>java.lang.AssertionError: The following asserts failed:
+	An exception element click intercepted: Element &lt;button class=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1380, 151). Other element would receive the click: &lt;div class=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03a3f4bc32654697535f253b6d9421d7, clickElement {id=f.79F0BED297CA4A984A056E5EE9A5BBC9.d.C9B36D1DFFE8856154290882E17BA7E6.e.859}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61107/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (03a3f4bc32654697535f253b6d9421d7)] -&gt; xpath: //button[text()=&apos;Add Organization&apos;]]
+Session ID: 03a3f4bc32654697535f253b6d9421d7
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists(Test_Orgnization.java:946)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>Test_Orgnization@402c4085</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +437,125 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_address_fields()'><b>Ensure_that_the_organization_update_fails_without_address_fields</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_GST_number()'><b>Verify_that_an_organization_cannot_be_created_without_GST_number</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode()'><b>Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_enter_pincode()'><b>Ensure_that_the_organization_update_fails_without_enter_pincode</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format()'><b>Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_state()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_state</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode()'><b>Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode()'><b>Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_Address_field()'><b>Verify_that_an_organization_cannot_be_created_without_Address_field</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_max_length_Of_city()'><b>Ensure_that_the_organization_update_fails_with_max_length_Of_city</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_max_length_of_orgname()'><b>Verify_to_add_orgnization_with_max_length_of_orgname</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address()'><b>Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address</b><br>Test class: Test_Orgnization</td>
 <td></td>
-<td>16</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>14</td>
+<td>Test_Orgnization@402c4085</td></tr>
 <tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_enter_city()'><b>Ensure_that_the_organization_update_fails_without_enter_city</b><br>Test class: Test_Orgnization2</td>
-<td></td>
-<td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
-<tr>
-<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_max_length_of_address_fields()'><b>Ensure_that_the_organization_update_fails_with_max_length_of_address_fields</b><br>Test class: Test_Orgnization2</td>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield</b><br>Test class: Test_Orgnization</td>
 <td></td>
 <td>11</td>
-<td>Test_Orgnization2@48075da3</td></tr>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing()'><b>Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_special_charcter_in_org_name_field()'><b>Verify_to_add_orgnization_with_special_charcter_in_org_name_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>13</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field()'><b>Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_minimum_length_of_orgname()'><b>Verify_to_add_orgnization_with_minimum_length_of_orgname</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode()'><b>Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state()'><b>Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_an_organization_name()'><b>Verify_that_an_organization_cannot_be_created_without_an_organization_name</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>36</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield()'><b>Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without__pincode()'><b>Verify_that_an_organization_cannot_be_created_without__pincode</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_city_field()'><b>Verify_that_an_organization_cannot_be_created_without_enter_city_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>11</td>
+<td>Test_Orgnization@402c4085</td></tr>
 </table><p>
 </body>
 </html>
