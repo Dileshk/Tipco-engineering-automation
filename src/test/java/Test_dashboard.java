@@ -35,7 +35,7 @@ public class Test_dashboard extends Base_class {
 	
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-    Thread.sleep(3000);
+    
 		dash.clickonorarrow();
 		Thread.sleep(7000);
 		
@@ -43,9 +43,9 @@ public class Test_dashboard extends Base_class {
 		dash.clickonorgname();
 		Thread.sleep(7000);
 		dash.clickondevice();
-		Thread.sleep(2000);
+		 
 		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
-		Thread.sleep(2000);
+		 
 	date.sendKeys("20-09-2024");
 //		Thread.sleep(1000);
 //		date.click();

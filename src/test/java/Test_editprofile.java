@@ -25,7 +25,7 @@ public class Test_editprofile extends Base_class {
 		Thread.sleep(5000);
 		edit.entermail(UtilityClass.propertiesfile("validmail"));
 		edit.entpass(UtilityClass.propertiesfile("validpass"));
-		Thread.sleep(3000);
+		
 		edit.clickbuttonsubmit();
 	}
 	@Test
@@ -34,16 +34,16 @@ public class Test_editprofile extends Base_class {
 	    try {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-	       Thread.sleep(2000); 
+	         
 	        edit.clicksbtn();
-	        Thread.sleep(2000); 
+	          
 	        edit.clickprofiletab();
-	        Thread.sleep(3000); 
+	         
 	        edit.editname();
 	        
-	        Thread.sleep(5000); 
+	        
 	        edit.editphone();
-	        Thread.sleep(3000); 
+	         
 	        edit.submit();
 
 	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(15));

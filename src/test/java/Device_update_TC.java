@@ -71,6 +71,7 @@ public class Device_update_TC extends  Base_class{
 		
         
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -101,6 +102,7 @@ public class Device_update_TC extends  Base_class{
 		
         
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -131,6 +133,7 @@ public class Device_update_TC extends  Base_class{
 		
 	  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -174,6 +177,7 @@ public class Device_update_TC extends  Base_class{
 		
 	        
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -217,6 +221,7 @@ public class Device_update_TC extends  Base_class{
 		
 	  	
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -258,6 +263,7 @@ public class Device_update_TC extends  Base_class{
 		
 	  	
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -299,6 +305,7 @@ public class Device_update_TC extends  Base_class{
 		
 	  	
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -340,6 +347,7 @@ public class Device_update_TC extends  Base_class{
 		
 		  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -381,6 +389,7 @@ public class Device_update_TC extends  Base_class{
 		
 		  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -422,6 +431,7 @@ public class Device_update_TC extends  Base_class{
 		
 		  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -463,6 +473,7 @@ public class Device_update_TC extends  Base_class{
 		
 		  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -504,6 +515,7 @@ public class Device_update_TC extends  Base_class{
 	  	
 		  		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -543,6 +555,7 @@ public class Device_update_TC extends  Base_class{
 	    
 	    	
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -583,6 +596,7 @@ public class Device_update_TC extends  Base_class{
 		
 	    		
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -624,6 +638,7 @@ public class Device_update_TC extends  Base_class{
 	    	 
 		       
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -668,6 +683,7 @@ public class Device_update_TC extends  Base_class{
 		       
 		       
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -712,6 +728,7 @@ public class Device_update_TC extends  Base_class{
 		       
 		       
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+       wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -753,6 +770,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -795,6 +813,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -837,6 +856,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -879,6 +899,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -922,6 +943,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -964,6 +986,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1006,6 +1029,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
        Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1048,6 +1072,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    		
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
       wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
       Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1090,6 +1115,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    		
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
       wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
       Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1132,6 +1158,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    		
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
       wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
       Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1173,6 +1200,7 @@ public class Device_update_TC extends  Base_class{
 		 
 	    		
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
       wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
       Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -1187,6 +1215,7 @@ public class Device_update_TC extends  Base_class{
 	      try {
 	    		
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
       wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
       Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();

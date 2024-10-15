@@ -113,6 +113,7 @@ softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -146,6 +147,7 @@ softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -182,6 +184,7 @@ softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
 		 softAssert = new SoftAssert();
 	      try {
 	    	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	     wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	          wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	        Thread.sleep(2000);
 	         device.clicksbtn();
@@ -226,6 +229,7 @@ Thread.sleep(3000);
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -255,6 +259,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -295,6 +300,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		WebElement logo = driver.findElement(By.xpath("//span[@class='mainLogo']"));
@@ -339,6 +345,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Previous']")));
      Thread.sleep(3000);
 		 driver.findElement(By.xpath("//a[text()='Previous']")).click();
@@ -362,6 +369,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//th[text()='S. No.']")));
      Thread.sleep(3000);
 //		WebElement logo = driver.findElement(By.xpath("//a[text()='Next']"));
@@ -385,6 +393,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//th[text()='Device Id']")));
      Thread.sleep(3000);
 //		WebElement logo = driver.findElement(By.xpath("//a[text()='Next']"));
@@ -408,6 +417,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//th[text()='Device Type']")));
      Thread.sleep(3000);
 //		WebElement logo = driver.findElement(By.xpath("//a[text()='Next']"));
@@ -431,6 +441,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//th[text()='Organization Name']")));
      Thread.sleep(3000);
 //		WebElement logo = driver.findElement(By.xpath("//a[text()='Next']"));
@@ -454,6 +465,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	      try {
 	    	 
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//th[text()='Action']")));
      Thread.sleep(3000);
 //		WebElement logo = driver.findElement(By.xpath("//a[text()='Next']"));
@@ -479,6 +491,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	    	 
 	    	
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -508,6 +521,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	    	 
 	    	  
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -537,6 +551,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	    	 
 	    	  
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -567,6 +582,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	    	 
 	    	  
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 //		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();
@@ -600,6 +616,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 //	         device.clickondevicetab();
 	    	  
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    		     wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
 //		driver.findElement(By.xpath("//td[@class='actionIcon']/span")).click();

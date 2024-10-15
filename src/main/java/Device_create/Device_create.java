@@ -12,7 +12,7 @@ public class Device_create {
 	@FindBy(xpath = "//input[@name='email']")private WebElement mail;
 	@FindBy(xpath = "//input[@name='password']")private WebElement pass;
 	@FindBy(xpath = "//button[text()='Sign in']")private WebElement btn;
-	@FindBy(xpath = "//div[text()='S']")private WebElement sbtn;
+	@FindBy(xpath = "//div[@id='toggle-id']")private WebElement sbtn;
 	@FindBy(xpath = "//span[text()='Device']")private WebElement devicetab;
 	@FindBy(xpath = "//button[text()='Add Device']")private WebElement adddevice;
 	@FindBy(xpath = "//input[@placeholder='Device Id ']")private WebElement Deviceid;
