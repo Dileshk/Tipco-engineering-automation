@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 15 21:40:51 IST 2024</td>
+<td>Started on:</td><td>Wed Oct 16 12:50:01 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>557 seconds (557540 ms)</td>
+<tr><td>Total time:</td><td>479 seconds (479200 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_Supervisor.Verify_to_update_superviosr_with_invalid_number()'><b>Verify_to_update_superviosr_with_invalid_number</b><br>Test class: Test_Supervisor</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Invalid Mobile ] but found [Invalid Mobile No.]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Test_Supervisor.Verify_to_update_superviosr_with_invalid_number(Test_Supervisor.java:711)
+<td title='Test_Supervisor_from_supervisor.Verify_to_check_and_click_on_next_page_button_of_supervisor()'><b>Verify_to_check_and_click_on_next_page_button_of_supervisor</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;page-link &quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot; aria-label=&quot;... page&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt; is not clickable at point (824, 660). Other element would receive the click: &lt;li class=&quot;page-item disabled&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88fa750972df0a47a6a7bf2644e157d0, clickElement {id=f.302A9DF4ED2DD635113693AC13836F43.d.A537C317AAF730099182AE50436F3B9F.e.493}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58276/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88fa750972df0a47a6a7bf2644e157d0)] -&gt; xpath: //a[text()=&apos;Next&apos;]]
+Session ID: 88fa750972df0a47a6a7bf2644e157d0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Test_Supervisor_from_supervisor.Verify_to_check_and_click_on_next_page_button_of_supervisor(Test_Supervisor_from_supervisor.java:543)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,12 +129,31 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace655183968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace655183968'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Invalid Mobile ] but found [Invalid Mobile No.]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Test_Supervisor.Verify_to_update_superviosr_with_invalid_number(Test_Supervisor.java:711)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1589745212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589745212'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;page-link &quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot; aria-label=&quot;... page&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt; is not clickable at point (824, 660). Other element would receive the click: &lt;li class=&quot;page-item disabled&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=129.0.6668.101)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88fa750972df0a47a6a7bf2644e157d0, clickElement {id=f.302A9DF4ED2DD635113693AC13836F43.d.A537C317AAF730099182AE50436F3B9F.e.493}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58276/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88fa750972df0a47a6a7bf2644e157d0)] -&gt; xpath: //a[text()=&apos;Next&apos;]]
+Session ID: 88fa750972df0a47a6a7bf2644e157d0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Test_Supervisor_from_supervisor.Verify_to_check_and_click_on_next_page_button_of_supervisor(Test_Supervisor_from_supervisor.java:543)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,8 +183,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>14</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -157,105 +195,100 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_Supervisor.check_to_update_supervisor_without_enter_mandatory_field()'><b>check_to_update_supervisor_without_enter_mandatory_field</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_to_update_supervisor_with_max_char_in_full_name_field()'><b>Verify_to_update_supervisor_with_max_char_in_full_name_field</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu()'><b>Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>24</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Create_Supervisor_with_valid_email()'><b>Create_Supervisor_with_valid_email</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>24</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_the_maximum_and_minimum_length_of_the_full_name()'><b>Verify_the_maximum_and_minimum_length_of_the_full_name</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty()'><b>Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>20</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.check_to_update_supervisor_without_select_orgnization_name()'><b>check_to_update_supervisor_without_select_orgnization_name</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.Create_Supervisor_with_valid_email()'><b>Create_Supervisor_with_valid_email</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>24</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code()'><b>Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>24</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_to_check_createsupervisor_that_are_already_exist()'><b>Verify_to_check_createsupervisor_that_are_already_exist</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>28</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty()'><b>Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code()'><b>Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code()'><b>Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>44</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.verify_that_createSupervisor_with_invalid_email()'><b>verify_that_createSupervisor_with_invalid_email</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>52</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_to_check_and_click_on_next_page_button_of_supervisor()'><b>Verify_to_check_and_click_on_next_page_button_of_supervisor</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>19</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty()'><b>Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_organization_name_field_is_disabled_from_supervisorside()'><b>Verify_that_the_organization_name_field_is_disabled_from_supervisorside</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>20</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters()'><b>Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.verify_that_createSupervisor_with_invalid_email()'><b>verify_that_createSupervisor_with_invalid_email</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>51</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled()'><b>Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed()'><b>Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>34</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character()'><b>Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>22</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown()'><b>Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown</b><br>Test class: Test_Supervisor</td>
-<td></td>
-<td>20</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
-<tr>
-<td title='Test_Supervisor.check_and_update_superviaor_without_using_attherate()'><b>check_and_update_superviaor_without_using_attherate</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.check_and_update_superviaor_without_using_attherate()'><b>check_and_update_superviaor_without_using_attherate</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>26</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 <tr>
-<td title='Test_Supervisor.Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code()'><b>Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code</b><br>Test class: Test_Supervisor</td>
+<td title='Test_Supervisor_from_supervisor.check_to_update_supervisor_without_enter_mandatory_field()'><b>check_to_update_supervisor_without_enter_mandatory_field</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>22</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.check_to_update_supervisor_without_select_orgnization_name()'><b>check_to_update_supervisor_without_select_orgnization_name</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>21</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character()'><b>Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>20</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code()'><b>Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code</b><br>Test class: Test_Supervisor_from_supervisor</td>
 <td></td>
 <td>24</td>
-<td>Test_Supervisor@1a75e76a</td></tr>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_to_check_createsupervisor_that_are_already_exist()'><b>Verify_to_check_createsupervisor_that_are_already_exist</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>25</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_to_update_supervisor_with_max_char_in_full_name_field()'><b>Verify_to_update_supervisor_with_max_char_in_full_name_field</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>22</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters()'><b>Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>20</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code()'><b>Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>23</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty()'><b>Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>20</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled()'><b>Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>19</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_to_update_superviosr_with_invalid_number()'><b>Verify_to_update_superviosr_with_invalid_number</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>22</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Verify_the_maximum_and_minimum_length_of_the_full_name()'><b>Verify_the_maximum_and_minimum_length_of_the_full_name</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>20</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
+<tr>
+<td title='Test_Supervisor_from_supervisor.Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed()'><b>Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed</b><br>Test class: Test_Supervisor_from_supervisor</td>
+<td></td>
+<td>25</td>
+<td>Test_Supervisor_from_supervisor@33bc72d1</td></tr>
 </table><p>
 </body>
 </html>

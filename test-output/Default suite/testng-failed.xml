@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Supervisor">
+      <class name="Test_Supervisor_from_supervisor">
         <methods>
-          <include name="Verify_to_update_superviosr_with_invalid_number"/>
+          <include name="Verify_to_check_and_click_on_next_page_button_of_supervisor"/>
           <include name="initializebrowser"/>
         </methods>
-      </class> <!-- Test_Supervisor -->
+      </class> <!-- Test_Supervisor_from_supervisor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,7 +11,7 @@ public class Supervisor {
 	@FindBy(xpath = "//input[@name='email']")private WebElement mail;
 	@FindBy(xpath = "//input[@name='password']")private WebElement pass;
 	@FindBy(xpath = "//button[text()='Sign in']")private WebElement btn;
-	@FindBy(xpath = "//div[text()='S']")private WebElement sbtn;
+	@FindBy(xpath = "//div[@id='toggle-id']")private WebElement sbtn;
 	@FindBy(xpath = "//span[text()='Supervisor']")private WebElement superv;
 	@FindBy(xpath = "//button[text()='Add Supervisor']")private WebElement addsupervisor;
 	@FindBy(xpath = "//input[@placeholder='Email address']")private WebElement supemail;
