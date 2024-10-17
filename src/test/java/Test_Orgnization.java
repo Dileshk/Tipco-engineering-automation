@@ -44,7 +44,7 @@ public void Create_Orgnization_with_invalid_orgnization_name() throws IOExceptio
        Thread.sleep(2000);
        org.clickonorgnizationtab();
        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
-       
+       wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
          wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
       
         
@@ -73,16 +73,18 @@ public void Create_Orgnization_with_invalid_orgnization_name() throws IOExceptio
         String expected = "Organization Name can only contain alphabets, numbers, single spaces, periods, commas, and ampersands (&)";
         String actual = driver.findElement(By.xpath("//p[text()='Organization Name can only contain alphabets, numbers, single spaces, periods, commas, and ampersands (&)']")).getText();
         softAssert.assertEquals(actual, expected, "Error message does not match for invalid organization name.");
+        Thread.sleep(5000);
     } catch (Exception e) {
         softAssert.fail("An exception " + e.getMessage());
     } finally {
-        Thread.sleep(5000);
-        driver.navigate().refresh();
+       
+       
         softAssert.assertAll();  
+        driver.navigate().refresh();
     }
 }
 
-@Test(priority = 2)
+@Test(priority = 31)
 public void verify_to_create_orgnization_with_all_valid_data_of_orgnization() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     
@@ -116,11 +118,12 @@ public void verify_to_create_orgnization_with_all_valid_data_of_orgnization() th
         String actual = driver.findElement(By.xpath("//div[text()='Organization Created Successfully']")).getText();
         String expected = "Organization Created Successfully";
         softAssert.assertEquals(actual, expected, "Organization creation success message does not match.");
-        
+        Thread.sleep(5000);
     } catch (Exception e) {
         softAssert.fail("An exception " + e.getMessage());
     } finally {
         softAssert.assertAll();  
+        driver.navigate().refresh();
     }}
 @Test(priority = 3)
 public void Verify_that_an_organization_cannot_be_created_without_an_organization_name() throws InterruptedException, IOException {

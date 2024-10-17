@@ -335,4 +335,69 @@ public class TesttipcoLogin extends Base_class {
 	        }
 	    }
 	    
+	    //verify to enter wrong mail
+	    //verify to enter without domain
+	//check to take blank mail field
+	    //enter unregisterd mail in forgott password
+	    @Test(priority = 13)
+	    public void verify_to_check_and_invalid_mail_in_forgot_password_field() {
+	        softAssert = new SoftAssert(); 
+	        try {
+	        	 Thread.sleep(4000);
+		          driver.findElement(By.xpath("//span[text()='Forgot Password ?']")).click();
+		          Thread.sleep(4000);
+		         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("tipco@.com");
+		        
+		         Thread.sleep(3000);
+		        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+		        Thread.sleep(3000);
+		        String text = driver.findElement(By.xpath("//p[text()='Email is invalid']")).getText();
+		        String expected="Email is invalid";
+		        softAssert.assertEquals(text, expected);
+	            Thread.sleep(4000);
+	            driver.navigate().refresh();
+	        } catch (Exception e) {
+	            softAssert.fail("Exception occurred: " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();
+	        }
+	    }
+	    @Test(priority = 14)
+	    public void verify_to_check_mail_field_take_blank_and_see_valid_error_message() {
+	        softAssert = new SoftAssert(); 
+	        try {
+	        	 Thread.sleep(4000);
+		          driver.findElement(By.xpath("//span[text()='Forgot Password ?']")).click();
+		          Thread.sleep(4000);
+		        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+		        Thread.sleep(3000);
+		        String text = driver.findElement(By.xpath("//p[text()='Email is required']")).getText();
+		        String expected="Email is required";
+		        softAssert.assertEquals(text, expected);
+	            Thread.sleep(4000);
+	            driver.navigate().refresh();
+	        } catch (Exception e) {
+	            softAssert.fail("Exception occurred: " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();
+	        }
+	    }
+	    @Test(priority = 15)
+	    public void verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page() {
+	        softAssert = new SoftAssert(); 
+	        try {
+	        	 Thread.sleep(4000);
+		          driver.findElement(By.xpath("//span[text()='Forgot Password ?']")).click();
+		          Thread.sleep(4000);
+		      WebElement text = driver.findElement(By.xpath("//img[@alt='logo img']"));
+		       softAssert.assertTrue(text.isDisplayed());
+	            Thread.sleep(4000);
+	            driver.navigate().refresh();
+	        } catch (Exception e) {
+	            softAssert.fail("Exception occurred: " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();
+	        }
+	    }
+	    
 }

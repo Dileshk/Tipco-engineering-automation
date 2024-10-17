@@ -70,7 +70,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -102,7 +102,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -134,7 +134,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -166,7 +166,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -198,7 +198,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -230,7 +230,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -262,7 +262,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -294,7 +294,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -326,7 +326,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -358,7 +358,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -390,7 +390,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -425,7 +425,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -457,7 +457,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -489,7 +489,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -521,7 +521,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -551,7 +551,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -583,7 +583,7 @@ public class Test_Orgnization2 extends Base_class {
 	    
 	    try {
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -607,7 +607,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -640,7 +640,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -661,7 +661,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -682,7 +682,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -703,7 +703,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -724,7 +724,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -745,7 +745,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']")));
 	       Thread.sleep(2000);
@@ -764,7 +764,7 @@ public class Test_Orgnization2 extends Base_class {
 	    try {
 	    	
 	    	
-	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Previous']")));
 	       Thread.sleep(2000);
