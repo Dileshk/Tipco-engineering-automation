@@ -34,6 +34,7 @@ public class Test_dashboard extends Base_class {
 	{
 	
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
     
 		dash.clickonorarrow();

@@ -9,7 +9,7 @@ public class Edit_profile {
 	@FindBy(xpath = "//input[@name='email']")private WebElement mail;
 	@FindBy(xpath = "//input[@name='password']")private WebElement pass;
 	@FindBy(xpath = "//button[text()='Sign in']")private WebElement btn;
-	@FindBy(xpath = "//div[text()='S']")private WebElement sbtn;
+	@FindBy(xpath = "//div[@id='toggle-id']")private WebElement sbtn;
 	@FindBy(xpath = "//span[text()='Profile']")private WebElement profiletab;
 	@FindBy(xpath = "//input[@placeholder='Email address']")private WebElement email;
 	@FindBy(xpath = "//input[@placeholder='Full Name ']")private WebElement name;
@@ -50,13 +50,14 @@ public class Edit_profile {
 	{
 		email.clear();
 	}
-	public void editname()
+	public void editname(String names)
 	{
-		name.sendKeys("v");
+		name.sendKeys(names);
+		
 	}
-	public void editphone()
+	public void editphone(String number)
 	{
-		phnum.clear();
+		phnum.sendKeys(number);
 	}
 	public void submit()
 	{
