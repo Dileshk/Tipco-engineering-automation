@@ -66,7 +66,7 @@ public class Supervisor {
 	}
 	public void sendkey()
 	{
-		sende.sendKeys("extern labs");
+		sende.sendKeys("extern la");
 	}
 	public void clickexternbtn()
 	{

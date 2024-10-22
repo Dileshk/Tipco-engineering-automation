@@ -35,6 +35,8 @@ public class Test_Supervisor extends Base_class  {
     	
          softAssert = new SoftAssert();
         try {
+        	
+   
         	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
         	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
@@ -44,6 +46,7 @@ public class Test_Supervisor extends Base_class  {
             sup.entersupermail(UtilityClass.propertiesfile("validsupervisor"));
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
@@ -51,8 +54,8 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(3000);
             sup.clickonsubmitbutton();
             
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully Registered']")));
+            WebDriverWait wait3= new WebDriverWait(driver, Duration.ofSeconds(45));
+            wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully Registered']")));
             System.out.println("Overlay Gone");
             
             String actual = driver.findElement(By.xpath("//div[text()='Successfully Registered']")).getText();
@@ -89,8 +92,11 @@ public class Test_Supervisor extends Base_class  {
             sup.entersupermail(UtilityClass.propertiesfile("invalidsuperviosrmail"));
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
+            Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             Thread.sleep(2000);
@@ -122,9 +128,11 @@ public class Test_Supervisor extends Base_class  {
             sup.entermail(UtilityClass.propertiesfile("validsupervisor"));
             sup.entername(UtilityClass.propertiesfile("supervisornamewithnumericandspecialchar"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -156,9 +164,11 @@ public class Test_Supervisor extends Base_class  {
            
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -190,9 +200,12 @@ public class Test_Supervisor extends Base_class  {
            
             sup.entermail(UtilityClass.propertiesfile("validsupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
+            Thread.sleep(2000);
             sup.sendkey();
-           
+            Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -258,9 +271,11 @@ public class Test_Supervisor extends Base_class  {
             sup.entermail(UtilityClass.propertiesfile("validsupervisor"));
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numfieldwithalphaspecial"));
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -299,9 +314,11 @@ public class Test_Supervisor extends Base_class  {
             driver.findElement(By.xpath("//div[@class='selected-flag']")).click();
             Thread.sleep(2000);
             driver.findElement(By.xpath("//span[text()='Iceland']")).click();
+            Thread.sleep(2000);
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -334,6 +351,7 @@ public class Test_Supervisor extends Base_class  {
             driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -365,6 +383,7 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             sup.sendkey();
             Thread.sleep(2000);
+            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -446,8 +465,11 @@ public class Test_Supervisor extends Base_class  {
           sup.entersupermail(UtilityClass.propertiesfile("validsupervisor"));
           sup.entername(UtilityClass.propertiesfile("maxlengthofsup"));
           sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+          Thread.sleep(2000);
           driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
           sup.sendkey();
+          Thread.sleep(2000);
+          driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
           sup.clickexternbtn();
           sup.clickonsubmitbutton();
           Thread.sleep(2000);
@@ -478,8 +500,10 @@ public class Test_Supervisor extends Base_class  {
               sup.entersupermail(UtilityClass.propertiesfile("validsupervisor"));
               sup.entername(UtilityClass.propertiesfile("namesupervisor"));
               sup.enterphonenumber(UtilityClass.propertiesfile("minlengthofphon"));
+              Thread.sleep(2000);
               driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
               sup.sendkey();
+              driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
               sup.clickexternbtn();
               sup.clickonsubmitbutton();
               Thread.sleep(2000);
@@ -511,9 +535,11 @@ public class Test_Supervisor extends Base_class  {
                 sup.entersupermail(UtilityClass.propertiesfile("supmailwithoutdomain"));
                 sup.entername(UtilityClass.propertiesfile("namesupervisor"));
                 sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+                Thread.sleep(2000);
                 driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
                 sup.sendkey();
-                Thread.sleep(7000);
+                Thread.sleep(2000);
+                driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
                
 //              WebElement text = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
 //              text.sendKeys(Keys.DELETE);
