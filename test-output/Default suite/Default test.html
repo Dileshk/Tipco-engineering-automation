@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 21 18:27:20 IST 2024</td>
+<td>Started on:</td><td>Tue Oct 22 14:23:43 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>611 seconds (611592 ms)</td>
+<tr><td>Total time:</td><td>724 seconds (724551 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,97 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_valid_NAME()'><b>Verify_to_check_edit_full_namefield_and_enter_valid_NAME</b><br>Test class: Test_editprofile</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	An exception Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Profile Updated Successfully&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60284/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d1c4abf5e48b87ae7119c0710fb3112
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_valid_NAME(Test_editprofile.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1128198660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1128198660'><pre>java.lang.AssertionError: The following asserts failed:
-	An exception Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Profile Updated Successfully&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60284/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d1c4abf5e48b87ae7119c0710fb3112
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_valid_NAME(Test_editprofile.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>32</td>
-<td>Test_editprofile@6caf0677</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -167,80 +76,155 @@ Session ID: 3d1c4abf5e48b87ae7119c0710fb3112
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_with_invalid_email_formate()'><b>Verify_to_check_edit_profile_with_invalid_email_formate</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.check_to_create_device_with_maxtepm3_field_is_blank()'><b>check_to_create_device_with_maxtepm3_field_is_blank</b><br>Test class: Test_Device</td>
+<td></td>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_text_of_Device_page()'><b>Verify_that_the_text_of_Device_page</b><br>Test class: Test_Device</td>
+<td></td>
+<td>4</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_the_deice_text_on_add_device_page()'><b>Verify_the_deice_text_on_add_device_page</b><br>Test class: Test_Device</td>
+<td></td>
+<td>14</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters()'><b>Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters</b><br>Test class: Test_Device</td>
+<td></td>
+<td>24</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.check_maxtepm3_does_not_accept_greater_than_100()'><b>check_maxtepm3_does_not_accept_greater_than_100</b><br>Test class: Test_Device</td>
+<td></td>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_to_create_highspeed_disperser_machine()'><b>Verify_to_create_highspeed_disperser_machine</b><br>Test class: Test_Device</td>
+<td></td>
+<td>25</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1()'><b>Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1</b><br>Test class: Test_Device</td>
+<td></td>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_to_check__Device_ID_Field_with_special_characters()'><b>Verify_to_check__Device_ID_Field_with_special_characters</b><br>Test class: Test_Device</td>
+<td></td>
+<td>28</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters()'><b>Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters</b><br>Test class: Test_Device</td>
+<td></td>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates()'><b>Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates</b><br>Test class: Test_Device</td>
+<td></td>
+<td>41</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Time_Zone_field_displays_a_dropdown_menu()'><b>Verify_that_the_Time_Zone_field_displays_a_dropdown_menu</b><br>Test class: Test_Device</td>
+<td></td>
+<td>20</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters()'><b>Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters</b><br>Test class: Test_Device</td>
 <td></td>
 <td>30</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_to_enter_invalid_phoneNumber()'><b>Verify_to_check_edit_profile_to_enter_invalid_phoneNumber</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.check_maxtemp3_field_does_not_accept_special_char()'><b>check_maxtemp3_field_does_not_accept_special_char</b><br>Test class: Test_Device</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>44</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_close_popup_to_click_on_cross_button_of_the_popup()'><b>Verify_to_close_popup_to_click_on_cross_button_of_the_popup</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters()'><b>Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters</b><br>Test class: Test_Device</td>
 <td></td>
-<td>33</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_select_other_country_code_and_enter_invalid_phone()'><b>Verify_to_check_select_other_country_code_and_enter_invalid_phone</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_temp1_field_should_not_accept_alphabet()'><b>Verify_that_temp1_field_should_not_accept_alphabet</b><br>Test class: Test_Device</td>
 <td></td>
-<td>39</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>28</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char()'><b>Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100()'><b>Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100</b><br>Test class: Test_Device</td>
 <td></td>
-<td>46</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage()'><b>Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage</b><br>Test class: Test_Device</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>18</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_enter_email_field()'><b>Verify_to_check_edit_profile_without_enter_email_field</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_to_create_Horizontalbead_mill_machine()'><b>Verify_to_create_Horizontalbead_mill_machine</b><br>Test class: Test_Device</td>
 <td></td>
-<td>51</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>25</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_fullname_field()'><b>Verify_to_check_edit_profile_without_fullname_field</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Device_ID_field_does_not_accept_with_max_length()'><b>Verify_that_the_Device_ID_field_does_not_accept_with_max_length</b><br>Test class: Test_Device</td>
 <td></td>
-<td>41</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>24</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_temp1_field_take_blank_and_see_the_error_message()'><b>Verify_that_temp1_field_take_blank_and_see_the_error_message</b><br>Test class: Test_Device</td>
 <td></td>
-<td>26</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_in_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_in_length_of_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10()'><b>Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10</b><br>Test class: Test_Device</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_toupdate_profile_with_all_valid_data()'><b>Verify_toupdate_profile_with_all_valid_data</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_pressure__field_take_blnak_and_see_error()'><b>Verify_that_the_Max_pressure__field_take_blnak_and_see_error</b><br>Test class: Test_Device</td>
 <td></td>
-<td>33</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_enter_phone_number()'><b>Verify_to_check_edit_profile_without_enter_phone_number</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100()'><b>Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100</b><br>Test class: Test_Device</td>
 <td></td>
-<td>41</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>40</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_to_check__Device_IDfield_with_spaces()'><b>Verify_to_check__Device_IDfield_with_spaces</b><br>Test class: Test_Device</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>28</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_using_at_the_ratein_name_field()'><b>Verify_to_check_edit_profile_without_using_at_the_ratein_name_field</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_clickon_submit_button_when_all_the_fields_are_blank()'><b>Verify_that_clickon_submit_button_when_all_the_fields_are_blank</b><br>Test class: Test_Device</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>15</td>
+<td>Test_Device@2767e23c</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_get_text_of_edit_profile_page()'><b>Verify_to_get_text_of_edit_profile_page</b><br>Test class: Test_editprofile</td>
+<td title='Test_Device.Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000()'><b>Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000</b><br>Test class: Test_Device</td>
 <td></td>
-<td>33</td>
-<td>Test_editprofile@6caf0677</td></tr>
+<td>23</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.verify_to_create_twinsaftdisperser()'><b>verify_to_create_twinsaftdisperser</b><br>Test class: Test_Device</td>
+<td></td>
+<td>25</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Max_vibration_field_take_blank_and_see_error_message()'><b>Verify_that_the_Max_vibration_field_take_blank_and_see_error_message</b><br>Test class: Test_Device</td>
+<td></td>
+<td>15</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_click_on_cross_button_and_close_the_popup()'><b>Verify_that_click_on_cross_button_and_close_the_popup</b><br>Test class: Test_Device</td>
+<td></td>
+<td>10</td>
+<td>Test_Device@2767e23c</td></tr>
+<tr>
+<td title='Test_Device.Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1()'><b>Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1</b><br>Test class: Test_Device</td>
+<td></td>
+<td>15</td>
+<td>Test_Device@2767e23c</td></tr>
 </table><p>
 </body>
 </html>

@@ -41,10 +41,13 @@ public class Test_editprofile extends Base_class {
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
 	        Thread.sleep(3000);
-	        edit.editname(UtilityClass.propertiesfile("validfullname")) ;
-	        
+//	        edit.editname(UtilityClass.propertiesfile("validfullname")) ;
+	        WebElement fullname = driver.findElement(By.xpath("//input[@placeholder='Full Name ']"));
+		     fullname.sendKeys(Keys.CONTROL+"a");
+		     fullname.sendKeys(Keys.DELETE);
+		     edit.editname(UtilityClass.propertiesfile("validfullname"));
 	        Thread.sleep(3000);
-	        edit.editphone(UtilityClass.propertiesfile("validphonenum"));
+//	        edit.editphone(UtilityClass.propertiesfile("validphonenum"));
 	         
 	        edit.submit();
 
@@ -101,7 +104,7 @@ public class Test_editprofile extends Base_class {
 	        softAssert.assertAll();
 	    }}
 	@Test(priority = 2)
-	public void Verify_to_check_edit_full_namefield_and_enter_in_length_of_fullname() throws InterruptedException {
+	public void Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
