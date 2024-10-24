@@ -50,8 +50,10 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
-            Thread.sleep(2000);
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
+            
             sup.clickexternbtn();
             Thread.sleep(3000);
             sup.clickonsubmitbutton();
@@ -98,7 +100,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             Thread.sleep(2000);
@@ -134,7 +138,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -170,7 +176,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -207,7 +215,9 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -277,7 +287,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             sup.clickonsubmitbutton();
             
@@ -320,7 +332,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -353,7 +367,9 @@ public class Test_Supervisor extends Base_class  {
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -385,7 +401,9 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             sup.sendkey();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+            org.sendKeys("\b");
+            Thread.sleep(1000);
             sup.clickexternbtn();
             Thread.sleep(5000);
             driver.navigate().refresh();
@@ -471,7 +489,9 @@ public class Test_Supervisor extends Base_class  {
 //          driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
           sup.sendkey();
           Thread.sleep(2000);
-          driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+          WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+          org.sendKeys("\b");
+          Thread.sleep(1000);
           sup.clickexternbtn();
           sup.clickonsubmitbutton();
           Thread.sleep(2000);
@@ -505,7 +525,10 @@ public class Test_Supervisor extends Base_class  {
               Thread.sleep(2000);
 //              driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
               sup.sendkey();
-              driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+              Thread.sleep(1000);
+              WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+              org.sendKeys("\b");
+              Thread.sleep(1000);
               sup.clickexternbtn();
               sup.clickonsubmitbutton();
               Thread.sleep(2000);
@@ -541,7 +564,9 @@ public class Test_Supervisor extends Base_class  {
 //                driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
                 sup.sendkey();
                 Thread.sleep(2000);
-                driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("b");
+                WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+                org.sendKeys("\b");
+                Thread.sleep(1000);
                
 //              WebElement text = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
 //              text.sendKeys(Keys.DELETE);
@@ -723,6 +748,7 @@ public class Test_Supervisor extends Base_class  {
 	     orgname.sendKeys(Keys.DELETE);
 	     Thread.sleep(2000);
 	    sup.enterphonenumber(UtilityClass.propertiesfile("minlengthofphon"));
+	    Thread.sleep(2000);
 	     sup.clickonsubmitbutton();
 	       
 	        String expected = "Invalid Mobile No.";
@@ -758,6 +784,9 @@ public class Test_Supervisor extends Base_class  {
 	            sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
 	            sup.sendkey();
 	            Thread.sleep(2000);
+	            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
+	            org.sendKeys("\b");
+	            Thread.sleep(1000);
 	            sup.clickexternbtn();
 	            Thread.sleep(3000);
 	            sup.clickonsubmitbutton();
