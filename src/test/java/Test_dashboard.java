@@ -27,8 +27,46 @@ public class Test_dashboard extends Base_class {
 		dash.entpass(UtilityClass.propertiesfile("validpass"));
 		dash.clickbuttonsubmit();
 	}
-	@Test
-	public void Verify_that_select_orgnization_device_and_check_data_according_select_date() throws InterruptedException
+//	@Test
+//	public void Verify_that_select_orgnization_device_and_check_data_according_select_date() throws InterruptedException
+//	{ softAssert= new SoftAssert();
+//	try
+//	{
+//	
+//		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+//		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+//	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+//    
+//		dash.clickonorarrow();
+//		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+//		
+//		
+//		dash.clickonorgname();
+//		
+//		dash.clickondevice();
+//		 
+//		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
+//		 
+//	date.sendKeys("20-09-2024");
+////		Thread.sleep(1000);
+////		date.click();
+//	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+//     
+//     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='graphtlist']/li")));
+//     System.out.println("Overlay Gone");
+//		WebElement nodata = driver.findElement(By.xpath("//ul[@class='graphtlist']/li"));
+//		softAssert.assertTrue(nodata.isDisplayed());
+//	}
+//	catch(Exception e)
+//	{
+//		softAssert.fail("Exceptio"+e.getMessage());
+//	}finally {
+//		softAssert.assertAll();
+//	}
+//		
+//	}
+	@Test(priority = 1)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
 	{
@@ -38,20 +76,23 @@ public class Test_dashboard extends Base_class {
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
     
 		dash.clickonorarrow();
-		Thread.sleep(7000);
 		
-		
-		dash.clickonorgname();
-		Thread.sleep(7000);
-		dash.clickondevice();
+		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	     dash.clickonorgname();
+		driver.findElement(By.xpath("//div[text()='THM']")).click();
+	     
 		 
 		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
 		 
 	date.sendKeys("20-09-2024");
 //		Thread.sleep(1000);
 //		date.click();
-		Thread.sleep(8000);
-		WebElement nodata = driver.findElement(By.xpath("//ul[@class='graphtlist']/li"));
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='statuscheck uppercase-text']")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("//div[@class='statuscheck uppercase-text']"));
 		softAssert.assertTrue(nodata.isDisplayed());
 	}
 	catch(Exception e)

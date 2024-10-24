@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Supervisor_from_supervisor">
+      <class name="Test_dashboard">
         <methods>
-          <include name="Verify_to_check_and_click_on_next_page_button_of_supervisor"/>
-          <include name="initializebrowser"/>
+          <include name="initialisebrowser"/>
+          <include name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off"/>
         </methods>
-      </class> <!-- Test_Supervisor_from_supervisor -->
+      </class> <!-- Test_dashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

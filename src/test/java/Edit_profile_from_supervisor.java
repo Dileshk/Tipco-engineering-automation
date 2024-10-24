@@ -800,4 +800,5 @@ public class Edit_profile_from_supervisor extends Base_class{
 	        
 	        softAssert.assertAll();
 	    }}
+	
 }
