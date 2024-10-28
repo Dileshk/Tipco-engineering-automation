@@ -162,7 +162,7 @@ public class Test_dashboard extends Base_class {
 		
 	}
 	@Test(priority = 4)
-	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_date_isDisplayed() throws InterruptedException
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
 	{
@@ -188,5 +188,332 @@ public class Test_dashboard extends Base_class {
 	}
 		
 	}
+	@Test(priority = 5)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 6)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 
-}
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[4]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[4]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 7)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+		
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[5]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[5]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 8)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[6]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[6]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 9)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	
+	@Test(priority = 10)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+		
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[7]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[7]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 11)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[8]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[8]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 12)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Horizontal Bead Mill']")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("//h2[text()='Horizontal Bead Mill']"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}}
+	@Test(priority = 13)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[9]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[9]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 14)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[10]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[10]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 15)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[11]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[11]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	@Test(priority = 16)
+	public void Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+    
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[12]")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[12]"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+	}
+
+////div[text()='HSD']
+

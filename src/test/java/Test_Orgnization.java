@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -89,13 +90,17 @@ public void verify_to_create_orgnization_with_all_valid_data_of_orgnization() th
     softAssert = new SoftAssert();
     
     try {
+    	 String randomOrgName = generateRandomOrganizationName();
+         String randomGST = generateRandomGSTNumber();
+         String randomEmail = generateRandomEmail();
+         String randomPhoneNumber = generateRandomPhoneNumber();
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
          wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
        Thread.sleep(2000);
         org.addorgnization();
-        org.enterorgname(UtilityClass.propertiesfile("validorg"));
-        org.entergst(UtilityClass.propertiesfile("validgst"));
+        org.enterorgname(randomOrgName);
+        org.entergst(randomGST);
         org.enteraddress(UtilityClass.propertiesfile("validaddress"));
         org.entercity(UtilityClass.propertiesfile("validcity"));
         org.enterstate(UtilityClass.propertiesfile("validstate"));
@@ -105,9 +110,9 @@ public void verify_to_create_orgnization_with_all_valid_data_of_orgnization() th
         org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
         s.selectByValue("1");
 
-        org.entersupervisormail(UtilityClass.propertiesfile("validsup"));
+        org.entersupervisormail(randomEmail);
         org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
-        org.enterphone(UtilityClass.propertiesfile("validnumofsuper"));
+        org.enterphone(randomPhoneNumber);
         
         Thread.sleep(5000);
         org.clickonsubmit();
@@ -125,6 +130,47 @@ public void verify_to_create_orgnization_with_all_valid_data_of_orgnization() th
         softAssert.assertAll();  
         driver.navigate().refresh();
     }}
+private String generateRandomOrganizationName() {
+    String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    StringBuilder orgName = new StringBuilder();
+    Random random = new Random();
+
+    // Generate a random length between 5 and 19 for variation
+    int length = random.nextInt(15) + 5; // 5 to 19 characters
+    for (int i = 0; i < length; i++) {
+        orgName.append(alphabet.charAt(random.nextInt(alphabet.length())));
+    }
+    return orgName.toString();
+}
+
+// Method to generate a random GST number with exactly 15 alphanumeric characters
+private String generateRandomGSTNumber() {
+    String alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    StringBuilder gstNumber = new StringBuilder();
+    Random random = new Random();
+
+    for (int i = 0; i < 15; i++) {
+        gstNumber.append(alphanumeric.charAt(random.nextInt(alphanumeric.length())));
+    }
+    return gstNumber.toString();
+}
+
+// Method to generate a random email
+private String generateRandomEmail() {
+    String emailDomain = "@example.com";
+    String emailPrefix = "user" + new Random().nextInt(10000); // Generates a number from 0 to 9999
+    return emailPrefix + emailDomain;
+}
+
+// Method to generate a random 10-digit phone number
+private String generateRandomPhoneNumber() {
+    Random rand = new Random();
+    StringBuilder phoneNumber = new StringBuilder("9"); // Start with 9 to look like a typical mobile number
+    for (int i = 0; i < 9; i++) {
+        phoneNumber.append(rand.nextInt(10)); // Adds a random digit from 0 to 9
+    }
+    return phoneNumber.toString();
+}
 @Test(priority = 3)
 public void Verify_that_an_organization_cannot_be_created_without_an_organization_name() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -636,7 +682,7 @@ public void Verify_that_an_organization_cannot_be_created_with_an_minimum_length
     
     try {
     	
-    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
     	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
          wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
        Thread.sleep(2000);

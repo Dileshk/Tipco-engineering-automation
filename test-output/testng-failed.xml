@@ -5,29 +5,9 @@
     <classes>
       <class name="Test_Supervisor">
         <methods>
-          <include name="Verify_to_check_createsupervisor_that_are_already_exist"/>
-          <include name="Verify_to_update_superviosr_with_invalid_number"/>
-          <include name="check_to_update_supervisor_without_enter_mandatory_field"/>
-          <include name="Verify_that_search_the_orgnization_that_are_not_present_in_list_box_and_see_valid_error_message"/>
-          <include name="Verify_to_check_click_on_previous_page_button_of_supervisor_page"/>
-          <include name="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad"/>
-          <include name="Verify_to_check_and_click_on_next_page_button_of_supervisor"/>
-          <include name="check_and_update_superviaor_without_using_attherate"/>
-          <include name="Verify_that_to_select_orgnization_from_filter_and_see_supervisor"/>
-          <include name="Verify_to_check_Email_column_is_present_in_supervisor_page"/>
-          <include name="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed"/>
           <include name="Create_Supervisor_with_valid_email"/>
-          <include name="Verify_to_check_action_column_is_present_in_supervisor_page"/>
-          <include name="Verify_the_maximum_and_minimum_length_of_the_full_name"/>
-          <include name="Verify_to_update_supervisor_with_max_char_in_full_name_field"/>
-          <include name="Verify_that_search_and_select_orgnization_from_filter_and_see_supervisor"/>
-          <include name="Verify_to_check_orgnizationname_column_is_present_in_supervisor_page"/>
-          <include name="Verify_to_check_mobile_number_column_is_present_in_supervisor_page"/>
-          <include name="Verify_to_check_supervisor_name_column_is_present_in_supervisor_page"/>
-          <include name="Verify_to_check_sr_no_column_is_present_in_supervisor_page"/>
+          <include name="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad"/>
           <include name="initializebrowser"/>
-          <include name="check_to_update_supervisor_without_select_orgnization_name"/>
-          <include name="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code"/>
         </methods>
       </class> <!-- Test_Supervisor -->
     </classes>

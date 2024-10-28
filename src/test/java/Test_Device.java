@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 
@@ -36,6 +37,7 @@ public class Test_Device extends Base_class{
 	     softAssert = new SoftAssert();
 	    try {
 	    	
+	    	String deviceId = generateDeviceId();
 	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
@@ -44,7 +46,7 @@ public class Test_Device extends Base_class{
 	       
 	        device.clickonadddevice();
 	        
-	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	        device.enterdeviceId(deviceId);
 
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
@@ -57,6 +59,7 @@ public class Test_Device extends Base_class{
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
 	        Thread.sleep(4000);
@@ -84,7 +87,7 @@ public class Test_Device extends Base_class{
 	@Test(priority = 32)
 	public void verify_to_create_twinsaftdisperser() throws InterruptedException, IOException {
 	     softAssert = new SoftAssert();
-	    try {
+	    try {String deviceId = generateDeviceId();
 	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
@@ -92,7 +95,7 @@ public class Test_Device extends Base_class{
 	        
 	        device.clickonadddevice();
 	        
-	        device.enterdeviceId(UtilityClass.propertiesfile("TID"));
+	        device.enterdeviceId(deviceId);
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
@@ -104,6 +107,7 @@ public class Test_Device extends Base_class{
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
 	        Thread.sleep(4000);
@@ -131,7 +135,7 @@ public class Test_Device extends Base_class{
 	@Test(priority = 33)
 	public void Verify_to_create_highspeed_disperser_machine() throws InterruptedException, IOException {
 	     softAssert = new SoftAssert();
-	    try {
+	    try {String deviceId = generateDeviceId();
 	    	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	    	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
@@ -140,7 +144,7 @@ public class Test_Device extends Base_class{
 	      
 	        device.clickonadddevice();
 	        
-	        device.enterdeviceId(UtilityClass.propertiesfile("HIID"));
+	        device.enterdeviceId(deviceId);
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
 	        
@@ -153,6 +157,7 @@ public class Test_Device extends Base_class{
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
 	        Thread.sleep(4000);
@@ -174,6 +179,18 @@ public class Test_Device extends Base_class{
 	    } finally {
 	        softAssert.assertAll();
 	    }}
+	 public String generateDeviceId() {
+	        int length = 14;
+	        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	        StringBuilder deviceId = new StringBuilder();
+	        Random random = new Random();
+
+	        for (int i = 0; i < length; i++) {
+	            deviceId.append(characters.charAt(random.nextInt(characters.length())));
+	        }
+
+	        return deviceId.toString();
+	    }
 @Test(priority = 4)
 public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates() throws InterruptedException, IOException {
      softAssert = new SoftAssert();
@@ -220,6 +237,10 @@ public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplica
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
         device.enterorgname(UtilityClass.propertiesfile("orgname"));
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -289,6 +310,10 @@ public void Verify_to_check__Device_ID_Field_with_special_characters() throws In
         Thread.sleep(4000);
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -374,6 +399,10 @@ public void Verify_to_check__Device_IDfield_with_spaces() throws InterruptedExce
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        Thread.sleep(4000);
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
 
@@ -441,6 +470,10 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -509,6 +542,10 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_max_length() t
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -576,6 +613,10 @@ public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_betw
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -645,6 +686,10 @@ public void  Verify_that_temp1_field_should_not_accept_alphabet() throws Interru
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -714,6 +759,10 @@ public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() thro
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
        
@@ -785,6 +834,10 @@ public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -855,6 +908,10 @@ public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -925,6 +982,10 @@ public void  check_maxtemp3_field_does_not_accept_special_char
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -995,6 +1056,10 @@ public void  check_maxtepm3_does_not_accept_greater_than_100
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -1065,6 +1130,10 @@ public void  check_to_create_device_with_maxtepm3_field_is_blank
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -1134,6 +1203,10 @@ public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -1203,6 +1276,10 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -1272,6 +1349,10 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -1341,6 +1422,10 @@ public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -1411,6 +1496,10 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_a
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         Thread.sleep(4000);
@@ -1481,6 +1570,10 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_t
        Thread.sleep(4000);
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
        Thread.sleep(4000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
        
@@ -1553,6 +1646,10 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
@@ -1625,7 +1722,10 @@ public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_messag
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-        
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         
 
@@ -1774,6 +1874,10 @@ public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_erro
 //       
        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
+       Thread.sleep(1000);
+       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
         

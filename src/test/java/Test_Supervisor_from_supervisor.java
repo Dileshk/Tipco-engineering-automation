@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -33,15 +34,17 @@ public class Test_Supervisor_from_supervisor extends Base_class{
     	
          softAssert = new SoftAssert();
         try {
+        	String randomEmail = generateRandomEmail();
+            String randomPhoneNumber = generateRandomPhoneNumber();
         	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
         	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 	        Thread.sleep(1000);
             sup.addbtnsupervisor();
             Thread.sleep(3000);
-            sup.entersupermail(UtilityClass.propertiesfile("supervisor"));
+            sup.entersupermail(randomEmail);
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
-            sup.enterphonenumber(UtilityClass.propertiesfile("validnumsup"));
+            sup.enterphonenumber(randomPhoneNumber);
 //            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
 //            sup.sendkey();
 //            Thread.sleep(2000);
@@ -65,7 +68,21 @@ public class Test_Supervisor_from_supervisor extends Base_class{
             softAssert.assertAll();  
         }
     }
+	 private String generateRandomEmail() {
+	        String emailDomain = "@example.com";
+	        String emailPrefix = "user" + new Random().nextInt(10000);
+	        return emailPrefix + emailDomain;
+	    }
 
+	    // Method to generate a random 10-digit phone number
+	    private String generateRandomPhoneNumber() {
+	        Random rand = new Random();
+	        StringBuilder phoneNumber = new StringBuilder("9"); // Start with 9
+	        for (int i = 0; i < 9; i++) {
+	            phoneNumber.append(rand.nextInt(10));
+	        }
+	        return phoneNumber.toString();
+	    }
     @Test(priority = 1)
     public void verify_that_createSupervisor_with_invalid_email() {
          softAssert = new SoftAssert();

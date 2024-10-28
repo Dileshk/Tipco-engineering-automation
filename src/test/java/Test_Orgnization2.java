@@ -438,7 +438,7 @@ public class Test_Orgnization2 extends Base_class {
 	        Thread.sleep(5000);
 	        org.clickonsubmit();
 	        
-	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='organization with this name already exists.']")));
 	        
 	        String actual = driver.findElement(By.xpath("//div[text()='organization with this name already exists.']")).getText();
@@ -470,7 +470,7 @@ public class Test_Orgnization2 extends Base_class {
 	        Thread.sleep(5000);
 	        org.clickonsubmit();
 	        
-	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='City can only contain alphabetic characters, single spaces, ampersand(&), hyphen(-), and period.']")));
 	        
 	        String actual = driver.findElement(By.xpath("//div[text()='City can only contain alphabetic characters, single spaces, ampersand(&), hyphen(-), and period.']")).getText();
@@ -620,7 +620,7 @@ public class Test_Orgnization2 extends Base_class {
 	        Thread.sleep(5000);
 	        org.clickonsubmit();
 	        
-	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='organization with this gst already exists.']")));
 	        
 	        String actual = driver.findElement(By.xpath("//div[text()='organization with this gst already exists.']")).getText();
