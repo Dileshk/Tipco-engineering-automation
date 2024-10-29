@@ -3,13 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Supervisor">
+      <class name="Test_dashboard">
         <methods>
-          <include name="Create_Supervisor_with_valid_email"/>
-          <include name="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad"/>
-          <include name="initializebrowser"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed"/>
+          <include name="Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off"/>
+          <include name="initialisebrowser"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed"/>
+          <include name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off"/>
+          <include name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed"/>
         </methods>
-      </class> <!-- Test_Supervisor -->
+      </class> <!-- Test_dashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
