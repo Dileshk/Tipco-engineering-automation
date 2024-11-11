@@ -776,7 +776,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 26)
+	@Test(priority = 27)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -802,7 +802,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 26)
+	@Test(priority = 28)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -828,7 +828,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 27)
+	@Test(priority = 29)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -854,7 +854,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 28)
+	@Test(priority = 30)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -880,7 +880,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 29)
+	@Test(priority = 31)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -906,7 +906,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 30)
+	@Test(priority = 32)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try
@@ -932,7 +932,7 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
-	@Test(priority = 31)
+	@Test(priority = 33)
 	public void Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed() throws InterruptedException
 	{ softAssert= new SoftAssert();
 	try

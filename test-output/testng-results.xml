@@ -2,144 +2,144 @@
 <testng-results ignored="0" total="33" passed="33" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-29T17:23:48 IST" name="Default suite" finished-at="2024-10-29T17:32:08 IST" duration-ms="500631">
+  <suite started-at="2024-11-11T09:59:34 IST" name="Default suite" finished-at="2024-11-11T10:08:11 IST" duration-ms="517107">
     <groups>
     </groups>
-    <test started-at="2024-10-29T17:23:48 IST" name="Default test" finished-at="2024-10-29T17:32:08 IST" duration-ms="500631">
+    <test started-at="2024-11-11T09:59:34 IST" name="Default test" finished-at="2024-11-11T10:08:11 IST" duration-ms="517107">
       <class name="Test_dashboard">
-        <test-method is-config="true" signature="initialisebrowser()[pri:0, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:23:48 IST" name="initialisebrowser" finished-at="2024-10-29T17:23:58 IST" duration-ms="10361" status="PASS">
+        <test-method is-config="true" signature="initialisebrowser()[pri:0, instance:Test_dashboard@14028087]" started-at="2024-11-11T09:59:34 IST" name="initialisebrowser" finished-at="2024-11-11T09:59:47 IST" duration-ms="12813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisebrowser -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()[pri:1, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:23:58 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off" finished-at="2024-10-29T17:24:27 IST" duration-ms="29039" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()[pri:1, instance:Test_dashboard@14028087]" started-at="2024-11-11T09:59:47 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off" finished-at="2024-11-11T10:00:13 IST" duration-ms="26467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()[pri:2, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:24:27 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed" finished-at="2024-10-29T17:24:43 IST" duration-ms="15799" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()[pri:2, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:00:13 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed" finished-at="2024-11-11T10:00:27 IST" duration-ms="13956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()[pri:3, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:24:43 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed" finished-at="2024-10-29T17:24:58 IST" duration-ms="15692" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()[pri:3, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:00:27 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed" finished-at="2024-11-11T10:00:42 IST" duration-ms="14558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()[pri:4, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:24:59 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed" finished-at="2024-10-29T17:25:14 IST" duration-ms="15874" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()[pri:4, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:00:42 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed" finished-at="2024-11-11T10:00:56 IST" duration-ms="13925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()[pri:5, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:25:14 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off" finished-at="2024-10-29T17:25:29 IST" duration-ms="14355" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()[pri:5, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:00:56 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off" finished-at="2024-11-11T10:01:10 IST" duration-ms="14148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()[pri:6, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:25:29 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed" finished-at="2024-10-29T17:25:43 IST" duration-ms="14364" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()[pri:6, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:01:10 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed" finished-at="2024-11-11T10:01:14 IST" duration-ms="4100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()[pri:7, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:25:43 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed" finished-at="2024-10-29T17:25:57 IST" duration-ms="14284" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()[pri:7, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:01:14 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed" finished-at="2024-11-11T10:01:28 IST" duration-ms="13830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()[pri:8, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:25:57 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed" finished-at="2024-10-29T17:26:12 IST" duration-ms="14392" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()[pri:8, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:01:28 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed" finished-at="2024-11-11T10:01:54 IST" duration-ms="26747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()[pri:9, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:26:12 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off" finished-at="2024-10-29T17:26:26 IST" duration-ms="14334" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()[pri:9, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:01:54 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off" finished-at="2024-11-11T10:02:08 IST" duration-ms="13749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()[pri:10, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:26:26 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed" finished-at="2024-10-29T17:26:41 IST" duration-ms="14660" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()[pri:10, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:02:08 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed" finished-at="2024-11-11T10:02:22 IST" duration-ms="13943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()[pri:11, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:26:41 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed" finished-at="2024-10-29T17:26:55 IST" duration-ms="14401" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()[pri:11, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:02:22 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed" finished-at="2024-11-11T10:02:36 IST" duration-ms="13952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()[pri:12, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:26:55 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed" finished-at="2024-10-29T17:27:10 IST" duration-ms="15185" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()[pri:12, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:02:36 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed" finished-at="2024-11-11T10:03:02 IST" duration-ms="26225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()[pri:13, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:27:10 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed" finished-at="2024-10-29T17:27:25 IST" duration-ms="14603" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()[pri:13, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:03:02 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed" finished-at="2024-11-11T10:03:16 IST" duration-ms="14005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()[pri:14, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:27:25 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed" finished-at="2024-10-29T17:27:39 IST" duration-ms="14351" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()[pri:14, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:03:16 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed" finished-at="2024-11-11T10:03:31 IST" duration-ms="14517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()[pri:15, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:27:39 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed" finished-at="2024-10-29T17:27:54 IST" duration-ms="14430" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()[pri:15, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:03:31 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed" finished-at="2024-11-11T10:03:45 IST" duration-ms="13914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed -->
-        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()[pri:16, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:27:54 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed" finished-at="2024-10-29T17:28:09 IST" duration-ms="14856" status="PASS">
+        <test-method signature="Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()[pri:16, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:03:45 IST" name="Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed" finished-at="2024-11-11T10:03:59 IST" duration-ms="13850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed -->
-        <test-method signature="Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()[pri:17, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:28:09 IST" name="Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off" finished-at="2024-10-29T17:28:25 IST" duration-ms="16614" status="PASS">
+        <test-method signature="Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()[pri:17, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:03:59 IST" name="Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off" finished-at="2024-11-11T10:04:15 IST" duration-ms="16080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()[pri:18, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:28:25 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed" finished-at="2024-10-29T17:28:39 IST" duration-ms="13780" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()[pri:18, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:04:15 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed" finished-at="2024-11-11T10:04:29 IST" duration-ms="13957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()[pri:19, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:28:39 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed" finished-at="2024-10-29T17:28:53 IST" duration-ms="13799" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()[pri:19, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:04:29 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed" finished-at="2024-11-11T10:04:42 IST" duration-ms="13774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()[pri:20, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:28:53 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed" finished-at="2024-10-29T17:29:07 IST" duration-ms="14510" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()[pri:20, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:04:42 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed" finished-at="2024-11-11T10:04:56 IST" duration-ms="13852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()[pri:21, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:29:07 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed" finished-at="2024-10-29T17:29:21 IST" duration-ms="13798" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()[pri:21, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:04:56 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed" finished-at="2024-11-11T10:05:11 IST" duration-ms="14455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()[pri:22, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:29:21 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed" finished-at="2024-10-29T17:29:35 IST" duration-ms="13805" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()[pri:22, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:05:11 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed" finished-at="2024-11-11T10:05:25 IST" duration-ms="13911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()[pri:23, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:29:35 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed" finished-at="2024-10-29T17:29:49 IST" duration-ms="13961" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()[pri:23, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:05:25 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed" finished-at="2024-11-11T10:05:39 IST" duration-ms="13929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()[pri:24, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:29:49 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed" finished-at="2024-10-29T17:30:03 IST" duration-ms="13795" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()[pri:24, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:05:39 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed" finished-at="2024-11-11T10:05:52 IST" duration-ms="13825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()[pri:25, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:30:03 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed" finished-at="2024-10-29T17:30:17 IST" duration-ms="13796" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()[pri:25, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:05:52 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed" finished-at="2024-11-11T10:06:06 IST" duration-ms="14017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()[pri:26, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:30:17 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed" finished-at="2024-10-29T17:30:30 IST" duration-ms="13796" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()[pri:26, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:06:06 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed" finished-at="2024-11-11T10:06:20 IST" duration-ms="13803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()[pri:26, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:30:30 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed" finished-at="2024-10-29T17:30:44 IST" duration-ms="13801" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()[pri:27, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:06:20 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed" finished-at="2024-11-11T10:06:34 IST" duration-ms="13800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()[pri:26, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:30:44 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed" finished-at="2024-10-29T17:30:58 IST" duration-ms="13811" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()[pri:28, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:06:34 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed" finished-at="2024-11-11T10:06:48 IST" duration-ms="13804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()[pri:27, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:30:58 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed" finished-at="2024-10-29T17:31:12 IST" duration-ms="13862" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()[pri:29, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:06:48 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed" finished-at="2024-11-11T10:06:52 IST" duration-ms="3802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()[pri:28, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:31:12 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed" finished-at="2024-10-29T17:31:26 IST" duration-ms="13748" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()[pri:30, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:06:52 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed" finished-at="2024-11-11T10:07:05 IST" duration-ms="13853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()[pri:29, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:31:26 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed" finished-at="2024-10-29T17:31:40 IST" duration-ms="13953" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()[pri:31, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:07:05 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed" finished-at="2024-11-11T10:07:19 IST" duration-ms="13871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()[pri:30, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:31:40 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed" finished-at="2024-10-29T17:31:54 IST" duration-ms="14907" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()[pri:32, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:07:19 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed" finished-at="2024-11-11T10:07:36 IST" duration-ms="16339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed -->
-        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()[pri:31, instance:Test_dashboard@14028087]" started-at="2024-10-29T17:31:54 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed" finished-at="2024-10-29T17:32:08 IST" duration-ms="13765" status="PASS">
+        <test-method signature="Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()[pri:33, instance:Test_dashboard@14028087]" started-at="2024-11-11T10:07:36 IST" name="Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed" finished-at="2024-11-11T10:08:11 IST" duration-ms="35211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed -->
