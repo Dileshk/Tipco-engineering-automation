@@ -1,0 +1,417 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>55/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 11 15:16:13 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1284 seconds (1284376 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_Orgnization.verify_to_create_orgnization_with_all_valid_data_of_orgnization()'><b>verify_to_create_orgnization_with_all_valid_data_of_orgnization</b><br>Test class: Test_Orgnization</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	An exception Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Organization Created Successfully&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64785/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce897faf92b8c711d8d13848151de01
+	at Test_Orgnization.verify_to_create_orgnization_with_all_valid_data_of_orgnization(Test_Orgnization.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321185546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321185546'><pre>java.lang.AssertionError: The following asserts failed:
+	An exception Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Organization Created Successfully&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64785/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ce897faf92b8c711d8d13848151de01
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test_Orgnization.verify_to_create_orgnization_with_all_valid_data_of_orgnization(Test_Orgnization.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>39</td>
+<td>Test_Orgnization@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_an_editorgnization_page_and_click_on_cross_button()'><b>Verify_that_an_editorgnization_page_and_click_on_cross_button</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>20</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode()'><b>Ensure_that_the_organization_update_fails_with_maximum_length_of_pincode</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_minimum_length_of_orgname()'><b>Verify_to_add_orgnization_with_minimum_length_of_orgname</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address()'><b>Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_state_columnname_is_present_in_orgniozation_create_page()'><b>Verify_that_to_check_state_columnname_is_present_in_orgniozation_create_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field()'><b>Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>23</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing()'><b>Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode()'><b>Ensure_that_the_organization_update_fails_with_minimum_length_of_pincode</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_max_length_Of_city()'><b>Ensure_that_the_organization_update_fails_with_max_length_Of_city</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_sr_no_column_is_present_in_orgniozation_create_page()'><b>Verify_that_to_check_sr_no_column_is_present_in_orgniozation_create_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode()'><b>Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>12</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_address_fields()'><b>Ensure_that_the_organization_update_fails_without_address_fields</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_GST_number()'><b>Verify_that_an_organization_cannot_be_created_without_GST_number</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_max_length_of_address_fields()'><b>Ensure_that_the_organization_update_fails_with_max_length_of_address_fields</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_state()'><b>Verify_that_an_organization_cannot_be_created_without_enter_state</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_to_click_previous_page_of_orgnization_page()'><b>Verify_that_to_check_to_click_previous_page_of_orgnization_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_max_length_of_orgname()'><b>Verify_to_add_orgnization_with_max_length_of_orgname</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode()'><b>Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_state()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_state</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_an_updateorganization_without__city()'><b>Verify_that_an_updateorganization_without__city</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_withOut_selecting_refresh_rate()'><b>Ensure_that_the_organization_update_fails_withOut_selecting_refresh_rate</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>21</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_orgnization_name_column_is_present_in_orgniozation_create_page()'><b>Verify_that_to_check_orgnization_name_column_is_present_in_orgniozation_create_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>31</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_city_columnname_is_present_in_orgniozation_create_page()'><b>Verify_that_to_check_city_columnname_is_present_in_orgniozation_create_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field()'><b>Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_using_undercurse_and_at_the_rate_in_state()'><b>Ensure_that_the_organization_update_fails_with_using_undercurse_and_at_the_rate_in_state</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield()'><b>Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_to_add_orgnization_with_special_charcter_in_org_name_field()'><b>Verify_to_add_orgnization_with_special_charcter_in_org_name_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>23</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_an_updateorganization_with_a_name_that_already_exists()'><b>Verify_that_an_updateorganization_with_a_name_that_already_exists</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_with_enter_max_length_of_GSTnumberfield</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>56</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_enter_city_field()'><b>Verify_that_an_organization_cannot_be_created_without_enter_city_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_orgnization_text_present_in_orgnizationpage()'><b>Verify_that_orgnization_text_present_in_orgnizationpage</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield()'><b>Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_with_max_length_of_state()'><b>Ensure_that_the_organization_update_fails_with_max_length_of_state</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_update_orgnization_with_duplicate_GST_number()'><b>Verify_that_update_orgnization_with_duplicate_GST_number</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state()'><b>Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>23</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_an_editorgnizationtext_in_update_orgnization_page()'><b>Verify_that_an_editorgnizationtext_in_update_orgnization_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without__pincode()'><b>Verify_that_an_organization_cannot_be_created_without__pincode</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_enter_city()'><b>Ensure_that_the_organization_update_fails_without_enter_city</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Create_Orgnization_with_invalid_orgnization_name()'><b>Create_Orgnization_with_invalid_orgnization_name</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>34</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time()'><b>Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>25</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_an_organization_name()'><b>Verify_that_an_organization_cannot_be_created_without_an_organization_name</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>20</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_withOut_enter_state()'><b>Ensure_that_the_organization_update_fails_withOut_enter_state</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field()'><b>Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name()'><b>Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>23</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_to_click_next_page_of_orgnization_page()'><b>Verify_that_to_check_to_click_next_page_of_orgnization_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_to_check_action_columnname_is_present_in_orgniozation_create_page()'><b>Verify_that_to_check_action_columnname_is_present_in_orgniozation_create_page</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>16</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_without_Address_field()'><b>Verify_that_an_organization_cannot_be_created_without_Address_field</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format()'><b>Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>23</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Verify_that_an_updateorganization_with_a_numeric_city()'><b>Verify_that_an_updateorganization_with_a_numeric_city</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+<tr>
+<td title='Test_Orgnization.Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists()'><b>Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists</b><br>Test class: Test_Orgnization</td>
+<td></td>
+<td>22</td>
+<td>Test_Orgnization@24569dba</td></tr>
+<tr>
+<td title='Test_Orgnization2.Ensure_that_the_organization_update_fails_without_enter_pincode()'><b>Ensure_that_the_organization_update_fails_without_enter_pincode</b><br>Test class: Test_Orgnization2</td>
+<td></td>
+<td>21</td>
+<td>Test_Orgnization2@1033576a</td></tr>
+</table><p>
+</body>
+</html>

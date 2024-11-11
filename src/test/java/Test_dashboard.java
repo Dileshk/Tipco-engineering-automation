@@ -958,7 +958,317 @@ public class Test_dashboard extends Base_class {
 		driver.navigate().refresh();
 	}
 	}
+	
+	@Test(priority = 34)
+	public void Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off() throws InterruptedException
+	{ softAssert= new SoftAssert();
+	try
+	{
+	
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+	        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
+    Thread.sleep(4000);
+   
+    driver.findElement(By.xpath("//div[text()='HSD']")).click();
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+     
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='statuscheck uppercase-text']")));
+     System.out.println("Overlay Gone");
+		WebElement nodata = driver.findElement(By.xpath("//div[@class='statuscheck uppercase-text']"));
+		softAssert.assertTrue(nodata.isDisplayed());
+		Thread.sleep(3000);
+	
 	}
+	catch(Exception e)
+	{
+		softAssert.fail("Exceptio"+e.getMessage());
+	}finally {
+		softAssert.assertAll();
+		driver.navigate().refresh();
+	}
+		
+	}
+@Test(priority = 35)
+public void Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
 
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+       
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[1]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[1]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 36)
+public void Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[2]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[2]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 37)
+public void Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[3]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[3]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 38)
+public void Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='pump-box-sub-titles'])[4]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//p[@class='pump-box-sub-titles'])[4]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 39)
+public void Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[4]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[4]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 40)
+public void Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[5]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[5]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 41)
+public void Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='High Speed Disperser']")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("//h2[text()='High Speed Disperser']"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 42)
+public void Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[text()='Temperature']")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("//h3[text()='Temperature']"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 43)
+public void Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[7]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[7]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+@Test(priority = 44)
+public void Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ 
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[8]")));
+ System.out.println("Overlay Gone");
+	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[8]"));
+	softAssert.assertTrue(nodata.isDisplayed());
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}}
 ////div[text()='HSD']
 
