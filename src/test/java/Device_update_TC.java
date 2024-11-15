@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -48,6 +49,7 @@ public class Device_update_TC extends  Base_class{
 		WebElement deviceID = driver.findElement(By.xpath("//input[@placeholder=\"Device Id \"]"));
 		deviceID.sendKeys(Keys.CONTROL+"a");
 		deviceID.sendKeys(Keys.DELETE);
+		Thread.sleep(2000);
 		device.enterdeviceId(UtilityClass.propertiesfile("mindeviceid"));
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		String actual = driver.findElement(By.xpath("//p[text()='Device ID should be between 3 and 15 characters']")).getText();
@@ -148,6 +150,7 @@ public class Device_update_TC extends  Base_class{
 		WebElement maxtemp1 = driver.findElement(By.xpath("//input[@placeholder='Enter value for Max Temperature One']"));
 		maxtemp1.sendKeys(Keys.CONTROL+"a");
 		maxtemp1.sendKeys(Keys.DELETE);
+		
 		Thread.sleep(2000);
 		device.maxtemp1(UtilityClass.propertiesfile("minvalueoftemp1"));
 		Thread.sleep(2000);
@@ -1236,5 +1239,11 @@ public class Device_update_TC extends  Base_class{
         
      }
 	}
-	}
+
+@AfterClass
+public void closethebrowser()
+{
+	driver.close();
+}
+}
 		

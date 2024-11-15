@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -1274,15 +1273,39 @@ catch(Exception e)
 	driver.navigate().refresh();
 }
 	
-}}
-//get the text of graphical represntation
+}
+//get the text of graphical represntation //text xpath //h2[text()='Graphical Representation']
 //get the notification text after click on notification
-//click on notification and cancel the notfication
-// click on theme and change the theme 
+
+// click on theme and change the theme //xpath of the theme change //div[@class='img-notify-blur']
 //show data of each and every device 
-//logo is displayed on dashboard
-//overview text is visible on dashboard
+//logo is displayed on dashboard       //
+//overview text is visible on dashboard      // xpath-of overview text //h1[text()='Overview']
 //date and time of notification is visible or not 
 
 ////div[text()='HSD']
+@Test(priority = 45)
+public void Verify_that_to_click_on_notification_and_cancel_the_notification() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
 
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+     driver.findElement(By.xpath("//div[@class='img-notify-no-blur']")).click();
+     Thread.sleep(3000);
+     driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+ 
+	Thread.sleep(3000);
+
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}}

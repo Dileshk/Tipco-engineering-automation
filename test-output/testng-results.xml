@@ -1,203 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="32" passed="31" failed="1" skipped="0">
+<testng-results ignored="0" total="79" passed="79" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T14:43:25 IST" name="Default suite" finished-at="2024-11-12T14:57:23 IST" duration-ms="838655">
+  <suite started-at="2024-11-15T15:12:41 IST" name="MyTestSuite" finished-at="2024-11-15T15:44:00 IST" duration-ms="1878515">
     <groups>
     </groups>
-    <test started-at="2024-11-12T14:43:25 IST" name="Default test" finished-at="2024-11-12T14:57:23 IST" duration-ms="838655">
-      <class name="Test_Supervisor">
-        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:43:25 IST" name="initializebrowser" finished-at="2024-11-12T14:43:37 IST" duration-ms="11716" status="PASS">
+    <test started-at="2024-11-15T15:12:41 IST" name="SequentialTestExecution" finished-at="2024-11-15T15:44:00 IST" duration-ms="1878515">
+      <class name="Device_update_TC">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:24:56 IST" name="initializebrowser" finished-at="2024-11-15T15:25:03 IST" duration-ms="7429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verify_that_createSupervisor_with_invalid_email()[pri:1, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:43:37 IST" name="verify_that_createSupervisor_with_invalid_email" finished-at="2024-11-12T14:44:07 IST" duration-ms="30758" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Exception  element click intercepted: Element <button class="">...</button> is not clickable at point (1388, 151). Other element would receive the click: <div class="loader">...</div>
-  (Session info: chrome=130.0.6723.117)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6cffb61a1c7db48033222a7fa205792, clickElement {id=f.D8F5D5FEBFB8A85ACA5CF895433B2664.d.88B0E9001E5037961D5B1076902DE830.e.63}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51768/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b6cffb61a1c7db48033222a7fa205792)] -> xpath: //button[text()='Add Supervisor']]
-Session ID: b6cffb61a1c7db48033222a7fa205792]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Exception  element click intercepted: Element <button class="">...</button> is not clickable at point (1388, 151). Other element would receive the click: <div class="loader">...</div>
-  (Session info: chrome=130.0.6723.117)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6cffb61a1c7db48033222a7fa205792, clickElement {id=f.D8F5D5FEBFB8A85ACA5CF895433B2664.d.88B0E9001E5037961D5B1076902DE830.e.63}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51768/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b6cffb61a1c7db48033222a7fa205792)] -> xpath: //button[text()='Add Supervisor']]
-Session ID: b6cffb61a1c7db48033222a7fa205792
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at Test_Supervisor.verify_that_createSupervisor_with_invalid_email(Test_Supervisor.java:140)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verify_that_to_update_device_and_enter_min_length_of_device_ID()[pri:1, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:25:03 IST" name="verify_that_to_update_device_and_enter_min_length_of_device_ID" finished-at="2024-11-15T15:25:40 IST" duration-ms="36890" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_that_createSupervisor_with_invalid_email -->
-        <test-method signature="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character()[pri:2, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:44:07 IST" name="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character" finished-at="2024-11-12T14:44:50 IST" duration-ms="42286" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_enter_min_length_of_device_ID -->
+        <test-method signature="verify_that_to_update_device_and_enter_max_length_of_device_ID()[pri:2, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:25:40 IST" name="verify_that_to_update_device_and_enter_max_length_of_device_ID" finished-at="2024-11-15T15:25:58 IST" duration-ms="18068" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character -->
-        <test-method signature="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:3, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:44:50 IST" name="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-11-12T14:45:20 IST" duration-ms="30116" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_enter_max_length_of_device_ID -->
+        <test-method signature="verify_that_to_update_device_and_take_deviceId_field_blank()[pri:3, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:25:58 IST" name="verify_that_to_update_device_and_take_deviceId_field_blank" finished-at="2024-11-15T15:26:16 IST" duration-ms="17946" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
-        <test-method signature="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty()[pri:4, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:45:20 IST" name="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty" finished-at="2024-11-12T14:45:47 IST" duration-ms="27511" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_take_deviceId_field_blank -->
+        <test-method signature="verify_that_to_update_device_and_enter_temp1_below_the_range()[pri:4, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:26:16 IST" name="verify_that_to_update_device_and_enter_temp1_below_the_range" finished-at="2024-11-15T15:26:47 IST" duration-ms="30511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty -->
-        <test-method signature="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters()[pri:6, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:45:47 IST" name="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters" finished-at="2024-11-12T14:46:13 IST" duration-ms="25337" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_enter_temp1_below_the_range -->
+        <test-method signature="verify_that_to_update_device_and_enter_maxtemp1_above_the_range()[pri:5, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:26:47 IST" name="verify_that_to_update_device_and_enter_maxtemp1_above_the_range" finished-at="2024-11-15T15:27:16 IST" duration-ms="29494" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters -->
-        <test-method signature="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code()[pri:7, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:46:13 IST" name="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code" finished-at="2024-11-12T14:46:40 IST" duration-ms="27678" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_enter_maxtemp1_above_the_range -->
+        <test-method signature="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field()[pri:6, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:27:16 IST" name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field" finished-at="2024-11-15T15:27:43 IST" duration-ms="26383" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code -->
-        <test-method signature="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code()[pri:8, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:46:40 IST" name="Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code" finished-at="2024-11-12T14:47:10 IST" duration-ms="29602" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_temp1()[pri:7, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:27:43 IST" name="verify_that_to_update_device_without_enter_temp1" finished-at="2024-11-15T15:28:07 IST" duration-ms="24219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_user_can_type_in_the_mobile_number_after_selecting_the_country_code -->
-        <test-method signature="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu()[pri:9, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:47:10 IST" name="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu" finished-at="2024-11-12T14:47:37 IST" duration-ms="27536" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_without_enter_temp1 -->
+        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp1_field()[pri:8, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:28:07 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp1_field" finished-at="2024-11-15T15:28:33 IST" duration-ms="26372" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu -->
-        <test-method signature="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown()[pri:10, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:47:37 IST" name="Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown" finished-at="2024-11-12T14:47:58 IST" duration-ms="20361" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp1_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_below_the_range()[pri:9, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:28:33 IST" name="verify_that_to_update_device_with_enter_maxtemp2_below_the_range" finished-at="2024-11-15T15:29:00 IST" duration-ms="26363" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_the_user_can_type_and_select_an_organization_name_if_it_is_not_listed_in_the_dropdown -->
-        <test-method signature="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled()[pri:11, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:47:58 IST" name="Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled" finished-at="2024-11-12T14:48:18 IST" duration-ms="19837" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_below_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_maxtemp2_above_the_range()[pri:10, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:29:00 IST" name="verify_that_to_update_device_with_enter_maxtemp2_above_the_range" finished-at="2024-11-15T15:29:26 IST" duration-ms="26210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_an_error_message_is_displayed_if_the_save_button_is_clicked_when_mandatory_fields_are_not_filled -->
-        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_full_name()[pri:12, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:48:18 IST" name="Verify_the_maximum_and_minimum_length_of_the_full_name" finished-at="2024-11-12T14:48:43 IST" duration-ms="25509" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_maxtemp2_above_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_temp2_field()[pri:11, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:29:26 IST" name="verify_that_to_update_device_with_enter_alphabet_in_temp2_field" finished-at="2024-11-15T15:29:52 IST" duration-ms="26228" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_full_name -->
-        <test-method signature="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code()[pri:13, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:48:43 IST" name="Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code" finished-at="2024-11-12T14:49:11 IST" duration-ms="27535" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_temp2_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_temp2_field()[pri:12, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:29:52 IST" name="verify_that_to_update_device_without_enter_temp2_field" finished-at="2024-11-15T15:30:19 IST" duration-ms="26384" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_the_maximum_and_minimum_length_of_the_mobile_number_for_each_country_code -->
-        <test-method signature="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed()[pri:14, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:49:11 IST" name="Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed" finished-at="2024-11-12T14:49:43 IST" duration-ms="32569" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_without_enter_temp2_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_special_char_in_temp2_field()[pri:13, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:30:19 IST" name="verify_that_to_update_device_with_enter_special_char_in_temp2_field" finished-at="2024-11-15T15:30:42 IST" duration-ms="23217" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Enter_an_email_without_a_domain_and_verify_that_an_error_message_is_displayed -->
-        <test-method signature="Verify_to_check_and_click_on_next_page_button_of_supervisor()[pri:15, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:49:43 IST" name="Verify_to_check_and_click_on_next_page_button_of_supervisor" finished-at="2024-11-12T14:50:02 IST" duration-ms="19093" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_special_char_in_temp2_field -->
+        <test-method signature="verify_that_to_update_device_with_maxtemp3_below_the_range()[pri:14, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:30:42 IST" name="verify_that_to_update_device_with_maxtemp3_below_the_range" finished-at="2024-11-15T15:31:06 IST" duration-ms="24262" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_and_click_on_next_page_button_of_supervisor -->
-        <test-method signature="check_to_update_supervisor_without_select_orgnization_name()[pri:16, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:50:02 IST" name="check_to_update_supervisor_without_select_orgnization_name" finished-at="2024-11-12T14:50:26 IST" duration-ms="24134" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_below_the_range -->
+        <test-method signature="verify_that_to_update_device_with_maxtemp3_above_the_range()[pri:15, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:31:06 IST" name="verify_that_to_update_device_with_maxtemp3_above_the_range" finished-at="2024-11-15T15:31:30 IST" duration-ms="24226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_to_update_supervisor_without_select_orgnization_name -->
-        <test-method signature="check_and_update_superviaor_without_using_attherate()[pri:17, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:50:26 IST" name="check_and_update_superviaor_without_using_attherate" finished-at="2024-11-12T14:51:05 IST" duration-ms="38124" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_maxtemp3_above_the_range -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field()[pri:16, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:31:30 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field" finished-at="2024-11-15T15:31:57 IST" duration-ms="27178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_and_update_superviaor_without_using_attherate -->
-        <test-method signature="check_to_update_supervisor_without_enter_mandatory_field()[pri:18, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:51:05 IST" name="check_to_update_supervisor_without_enter_mandatory_field" finished-at="2024-11-12T14:51:27 IST" duration-ms="22125" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_maxtemp3()[pri:17, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:31:57 IST" name="verify_that_to_update_device_without_enter_maxtemp3" finished-at="2024-11-15T15:32:25 IST" duration-ms="27384" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_to_update_supervisor_without_enter_mandatory_field -->
-        <test-method signature="Verify_to_update_supervisor_with_max_char_in_full_name_field()[pri:19, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:51:27 IST" name="Verify_to_update_supervisor_with_max_char_in_full_name_field" finished-at="2024-11-12T14:51:53 IST" duration-ms="26164" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_without_enter_maxtemp3 -->
+        <test-method signature="verify_that_to_update_device_maxtemp3_with_special_char()[pri:18, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:32:25 IST" name="verify_that_to_update_device_maxtemp3_with_special_char" finished-at="2024-11-15T15:32:52 IST" duration-ms="27291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_update_supervisor_with_max_char_in_full_name_field -->
-        <test-method signature="Verify_to_update_superviosr_with_invalid_number()[pri:20, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:51:53 IST" name="Verify_to_update_superviosr_with_invalid_number" finished-at="2024-11-12T14:52:17 IST" duration-ms="24326" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_maxtemp3_with_special_char -->
+        <test-method signature="verify_that_to_update_device_with_below_range_of_the_maxpresser()[pri:19, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:32:52 IST" name="verify_that_to_update_device_with_below_range_of_the_maxpresser" finished-at="2024-11-15T15:33:19 IST" duration-ms="27322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_update_superviosr_with_invalid_number -->
-        <test-method signature="Verify_to_check_createsupervisor_that_are_already_exist()[pri:21, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:52:17 IST" name="Verify_to_check_createsupervisor_that_are_already_exist" finished-at="2024-11-12T14:53:08 IST" duration-ms="50412" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_maxpresser -->
+        <test-method signature="verify_that_to_update_device_with_above_range_of_the_maxpresser()[pri:20, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:33:19 IST" name="verify_that_to_update_device_with_above_range_of_the_maxpresser" finished-at="2024-11-15T15:33:47 IST" duration-ms="27270" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_createsupervisor_that_are_already_exist -->
-        <test-method signature="Verify_to_check_sr_no_column_is_present_in_supervisor_page()[pri:22, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:53:08 IST" name="Verify_to_check_sr_no_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:53:24 IST" duration-ms="16843" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_maxpresser -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field()[pri:21, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:33:47 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field" finished-at="2024-11-15T15:34:14 IST" duration-ms="27355" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_sr_no_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_supervisor_name_column_is_present_in_supervisor_page()[pri:23, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:53:24 IST" name="Verify_to_check_supervisor_name_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:53:56 IST" duration-ms="31382" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with0ut_enter_maxtpresser_field()[pri:22, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:34:14 IST" name="verify_that_to_update_device_with0ut_enter_maxtpresser_field" finished-at="2024-11-15T15:34:41 IST" duration-ms="27345" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_supervisor_name_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_Email_column_is_present_in_supervisor_page()[pri:24, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:53:56 IST" name="Verify_to_check_Email_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:54:13 IST" duration-ms="16757" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with0ut_enter_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field()[pri:23, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:34:41 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field" finished-at="2024-11-15T15:35:09 IST" duration-ms="27227" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_Email_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_mobile_number_column_is_present_in_supervisor_page()[pri:25, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:54:13 IST" name="Verify_to_check_mobile_number_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:54:29 IST" duration-ms="16836" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field -->
+        <test-method signature="verify_that_to_update_device_with_below_range_of_the_vibration()[pri:24, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:35:09 IST" name="verify_that_to_update_device_with_below_range_of_the_vibration" finished-at="2024-11-15T15:35:36 IST" duration-ms="27400" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_mobile_number_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_orgnizationname_column_is_present_in_supervisor_page()[pri:26, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:54:29 IST" name="Verify_to_check_orgnizationname_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:54:55 IST" duration-ms="25672" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_below_range_of_the_vibration -->
+        <test-method signature="verify_that_to_update_device_with_above_range_of_the_vibration()[pri:25, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:35:36 IST" name="verify_that_to_update_device_with_above_range_of_the_vibration" finished-at="2024-11-15T15:36:03 IST" duration-ms="27406" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_orgnizationname_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_action_column_is_present_in_supervisor_page()[pri:27, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:54:55 IST" name="Verify_to_check_action_column_is_present_in_supervisor_page" finished-at="2024-11-12T14:55:12 IST" duration-ms="17013" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_above_range_of_the_vibration -->
+        <test-method signature="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field()[pri:26, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:36:03 IST" name="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field" finished-at="2024-11-15T15:36:31 IST" duration-ms="27419" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_action_column_is_present_in_supervisor_page -->
-        <test-method signature="Verify_to_check_click_on_previous_page_button_of_supervisor_page()[pri:28, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:55:12 IST" name="Verify_to_check_click_on_previous_page_button_of_supervisor_page" finished-at="2024-11-12T14:55:33 IST" duration-ms="20698" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field -->
+        <test-method signature="verify_that_to_update_device_without_enter_maxvibration_field()[pri:27, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:36:31 IST" name="verify_that_to_update_device_without_enter_maxvibration_field" finished-at="2024-11-15T15:36:58 IST" duration-ms="27193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_to_check_click_on_previous_page_button_of_supervisor_page -->
-        <test-method signature="Verify_that_to_select_orgnization_from_filter_and_see_supervisor()[pri:29, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:55:33 IST" name="Verify_that_to_select_orgnization_from_filter_and_see_supervisor" finished-at="2024-11-12T14:55:53 IST" duration-ms="19997" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_without_enter_maxvibration_field -->
+        <test-method signature="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field()[pri:28, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:36:58 IST" name="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field" finished-at="2024-11-15T15:37:25 IST" duration-ms="27190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_to_select_orgnization_from_filter_and_see_supervisor -->
-        <test-method signature="Verify_that_search_and_select_orgnization_from_filter_and_see_supervisor()[pri:30, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:55:53 IST" name="Verify_that_search_and_select_orgnization_from_filter_and_see_supervisor" finished-at="2024-11-12T14:56:16 IST" duration-ms="23063" status="PASS">
+        </test-method> <!-- verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field -->
+        <test-method signature="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup()[pri:29, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:37:25 IST" name="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup" finished-at="2024-11-15T15:37:42 IST" duration-ms="16723" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_search_and_select_orgnization_from_filter_and_see_supervisor -->
-        <test-method signature="Verify_that_search_the_orgnization_that_are_not_present_in_list_box_and_see_valid_error_message()[pri:31, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:56:16 IST" name="Verify_that_search_the_orgnization_that_are_not_present_in_list_box_and_see_valid_error_message" finished-at="2024-11-12T14:56:36 IST" duration-ms="20022" status="PASS">
+        </test-method> <!-- verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup -->
+        <test-method signature="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page()[pri:30, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:37:42 IST" name="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page" finished-at="2024-11-15T15:38:02 IST" duration-ms="20441" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_search_the_orgnization_that_are_not_present_in_list_box_and_see_valid_error_message -->
-        <test-method signature="Create_Supervisor_with_valid_email()[pri:50, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:56:36 IST" name="Create_Supervisor_with_valid_email" finished-at="2024-11-12T14:57:04 IST" duration-ms="28131" status="PASS">
+        </test-method> <!-- verify_to_check_clickon_update_device_and_check_the_text_ofthe_page -->
+        <test-method is-config="true" signature="closethebrowser()[pri:0, instance:Device_update_TC@3f4faf53]" started-at="2024-11-15T15:38:02 IST" name="closethebrowser" finished-at="2024-11-15T15:38:03 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Create_Supervisor_with_valid_email -->
-        <test-method signature="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad()[pri:51, instance:Test_Supervisor@5386659f]" started-at="2024-11-12T14:57:04 IST" name="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad" finished-at="2024-11-12T14:57:23 IST" duration-ms="19407" status="PASS">
+        </test-method> <!-- closethebrowser -->
+      </class> <!-- Device_update_TC -->
+      <class name="Test_Device">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Test_Device@1972e513]" started-at="2024-11-15T15:12:41 IST" name="initializebrowser" finished-at="2024-11-15T15:12:50 IST" duration-ms="9131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad -->
-      </class> <!-- Test_Supervisor -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates()[pri:4, instance:Test_Device@1972e513]" started-at="2024-11-15T15:12:50 IST" name="Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates" finished-at="2024-11-15T15:13:49 IST" duration-ms="58425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplicates -->
+        <test-method signature="Verify_to_check__Device_ID_Field_with_special_characters()[pri:5, instance:Test_Device@1972e513]" started-at="2024-11-15T15:13:49 IST" name="Verify_to_check__Device_ID_Field_with_special_characters" finished-at="2024-11-15T15:14:10 IST" duration-ms="21471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check__Device_ID_Field_with_special_characters -->
+        <test-method signature="Verify_to_check__Device_IDfield_with_spaces()[pri:6, instance:Test_Device@1972e513]" started-at="2024-11-15T15:14:10 IST" name="Verify_to_check__Device_IDfield_with_spaces" finished-at="2024-11-15T15:14:36 IST" duration-ms="25632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check__Device_IDfield_with_spaces -->
+        <test-method signature="Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters()[pri:7, instance:Test_Device@1972e513]" started-at="2024-11-15T15:14:36 IST" name="Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters" finished-at="2024-11-15T15:14:57 IST" duration-ms="21370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters -->
+        <test-method signature="Verify_that_the_Device_ID_field_does_not_accept_with_max_length()[pri:8, instance:Test_Device@1972e513]" started-at="2024-11-15T15:14:57 IST" name="Verify_that_the_Device_ID_field_does_not_accept_with_max_length" finished-at="2024-11-15T15:16:13 IST" duration-ms="75652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Device_ID_field_does_not_accept_with_max_length -->
+        <test-method signature="Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100()[pri:9, instance:Test_Device@1972e513]" started-at="2024-11-15T15:16:13 IST" name="Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100" finished-at="2024-11-15T15:16:55 IST" duration-ms="42550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100 -->
+        <test-method signature="Verify_that_temp1_field_should_not_accept_alphabet()[pri:10, instance:Test_Device@1972e513]" started-at="2024-11-15T15:16:55 IST" name="Verify_that_temp1_field_should_not_accept_alphabet" finished-at="2024-11-15T15:17:43 IST" duration-ms="47727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_temp1_field_should_not_accept_alphabet -->
+        <test-method signature="Verify_that_temp1_field_take_blank_and_see_the_error_message()[pri:11, instance:Test_Device@1972e513]" started-at="2024-11-15T15:17:43 IST" name="Verify_that_temp1_field_take_blank_and_see_the_error_message" finished-at="2024-11-15T15:18:04 IST" duration-ms="20305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_temp1_field_take_blank_and_see_the_error_message -->
+        <test-method signature="Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters()[pri:12, instance:Test_Device@1972e513]" started-at="2024-11-15T15:18:04 IST" name="Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters" finished-at="2024-11-15T15:18:24 IST" duration-ms="20473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters -->
+        <test-method signature="Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100()[pri:13, instance:Test_Device@1972e513]" started-at="2024-11-15T15:18:24 IST" name="Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100" finished-at="2024-11-15T15:18:44 IST" duration-ms="20480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100 -->
+        <test-method signature="check_maxtemp3_field_does_not_accept_special_char()[pri:14, instance:Test_Device@1972e513]" started-at="2024-11-15T15:18:44 IST" name="check_maxtemp3_field_does_not_accept_special_char" finished-at="2024-11-15T15:19:05 IST" duration-ms="20488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_maxtemp3_field_does_not_accept_special_char -->
+        <test-method signature="check_maxtepm3_does_not_accept_greater_than_100()[pri:15, instance:Test_Device@1972e513]" started-at="2024-11-15T15:19:05 IST" name="check_maxtepm3_does_not_accept_greater_than_100" finished-at="2024-11-15T15:19:25 IST" duration-ms="20457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_maxtepm3_does_not_accept_greater_than_100 -->
+        <test-method signature="check_to_create_device_with_maxtepm3_field_is_blank()[pri:16, instance:Test_Device@1972e513]" started-at="2024-11-15T15:19:25 IST" name="check_to_create_device_with_maxtepm3_field_is_blank" finished-at="2024-11-15T15:19:46 IST" duration-ms="20402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_to_create_device_with_maxtepm3_field_is_blank -->
+        <test-method signature="Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters()[pri:17, instance:Test_Device@1972e513]" started-at="2024-11-15T15:19:46 IST" name="Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters" finished-at="2024-11-15T15:20:06 IST" duration-ms="20484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters -->
+        <test-method signature="Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10()[pri:18, instance:Test_Device@1972e513]" started-at="2024-11-15T15:20:06 IST" name="Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10" finished-at="2024-11-15T15:20:27 IST" duration-ms="20409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10 -->
+        <test-method signature="Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1()[pri:19, instance:Test_Device@1972e513]" started-at="2024-11-15T15:20:27 IST" name="Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1" finished-at="2024-11-15T15:20:47 IST" duration-ms="20368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1 -->
+        <test-method signature="Verify_that_the_Max_pressure__field_take_blnak_and_see_error()[pri:20, instance:Test_Device@1972e513]" started-at="2024-11-15T15:20:47 IST" name="Verify_that_the_Max_pressure__field_take_blnak_and_see_error" finished-at="2024-11-15T15:21:08 IST" duration-ms="20413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_pressure__field_take_blnak_and_see_error -->
+        <test-method signature="Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters()[pri:21, instance:Test_Device@1972e513]" started-at="2024-11-15T15:21:08 IST" name="Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters" finished-at="2024-11-15T15:21:28 IST" duration-ms="20380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters -->
+        <test-method signature="Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000()[pri:22, instance:Test_Device@1972e513]" started-at="2024-11-15T15:21:28 IST" name="Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000" finished-at="2024-11-15T15:21:48 IST" duration-ms="20402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000 -->
+        <test-method signature="Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1()[pri:23, instance:Test_Device@1972e513]" started-at="2024-11-15T15:21:48 IST" name="Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1" finished-at="2024-11-15T15:22:09 IST" duration-ms="20265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1 -->
+        <test-method signature="Verify_that_the_Max_vibration_field_take_blank_and_see_error_message()[pri:24, instance:Test_Device@1972e513]" started-at="2024-11-15T15:22:09 IST" name="Verify_that_the_Max_vibration_field_take_blank_and_see_error_message" finished-at="2024-11-15T15:22:29 IST" duration-ms="20523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Max_vibration_field_take_blank_and_see_error_message -->
+        <test-method signature="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu()[pri:25, instance:Test_Device@1972e513]" started-at="2024-11-15T15:22:29 IST" name="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu" finished-at="2024-11-15T15:22:44 IST" duration-ms="15185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Time_Zone_field_displays_a_dropdown_menu -->
+        <test-method signature="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage()[pri:26, instance:Test_Device@1972e513]" started-at="2024-11-15T15:22:44 IST" name="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage" finished-at="2024-11-15T15:23:05 IST" duration-ms="20363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage -->
+        <test-method signature="Verify_that_click_on_cross_button_and_close_the_popup()[pri:27, instance:Test_Device@1972e513]" started-at="2024-11-15T15:23:05 IST" name="Verify_that_click_on_cross_button_and_close_the_popup" finished-at="2024-11-15T15:23:15 IST" duration-ms="10740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_click_on_cross_button_and_close_the_popup -->
+        <test-method signature="Verify_that_the_text_of_Device_page()[pri:28, instance:Test_Device@1972e513]" started-at="2024-11-15T15:23:15 IST" name="Verify_that_the_text_of_Device_page" finished-at="2024-11-15T15:23:20 IST" duration-ms="4130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_text_of_Device_page -->
+        <test-method signature="Verify_that_clickon_submit_button_when_all_the_fields_are_blank()[pri:29, instance:Test_Device@1972e513]" started-at="2024-11-15T15:23:20 IST" name="Verify_that_clickon_submit_button_when_all_the_fields_are_blank" finished-at="2024-11-15T15:23:34 IST" duration-ms="14877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_clickon_submit_button_when_all_the_fields_are_blank -->
+        <test-method signature="Verify_the_deice_text_on_add_device_page()[pri:30, instance:Test_Device@1972e513]" started-at="2024-11-15T15:23:34 IST" name="Verify_the_deice_text_on_add_device_page" finished-at="2024-11-15T15:23:49 IST" duration-ms="14886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_deice_text_on_add_device_page -->
+        <test-method signature="Verify_to_create_Horizontalbead_mill_machine()[pri:31, instance:Test_Device@1972e513]" started-at="2024-11-15T15:23:49 IST" name="Verify_to_create_Horizontalbead_mill_machine" finished-at="2024-11-15T15:24:11 IST" duration-ms="22105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_create_Horizontalbead_mill_machine -->
+        <test-method signature="verify_to_create_twinsaftdisperser()[pri:32, instance:Test_Device@1972e513]" started-at="2024-11-15T15:24:11 IST" name="verify_to_create_twinsaftdisperser" finished-at="2024-11-15T15:24:34 IST" duration-ms="22140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_to_create_twinsaftdisperser -->
+        <test-method signature="Verify_to_create_highspeed_disperser_machine()[pri:33, instance:Test_Device@1972e513]" started-at="2024-11-15T15:24:34 IST" name="Verify_to_create_highspeed_disperser_machine" finished-at="2024-11-15T15:24:56 IST" duration-ms="22403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_create_highspeed_disperser_machine -->
+        <test-method is-config="true" signature="closethebrowser()[pri:0, instance:Test_Device@1972e513]" started-at="2024-11-15T15:24:56 IST" name="closethebrowser" finished-at="2024-11-15T15:24:56 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closethebrowser -->
+      </class> <!-- Test_Device -->
+      <class name="Device_TC">
+        <test-method is-config="true" signature="initializebrowser()[pri:0, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:38:03 IST" name="initializebrowser" finished-at="2024-11-15T15:38:10 IST" duration-ms="7199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="Verify_to_check_click_on_update_and_click_on_submit_button()[pri:1, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:38:10 IST" name="Verify_to_check_click_on_update_and_click_on_submit_button" finished-at="2024-11-15T15:38:27 IST" duration-ms="17473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_click_on_update_and_click_on_submit_button -->
+        <test-method signature="Verify_and_check_to_update_devicezone_by_selecting_other_country_from_dropdown()[pri:3, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:38:27 IST" name="Verify_and_check_to_update_devicezone_by_selecting_other_country_from_dropdown" finished-at="2024-11-15T15:38:55 IST" duration-ms="27985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_and_check_to_update_devicezone_by_selecting_other_country_from_dropdown -->
+        <test-method signature="Verify_and_check_to_type_on_timezone_field_and_select_from_list_box()[pri:4, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:38:55 IST" name="Verify_and_check_to_type_on_timezone_field_and_select_from_list_box" finished-at="2024-11-15T15:39:26 IST" duration-ms="31258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_and_check_to_type_on_timezone_field_and_select_from_list_box -->
+        <test-method signature="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox()[pri:5, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:39:26 IST" name="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox" finished-at="2024-11-15T15:39:58 IST" duration-ms="31300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox -->
+        <test-method signature="Verify_and_check_orgnization_field_disable_in_update_form()[pri:6, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:39:58 IST" name="Verify_and_check_orgnization_field_disable_in_update_form" finished-at="2024-11-15T15:40:19 IST" duration-ms="21459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_and_check_orgnization_field_disable_in_update_form -->
+        <test-method signature="Verify_to_check_clear_all_fields_and_click_on_submit_in_update_form()[pri:7, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:40:19 IST" name="Verify_to_check_clear_all_fields_and_click_on_submit_in_update_form" finished-at="2024-11-15T15:40:45 IST" duration-ms="25596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_clear_all_fields_and_click_on_submit_in_update_form -->
+        <test-method signature="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page()[pri:8, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:40:45 IST" name="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page" finished-at="2024-11-15T15:40:58 IST" duration-ms="13184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page -->
+        <test-method signature="Verify_to_check_and_click_next_page_of_the_device_page()[pri:9, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:40:58 IST" name="Verify_to_check_and_click_next_page_of_the_device_page" finished-at="2024-11-15T15:41:01 IST" duration-ms="3153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_and_click_next_page_of_the_device_page -->
+        <test-method signature="Verify_to_check_sr_number_column_of_the_device_in_device_page()[pri:10, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:41:01 IST" name="Verify_to_check_sr_number_column_of_the_device_in_device_page" finished-at="2024-11-15T15:41:15 IST" duration-ms="13706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_sr_number_column_of_the_device_in_device_page -->
+        <test-method signature="Verify_to_check_and_click_prvious_pagebutton_of_the_device_page()[pri:11, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:41:15 IST" name="Verify_to_check_and_click_prvious_pagebutton_of_the_device_page" finished-at="2024-11-15T15:41:28 IST" duration-ms="13219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_and_click_prvious_pagebutton_of_the_device_page -->
+        <test-method signature="Verify_to_check_devicwID_column_of_the_device_in_device_page()[pri:12, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:41:28 IST" name="Verify_to_check_devicwID_column_of_the_device_in_device_page" finished-at="2024-11-15T15:41:42 IST" duration-ms="13673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_devicwID_column_of_the_device_in_device_page -->
+        <test-method signature="Verify_to_check_devicetype_column_of_the_device_in_device_page()[pri:13, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:41:42 IST" name="Verify_to_check_devicetype_column_of_the_device_in_device_page" finished-at="2024-11-15T15:41:55 IST" duration-ms="13138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_devicetype_column_of_the_device_in_device_page -->
+        <test-method signature="Verify_to_check_Organization_Namecolumn_of_the_device_in_device_page()[pri:14, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:41:55 IST" name="Verify_to_check_Organization_Namecolumn_of_the_device_in_device_page" finished-at="2024-11-15T15:42:08 IST" duration-ms="13139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_Organization_Namecolumn_of_the_device_in_device_page -->
+        <test-method signature="Verify_to_check_Action_column_of_the_device_in_device_page()[pri:15, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:42:08 IST" name="Verify_to_check_Action_column_of_the_device_in_device_page" finished-at="2024-11-15T15:42:21 IST" duration-ms="13183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_Action_column_of_the_device_in_device_page -->
+        <test-method signature="Verify_to_check_selected_option_of_zone_in_update_form_is_visible()[pri:16, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:42:21 IST" name="Verify_to_check_selected_option_of_zone_in_update_form_is_visible" finished-at="2024-11-15T15:42:42 IST" duration-ms="20591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_selected_option_of_zone_in_update_form_is_visible -->
+        <test-method signature="Verify_to_check_selected_option_of_devicetype_in_update_form_is_visible()[pri:17, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:42:42 IST" name="Verify_to_check_selected_option_of_devicetype_in_update_form_is_visible" finished-at="2024-11-15T15:43:03 IST" duration-ms="20966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_selected_option_of_devicetype_in_update_form_is_visible -->
+        <test-method signature="Verify_to_check_selected_orgnization_should_not_change_in_update()[pri:18, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:43:03 IST" name="Verify_to_check_selected_orgnization_should_not_change_in_update" finished-at="2024-11-15T15:43:24 IST" duration-ms="20934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_selected_orgnization_should_not_change_in_update -->
+        <test-method signature="Verify_to_check_click_on_any_intermediate_page_of_device_page()[pri:19, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:43:24 IST" name="Verify_to_check_click_on_any_intermediate_page_of_device_page" finished-at="2024-11-15T15:43:42 IST" duration-ms="18004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_to_check_click_on_any_intermediate_page_of_device_page -->
+        <test-method signature="Verify_that_the_total_number_of_pages_is_displayed_correctly()[pri:20, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:43:42 IST" name="Verify_that_the_total_number_of_pages_is_displayed_correctly" finished-at="2024-11-15T15:44:00 IST" duration-ms="17827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_total_number_of_pages_is_displayed_correctly -->
+        <test-method is-config="true" signature="closethebrowser()[pri:0, instance:Device_TC@7fd50002]" started-at="2024-11-15T15:44:00 IST" name="closethebrowser" finished-at="2024-11-15T15:44:00 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closethebrowser -->
+      </class> <!-- Device_TC -->
+    </test> <!-- SequentialTestExecution -->
+  </suite> <!-- MyTestSuite -->
 </testng-results>

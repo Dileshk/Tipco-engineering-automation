@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SequentialTestExecution(failed)">
     <classes>
+      <class name="Test_Device">
+        <methods>
+          <include name="verify_to_create_twinsaftdisperser"/>
+          <include name="Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000"/>
+          <include name="check_maxtepm3_does_not_accept_greater_than_100"/>
+          <include name="Verify_to_create_highspeed_disperser_machine"/>
+          <include name="check_maxtemp3_field_does_not_accept_special_char"/>
+          <include name="Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100"/>
+          <include name="Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1"/>
+          <include name="Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10"/>
+          <include name="Verify_that_click_on_cross_button_and_close_the_popup"/>
+          <include name="Verify_that_clickon_submit_button_when_all_the_fields_are_blank"/>
+          <include name="initializebrowser"/>
+          <include name="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage"/>
+          <include name="Verify_that_the_Max_vibration_field_take_blank_and_see_error_message"/>
+          <include name="Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100"/>
+          <include name="Verify_to_create_Horizontalbead_mill_machine"/>
+          <include name="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu"/>
+          <include name="Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters"/>
+          <include name="closethebrowser"/>
+          <include name="Verify_that_the_text_of_Device_page"/>
+          <include name="Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters"/>
+          <include name="Verify_that_temp1_field_take_blank_and_see_the_error_message"/>
+          <include name="Verify_that_temp1_field_should_not_accept_alphabet"/>
+          <include name="Verify_the_deice_text_on_add_device_page"/>
+          <include name="Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters"/>
+          <include name="check_to_create_device_with_maxtepm3_field_is_blank"/>
+          <include name="Verify_that_the_Max_pressure__field_take_blnak_and_see_error"/>
+          <include name="Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1"/>
+        </methods>
+      </class> <!-- Test_Device -->
       <class name="Device_update_TC">
         <methods>
-          <include name="verify_that_to_update_device_and_take_deviceId_field_blank"/>
           <include name="verify_that_to_update_device_with_below_range_of_the_vibration"/>
           <include name="verify_that_to_update_device_with_above_range_of_the_maxpresser"/>
           <include name="verify_that_to_update_device_with_enter_alphabet_in_temp2_field"/>
@@ -16,11 +46,10 @@
           <include name="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field"/>
           <include name="verify_that_to_update_device_with_maxtemp3_above_the_range"/>
           <include name="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field"/>
-          <include name="verify_that_to_update_device_and_enter_max_length_of_device_ID"/>
           <include name="verify_that_to_update_device_with_below_range_of_the_maxpresser"/>
-          <include name="verify_that_to_update_device_and_enter_temp1_below_the_range"/>
-          <include name="verify_that_to_update_device_and_enter_min_length_of_device_ID"/>
+          <include name="closethebrowser"/>
           <include name="verify_that_to_update_device_with0ut_enter_maxtpresser_field"/>
+          <include name="initializebrowser"/>
           <include name="verify_that_to_update_device_with_above_range_of_the_vibration"/>
           <include name="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup"/>
           <include name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field"/>
@@ -34,7 +63,6 @@
           <include name="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field"/>
           <include name="verify_that_to_update_device_without_enter_maxtemp3"/>
           <include name="verify_that_to_update_device_with_enter_maxtemp2_above_the_range"/>
-          <include name="verify_that_to_update_device_and_enter_maxtemp1_above_the_range"/>
         </methods>
       </class> <!-- Device_update_TC -->
       <class name="Device_TC">
@@ -59,8 +87,9 @@
           <include name="Verify_to_check_and_click_next_page_of_the_device_page"/>
           <include name="Verify_to_check_click_on_any_intermediate_page_of_device_page"/>
           <include name="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page"/>
+          <include name="initializebrowser"/>
         </methods>
       </class> <!-- Device_TC -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- SequentialTestExecution(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

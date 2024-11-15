@@ -7,8 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -58,10 +57,26 @@ public class Test_Device extends Base_class{
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-	        Thread.sleep(4000);
-	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	        boolean isOptionSelected = false; // Flag to track if the option is selected
+	        int maxRetries = 3;
+
+	        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	            orgDropdown.click();
+	            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+	            try {
+	                // Try selecting the option directly
+	                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	                isOptionSelected = true;
+	                break; // Exit loop if the option is selected successfully
+	            } catch (Exception e) {
+	                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	            }
+	        }
+
+	        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -106,10 +121,26 @@ public class Test_Device extends Base_class{
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-	        Thread.sleep(4000);
-	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	        boolean isOptionSelected = false; // Flag to track if the option is selected
+	        int maxRetries = 3;
+
+	        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	            orgDropdown.click();
+	            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+	            try {
+	                // Try selecting the option directly
+	                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	                isOptionSelected = true;
+	                break; // Exit loop if the option is selected successfully
+	            } catch (Exception e) {
+	                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	            }
+	        }
+
+	        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -156,10 +187,26 @@ public class Test_Device extends Base_class{
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-	        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-	        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-	        Thread.sleep(4000);
-	        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	        boolean isOptionSelected = false; // Flag to track if the option is selected
+	        int maxRetries = 3;
+
+	        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	            orgDropdown.click();
+	            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+	            try {
+	                // Try selecting the option directly
+	                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	                isOptionSelected = true;
+	                break; // Exit loop if the option is selected successfully
+	            } catch (Exception e) {
+	                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	            }
+	        }
+
+	        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
 	        Thread.sleep(4000);
 	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -236,13 +283,26 @@ public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplica
         device.entertimezone(UtilityClass.propertiesfile("zone"));
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
         
@@ -306,19 +366,27 @@ public void Verify_to_check__Device_ID_Field_with_special_characters() throws In
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
-        Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
        
@@ -352,79 +420,68 @@ driver.navigate().refresh();
 //    }
 //}
 //}
-@Test(priority = 6)
-public void Verify_to_check__Device_IDfield_with_spaces() throws InterruptedException, IOException {
-    softAssert = new SoftAssert();
-    try {
-       
+	@Test(priority = 6)
+	public void Verify_to_check__Device_IDfield_with_spaces() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
 
-       
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
-        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
-        System.out.println("Overlay Gone");
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
 
-       
-        device.clickonadddevice();
-        
+	        device.clickonadddevice();
+	        device.enterdeviceId(UtilityClass.propertiesfile("Idwithspace"));
 
-        device.enterdeviceId(UtilityClass.propertiesfile("Idwithspace"));
-         
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	        dropDownIcon.click();
+	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
 
-      
-        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
-        dropDownIcon.click();
-         
-        
-        dropDownIcon.click();
-      
+	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-      
-        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
-         
+	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	        boolean isOptionSelected = false; // Flag to track if the option is selected
+	        int maxRetries = 3;
 
-       
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
-       
+	        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	            orgDropdown.click();
+	            Thread.sleep(1000); // Adjust sleep duration as necessary
 
-       
-        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+	            try {
+	                // Try selecting the option directly
+	                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	                isOptionSelected = true;
+	                break; // Exit loop if the option is selected successfully
+	            } catch (Exception e) {
+	                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	            }
+	        }
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       Thread.sleep(4000);
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+	        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
 
-        Thread.sleep(4000);
-        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+	        Thread.sleep(4000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
-        Thread.sleep(4000);
-        String actual = driver.findElement(By.xpath("//p[text()='Spaces are not allowed']")).getText();
-        String expected = "Spaces are not allowed";
-        
-        System.out.println("Message: " + actual);
-        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
-        
-        Thread.sleep(5000);
-driver.navigate().refresh();
-    } catch (Exception e) {
-        softAssert.fail("Exception: " + e.getMessage());
-    } finally {
-        softAssert.assertAll();
+	        Thread.sleep(4000);
+	        String actual = driver.findElement(By.xpath("//p[text()='Spaces are not allowed']")).getText();
+	        String expected = "Spaces are not allowed";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
 
-    }
-}
+	        Thread.sleep(5000);
+	        driver.navigate().refresh();
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();
+	    }
+	}
 @Test(priority = 7)
 public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length_of_2_characters() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -466,19 +523,27 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
        
         
@@ -537,20 +602,27 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_max_length() t
 
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -609,19 +681,27 @@ public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_betw
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -682,19 +762,27 @@ public void  Verify_that_temp1_field_should_not_accept_alphabet() throws Interru
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -755,19 +843,27 @@ public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() thro
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-       
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
       
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -830,19 +926,27 @@ public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -904,19 +1008,27 @@ public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -978,19 +1090,27 @@ public void  check_maxtemp3_field_does_not_accept_special_char
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1052,19 +1172,27 @@ public void  check_maxtepm3_does_not_accept_greater_than_100
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1126,18 +1254,27 @@ public void  check_to_create_device_with_maxtepm3_field_is_blank
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
       
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -1199,19 +1336,27 @@ public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1272,19 +1417,27 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1345,19 +1498,27 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
         Thread.sleep(4000);
-      
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1418,19 +1579,27 @@ public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1492,19 +1661,27 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_a
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        Thread.sleep(4000);
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1566,18 +1743,27 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_t
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(4000);
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-       
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
       
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -1642,19 +1828,27 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -1718,17 +1912,27 @@ public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_messag
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
       
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
@@ -1870,19 +2074,27 @@ public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_erro
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
-//        device.enterorgname(UtilityClass.propertiesfile("orgname"));
-//       
-       driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]")).click();
-       device.enterorgname(UtilityClass.propertiesfile("orgname"));
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-       Thread.sleep(1000);
-       driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("\b");
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
-        
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; // Flag to track if the option is selected
+        int maxRetries = 3;
 
-      
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); // Adjust sleep duration as necessary
+
+            try {
+                // Try selecting the option directly
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; // Exit loop if the option is selected successfully
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
@@ -2014,12 +2226,12 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
           softAssert.assertAll();          
          
       }
-  } }
-//@AfterClass
-//public void closethebrowser()
-//{
-//	driver.close();
-//}
-//}
+  } 
+@AfterClass
+public void closethebrowser()
+{
+	driver.close();
+}
+}
 
 		

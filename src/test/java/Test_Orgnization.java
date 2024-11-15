@@ -135,15 +135,15 @@ private String generateRandomOrganizationName() {
     StringBuilder orgName = new StringBuilder();
     Random random = new Random();
 
-    // Generate a random length between 5 and 19 for variation
-    int length = random.nextInt(15) + 5; // 5 to 19 characters
+    
+    int length = random.nextInt(15) + 5; 
     for (int i = 0; i < length; i++) {
         orgName.append(alphabet.charAt(random.nextInt(alphabet.length())));
     }
     return orgName.toString();
 }
 
-// Method to generate a random GST number with exactly 15 alphanumeric characters
+
 private String generateRandomGSTNumber() {
     String alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     StringBuilder gstNumber = new StringBuilder();
@@ -155,19 +155,19 @@ private String generateRandomGSTNumber() {
     return gstNumber.toString();
 }
 
-// Method to generate a random email
+
 private String generateRandomEmail() {
     String emailDomain = "@example.com";
-    String emailPrefix = "user" + new Random().nextInt(10000); // Generates a number from 0 to 9999
+    String emailPrefix = "user" + new Random().nextInt(10000); 
     return emailPrefix + emailDomain;
 }
 
-// Method to generate a random 10-digit phone number
+
 private String generateRandomPhoneNumber() {
     Random rand = new Random();
-    StringBuilder phoneNumber = new StringBuilder("9"); // Start with 9 to look like a typical mobile number
+    StringBuilder phoneNumber = new StringBuilder("9"); 
     for (int i = 0; i < 9; i++) {
-        phoneNumber.append(rand.nextInt(10)); // Adds a random digit from 0 to 9
+        phoneNumber.append(rand.nextInt(10)); 
     }
     return phoneNumber.toString();
 }
