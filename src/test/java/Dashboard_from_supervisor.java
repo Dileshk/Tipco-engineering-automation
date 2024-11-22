@@ -36,7 +36,10 @@ public class Dashboard_from_supervisor extends Base_class {
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
 		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-    
+	        driver.findElement(By.xpath("//div[@id='toggle-id']")).click();
+	        Thread.sleep(2000);
+	    	driver.findElement(By.xpath("//span[text()='Dashboard']")).click();
+	    	  Thread.sleep(2000);
 		
 		
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));

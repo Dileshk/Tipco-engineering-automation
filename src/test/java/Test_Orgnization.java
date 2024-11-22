@@ -31,7 +31,7 @@ public class Test_Orgnization extends Base_class{
 		org.entermail(UtilityClass.propertiesfile("validmail"));
 		org.entpass(UtilityClass.propertiesfile("validpass"));
 		org.clickbuttonsubmit();
-		
+//		
 	}
 @Test(priority = 1)
 public void Create_Orgnization_with_invalid_orgnization_name() throws IOException, InterruptedException {

@@ -1,39 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_Device">
+      <class name="Edit_profile_from_supervisor">
         <methods>
-          <include name="verify_to_create_twinsaftdisperser"/>
-          <include name="Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000"/>
-          <include name="check_maxtepm3_does_not_accept_greater_than_100"/>
-          <include name="Verify_to_create_highspeed_disperser_machine"/>
-          <include name="check_maxtemp3_field_does_not_accept_special_char"/>
-          <include name="Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100"/>
-          <include name="Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1"/>
-          <include name="Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10"/>
-          <include name="Verify_that_click_on_cross_button_and_close_the_popup"/>
-          <include name="Verify_that_clickon_submit_button_when_all_the_fields_are_blank"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_valid_NAME"/>
           <include name="initializebrowser"/>
-          <include name="Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage"/>
-          <include name="Verify_that_the_Max_vibration_field_take_blank_and_see_error_message"/>
-          <include name="Verify_to_create_Horizontalbead_mill_machine"/>
-          <include name="Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100"/>
-          <include name="Verify_that_the_Time_Zone_field_displays_a_dropdown_menu"/>
-          <include name="closethebrowser"/>
-          <include name="Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters"/>
-          <include name="Verify_that_the_text_of_Device_page"/>
-          <include name="Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters"/>
-          <include name="Verify_that_temp1_field_should_not_accept_alphabet"/>
-          <include name="Verify_that_temp1_field_take_blank_and_see_the_error_message"/>
-          <include name="Verify_the_deice_text_on_add_device_page"/>
-          <include name="Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters"/>
-          <include name="check_to_create_device_with_maxtepm3_field_is_blank"/>
-          <include name="Verify_that_the_Max_pressure__field_take_blnak_and_see_error"/>
-          <include name="Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1"/>
         </methods>
-      </class> <!-- Test_Device -->
+      </class> <!-- Edit_profile_from_supervisor -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

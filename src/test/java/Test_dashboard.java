@@ -72,10 +72,14 @@ public class Test_dashboard extends Base_class {
 	try
 	{
 	
+	
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
 		 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-    
+	        driver.findElement(By.xpath("//div[@id='toggle-id']")).click();
+	        Thread.sleep(2000);
+	    	driver.findElement(By.xpath("//span[text()='Dashboard']")).click();
+	    	  Thread.sleep(2000);
 		dash.clickonorarrow();
 		
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));
@@ -1072,6 +1076,7 @@ try
 catch(Exception e)
 {
 	softAssert.fail("Exceptio"+e.getMessage());
+
 }finally {
 	softAssert.assertAll();
 	driver.navigate().refresh();
@@ -1307,5 +1312,5 @@ catch(Exception e)
 	softAssert.assertAll();
 	driver.navigate().refresh();
 }
-	
+	System.out.println();
 }}

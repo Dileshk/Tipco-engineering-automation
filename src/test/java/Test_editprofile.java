@@ -60,7 +60,9 @@ public class Test_editprofile extends Base_class {
 	        String expected = "Profile Updated Successfully";
 	        System.out.println("dhkjfh" + actual);
 	        softAssert.assertEquals(actual, expected, "Profile update message mismatch");
-
+            Thread.sleep(4000);
+            driver.navigate().refresh();
+            Thread.sleep(4000);
 	    } catch (Exception e) {
 	        
 	        softAssert.fail("An exception " + e.getMessage());

@@ -1,4 +1,5 @@
 import java.io.IOException;
+
 import java.time.Duration;
 import java.util.Random;
 
@@ -26,10 +27,11 @@ public class Test_Supervisor extends Base_class  {
 	{
 		openbrowser();
 		sup=new Supervisor(driver);
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		sup.entermail(UtilityClass.propertiesfile("validmail"));
 		sup.entpass(UtilityClass.propertiesfile("validpass"));
 		sup.clickbuttonsubmit();
+		
 	
 	}
 	@Test(priority = 50)
@@ -50,16 +52,28 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(randomPhoneNumber);
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
+         // Retry mechanism for dropdown option selection
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; // Flag to track if the option is selected
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); // Attempt to open the dropdown
+                Thread.sleep(1000); // Adjust sleep duration as necessary
+
+                try {
+                    // Try selecting the option directly
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; // Exit loop if the option is selected successfully
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
             
-            sup.clickexternbtn();
-            Thread.sleep(3000);
             sup.clickonsubmitbutton();
             
             WebDriverWait wait3= new WebDriverWait(driver, Duration.ofSeconds(45));
@@ -94,53 +108,68 @@ public class Test_Supervisor extends Base_class  {
 	        return phoneNumber.toString();
 	    }
 
-    @Test(priority = 1)
-    public void verify_that_createSupervisor_with_invalid_email() {
-         softAssert = new SoftAssert();
-        try {
+	    @Test(priority = 1)
+	    public void verify_that_createSupervisor_with_invalid_email() throws InterruptedException {
+	        softAssert = new SoftAssert();
+	        try {
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+	            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+	            Thread.sleep(2000);
+	            sup.clicksbtn();
+	            Thread.sleep(2000);
+	            sup.clicksuper();
 
-        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-           
-	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-	       Thread.sleep(2000);
-	       sup.clicksbtn();
-            Thread.sleep(2000);
-            sup.clicksuper();
-            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
-           
-	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
-            Thread.sleep(3000);
-            sup.addbtnsupervisor();
-            Thread.sleep(4000);
-            sup.entersupermail(UtilityClass.propertiesfile("invalidsuperviosrmail"));
-            sup.entername(UtilityClass.propertiesfile("namesupervisor"));
-            sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
-            Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
-            sup.clickonsubmitbutton();
-            Thread.sleep(2000);
-            
-            String expected = "Invalid Email. Ensure it follows the format: abc@abc.com";
-            String actual = driver.findElement(By.xpath("//p[text()='Invalid Email. Ensure it follows the format: abc@abc.com']")).getText();
-            
-            softAssert.assertEquals(actual, expected);
-            Thread.sleep(5000);
-            driver.navigate().refresh();
-        } catch (Exception e) {
-            
-            softAssert.fail("Exception  " + e.getMessage());
-        } finally {
-            softAssert.assertAll();  
-        }
-    }
+	            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+	            wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	            Thread.sleep(3000);
+	            sup.addbtnsupervisor();
+	            Thread.sleep(4000);
 
+	            sup.entersupermail(UtilityClass.propertiesfile("invalidsuperviosrmail"));
+	            sup.entername(UtilityClass.propertiesfile("namesupervisor"));
+	            sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
+	            Thread.sleep(2000);
+
+	           
+	            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+	            boolean isOptionSelected = false; 
+	            int maxRetries = 3;
+
+	            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	                orgDropdown.click(); 
+	                Thread.sleep(1000); 
+
+	                try {
+	                   
+	                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+	                    isOptionSelected = true;
+	                    System.out.println("Option 'extern labs' selected successfully.");
+	                    break; 
+	                } catch (Exception e) {
+	                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+	                }
+	            }
+
+	            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+	            
+
+	          
+	            sup.clickonsubmitbutton();
+	            Thread.sleep(2000);
+
+	            String expected = "Invalid Email. Ensure it follows the format: abc@abc.com";
+	            String actual = driver.findElement(By.xpath("//p[text()='Invalid Email. Ensure it follows the format: abc@abc.com']")).getText();
+	            softAssert.assertEquals(actual, expected);
+	            Thread.sleep(4000);
+	            driver.navigate().refresh();
+	           
+	        } catch (Exception e) {
+	            softAssert.fail("Exception: " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();
+	           
+	        }
+	    }
     @Test(priority = 2)
     public void Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character() {
         softAssert = new SoftAssert();
@@ -155,14 +184,28 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("supervisornamewithnumericandspecialchar"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+         
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                    
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             sup.clickonsubmitbutton();
             
             String expected = "Full Name must only contain letters and a single space between words";
@@ -194,14 +237,28 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+         
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click();
+                Thread.sleep(1000);
+
+                try {
+                    
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             sup.clickonsubmitbutton();
             
             String expected = "Email is required";
@@ -233,15 +290,28 @@ public class Test_Supervisor extends Base_class  {
             sup.entermail(UtilityClass.propertiesfile("validsupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            Thread.sleep(2000);
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+        
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                   
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             sup.clickonsubmitbutton();
             
             String expected = "Full Name is required";
@@ -307,14 +377,28 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numfieldwithalphaspecial"));
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+        
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                   
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             sup.clickonsubmitbutton();
             
             String expected = "Field cannot be empty";
@@ -353,14 +437,28 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             driver.findElement(By.xpath("//span[text()='Iceland']")).click();
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+        
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                    
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             Thread.sleep(5000);
             driver.navigate().refresh();
             
@@ -389,14 +487,28 @@ public class Test_Supervisor extends Base_class  {
             Thread.sleep(2000);
             driver.findElement(By.xpath("//input[@placeholder='Enter phone number']")).sendKeys("9673568610");
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+        
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                   
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             Thread.sleep(5000);
             driver.navigate().refresh();
             
@@ -423,15 +535,28 @@ public class Test_Supervisor extends Base_class  {
             
             
             Thread.sleep(2000);
-//            driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-            Thread.sleep(2000);
-            sup.sendkey();
-            Thread.sleep(2000);
-            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-            org.sendKeys("\b");
-            Thread.sleep(1000);
-            org.sendKeys("\b");
-            sup.clickexternbtn();
+        
+            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+            boolean isOptionSelected = false; 
+            int maxRetries = 3;
+
+            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
+
+                try {
+                    
+                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                    isOptionSelected = true;
+                    System.out.println("Option 'extern labs' selected successfully.");
+                    break; 
+                } catch (Exception e) {
+                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+                }
+            }
+
+            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+            
             Thread.sleep(5000);
             driver.navigate().refresh();
             
@@ -513,14 +638,28 @@ public class Test_Supervisor extends Base_class  {
           sup.entername(UtilityClass.propertiesfile("maxlengthofsup"));
           sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
           Thread.sleep(2000);
-//          driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-          sup.sendkey();
-          Thread.sleep(2000);
-          WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-          org.sendKeys("\b");
-          Thread.sleep(1000);
-          org.sendKeys("\b");
-          sup.clickexternbtn();
+       
+          WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+          boolean isOptionSelected = false; 
+          int maxRetries = 3;
+
+          for (int attempt = 1; attempt <= maxRetries; attempt++) {
+              orgDropdown.click(); 
+              Thread.sleep(1000); 
+
+              try {
+                 
+                  driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+                  isOptionSelected = true;
+                  System.out.println("Option 'extern labs' selected successfully.");
+                  break; 
+              } catch (Exception e) {
+                  System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+              }
+          }
+
+          softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+          
           sup.clickonsubmitbutton();
           Thread.sleep(2000);
           
@@ -551,14 +690,28 @@ public class Test_Supervisor extends Base_class  {
               sup.entername(UtilityClass.propertiesfile("namesupervisor"));
               sup.enterphonenumber(UtilityClass.propertiesfile("minlengthofphon"));
               Thread.sleep(2000);
-//              driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-              sup.sendkey();
-              Thread.sleep(1000);
-              WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-              org.sendKeys("\b");
-              Thread.sleep(1000);
-              org.sendKeys("\b");
-              sup.clickexternbtn();
+           
+	            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+	            boolean isOptionSelected = false; 
+	            int maxRetries = 3;
+
+	            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	                orgDropdown.click(); 
+	                Thread.sleep(1000); 
+
+	                try {
+	                    
+	                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+	                    isOptionSelected = true;
+	                    System.out.println("Option 'extern labs' selected successfully.");
+	                    break; 
+	                } catch (Exception e) {
+	                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+	                }
+	            }
+
+	            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+	            
               sup.clickonsubmitbutton();
               Thread.sleep(2000);
               
@@ -590,19 +743,28 @@ public class Test_Supervisor extends Base_class  {
                 sup.entername(UtilityClass.propertiesfile("namesupervisor"));
                 sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
                 Thread.sleep(2000);
-//                driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
-                sup.sendkey();
-                Thread.sleep(2000);
-                WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-                org.sendKeys("\b");
-                Thread.sleep(1000);
-                org.sendKeys("\b");
-//              WebElement text = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-//              text.sendKeys(Keys.DELETE);
-//              Thread.sleep(3000);
-//              driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("ex");
-//              Thread.sleep(3000);
-              sup.clickexternbtn();
+            
+	            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+	            boolean isOptionSelected = false; 
+	            int maxRetries = 3;
+
+	            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	                orgDropdown.click(); 
+	                Thread.sleep(1000); 
+
+	                try {
+	                   
+	                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+	                    isOptionSelected = true;
+	                    System.out.println("Option 'extern labs' selected successfully.");
+	                    break; 
+	                } catch (Exception e) {
+	                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+	                }
+	            }
+
+	            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+	            
               Thread.sleep(2000);
                 sup.clickonsubmitbutton();
                 Thread.sleep(2000);
@@ -811,14 +973,29 @@ public class Test_Supervisor extends Base_class  {
 	            sup.entersupermail(UtilityClass.propertiesfile("alreadyexistsup"));
 	            sup.entername(UtilityClass.propertiesfile("namesupervisor"));
 	            sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
-	            sup.sendkey();
-	            Thread.sleep(2000);
-	            WebElement org = driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']"));
-	            org.sendKeys("\b");
-	            Thread.sleep(1000);
-	            org.sendKeys("\b");
-	            sup.clickexternbtn();
-	            Thread.sleep(3000);
+
+	            WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
+	            boolean isOptionSelected = false; 
+	            int maxRetries = 3;
+
+	            for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	                orgDropdown.click(); 
+	                Thread.sleep(1000); 
+
+	                try {
+	                   
+	                    driver.findElement(By.xpath("//div[text()='extern labs']")).click();
+	                    isOptionSelected = true;
+	                    System.out.println("Option 'extern labs' selected successfully.");
+	                    break; 
+	                } catch (Exception e) {
+	                    System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
+	                }
+	            }
+
+	            softAssert.assertTrue(isOptionSelected, "extern labs' was not selected in the dropdown!");
+	            
+              Thread.sleep(2000);
 	            sup.clickonsubmitbutton();
 	            
 	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));

@@ -5,11 +5,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -24,11 +26,13 @@ public class TesttipcoLogin extends Base_class {
 	
 	  Loginpage log;
 	    SoftAssert softAssert;
-	    
+	   
 	    @BeforeClass
 	    public void initialise() throws IOException {
+	    	  
 	        openbrowser();
 	        log = new Loginpage(driver);
+	    
 	    }
 	    
 	    @Test(priority = 20)

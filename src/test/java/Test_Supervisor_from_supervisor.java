@@ -36,6 +36,8 @@ public class Test_Supervisor_from_supervisor extends Base_class{
         try {
         	String randomEmail = generateRandomEmail();
             String randomPhoneNumber = generateRandomPhoneNumber();
+        	
+	  
         	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
         	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
@@ -52,8 +54,8 @@ public class Test_Supervisor_from_supervisor extends Base_class{
             Thread.sleep(3000);
             sup.clickonsubmitbutton();
             
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully Registered']")));
+            WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(25));
+            wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully Registered']")));
             System.out.println("Overlay Gone");
             
             String actual = driver.findElement(By.xpath("//div[text()='Successfully Registered']")).getText();
@@ -61,6 +63,8 @@ public class Test_Supervisor_from_supervisor extends Base_class{
             System.out.println("dhkjfh" + actual);
             
             softAssert.assertEquals(actual, expected);
+            Thread.sleep(3000);
+            driver.navigate().refresh();
         } catch (Exception e) {
             
             softAssert.fail("Exception  " + e.getMessage());
@@ -74,11 +78,11 @@ public class Test_Supervisor_from_supervisor extends Base_class{
 	        return emailPrefix + emailDomain;
 	    }
 
-	    // Method to generate a random 10-digit phone number
+	    
 	    private String generateRandomPhoneNumber() {
 	        Random rand = new Random();
-	        StringBuilder phoneNumber = new StringBuilder("9"); // Start with 9
-	        for (int i = 0; i < 9; i++) {
+	        StringBuilder phoneNumber = new StringBuilder("9"); 
+	        for (int i = 0; i <= 9; i++) {
 	            phoneNumber.append(rand.nextInt(10));
 	        }
 	        return phoneNumber.toString();
@@ -757,7 +761,161 @@ public class Test_Supervisor_from_supervisor extends Base_class{
 	            softAssert.assertAll();  
 	        }
 	    }
-}
+	 @Test(priority = 22)
+	    public void Verify_to_check_sr_no_column_is_present_in_supervisor_page() throws IOException {
+	    	
+	         softAssert = new SoftAssert();
+	        try {
+	        	
+	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+	        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	            Thread.sleep(3000);
+	           
+	            
+	            String actual = driver.findElement(By.xpath("//th[text()='S. No.']")).getText();
+	            String expected = "S. No.";
+	            System.out.println("dhkjfh" + actual);
+	            
+	            softAssert.assertEquals(actual, expected);
+	            Thread.sleep(3000);
+		        driver.navigate().refresh();
+	        } catch (Exception e) {
+	            
+	            softAssert.fail("Exception  " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();  
+	        }
+	    }
+	 @Test(priority = 23)
+	    public void Verify_to_check_supervisor_name_column_is_present_in_supervisor_page() throws IOException {
+	    	
+	         softAssert = new SoftAssert();
+	        try {
+	        	
+	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+	        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	            Thread.sleep(3000);
+	           
+	            
+	            String actual = driver.findElement(By.xpath("//th[text()='Supervisor Name']")).getText();
+	            String expected = "Supervisor Name";
+	            System.out.println("dhkjfh" + actual);
+	            
+	            softAssert.assertEquals(actual, expected);
+	            Thread.sleep(3000);
+		        driver.navigate().refresh();
+	        } catch (Exception e) {
+	            
+	            softAssert.fail("Exception  " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();  
+	        }
+	    }
+	 @Test(priority = 24)
+	    public void Verify_to_check_Email_column_is_present_in_supervisor_page() throws IOException {
+	    	
+	         softAssert = new SoftAssert();
+	        try {
+	        	
+	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+	        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	            Thread.sleep(3000);
+	           
+	            
+	            String actual = driver.findElement(By.xpath("//th[text()='Email']")).getText();
+	            String expected = "Email";
+	            System.out.println("dhkjfh" + actual);
+	            
+	            softAssert.assertEquals(actual, expected);
+	            Thread.sleep(3000);
+		        driver.navigate().refresh();
+	        } catch (Exception e) {
+	            
+	            softAssert.fail("Exception  " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();  
+	        }
+	 }
+	        @Test(priority = 25)
+		    public void Verify_to_check_mobile_number_column_is_present_in_supervisor_page() throws IOException {
+		    	
+		         softAssert = new SoftAssert();
+		        try {
+		        	
+		        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+		        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+		     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+		            Thread.sleep(3000);
+		           
+		            
+		            String actual = driver.findElement(By.xpath("//th[text()='Number']")).getText();
+		            String expected = "Number";
+		            System.out.println("dhkjfh" + actual);
+		            
+		            softAssert.assertEquals(actual, expected);
+		            Thread.sleep(3000);
+			        driver.navigate().refresh();
+		        } catch (Exception e) {
+		            
+		            softAssert.fail("Exception  " + e.getMessage());
+		        } finally {
+		            softAssert.assertAll();  
+		        }
+	    }
+	        @Test(priority = 26)
+		    public void Verify_to_check_orgnizationname_column_is_present_in_supervisor_page() throws IOException {
+		    	
+		         softAssert = new SoftAssert();
+		        try {
+		        	
+		        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+		        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+		     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+		            Thread.sleep(3000);
+		           
+		            
+		            String actual = driver.findElement(By.xpath("//th[text()='Organization Name']")).getText();
+		            String expected = "Organization Name";
+		            System.out.println("dhkjfh" + actual);
+		            
+		            softAssert.assertEquals(actual, expected);
+		            Thread.sleep(3000);
+			        driver.navigate().refresh();
+		        } catch (Exception e) {
+		            
+		            softAssert.fail("Exception  " + e.getMessage());
+		        } finally {
+		            softAssert.assertAll();  
+		        }
+	    } @Test(priority = 27)
+	    public void Verify_to_check_action_column_is_present_in_supervisor_page() throws IOException {
+	    	
+	         softAssert = new SoftAssert();
+	        try {
+	        	
+	        	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
+	        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
+	            Thread.sleep(3000);
+	           
+	            
+	            String actual = driver.findElement(By.xpath("//th[text()='Action']")).getText();
+	            String expected = "Action";
+	            System.out.println("dhkjfh" + actual);
+	            
+	            softAssert.assertEquals(actual, expected);
+	            Thread.sleep(3000);
+		        driver.navigate().refresh();
+	        } catch (Exception e) {
+	            
+	            softAssert.fail("Exception  " + e.getMessage());
+	        } finally {
+	            softAssert.assertAll();  
+	        }
+   }}
 //	 @Test(priority = 22)
 //	    public void Verify_to_check_sr_no_column_is_present_in_supervisor_page() throws IOException {
 //	    	

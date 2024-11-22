@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -19,6 +20,7 @@ import Liberaryfiles.UtilityClass;
 public class Device_update_TC extends  Base_class{
 	Device_create device;
     SoftAssert softAssert;
+    
 	@BeforeClass
 	public void initializebrowser() throws IOException, InterruptedException
 	{
@@ -1238,12 +1240,12 @@ public class Device_update_TC extends  Base_class{
          softAssert.assertAll();          
         
      }
-	}
+	}}
 
-@AfterClass
-public void closethebrowser()
-{
-	driver.close();
-}
-}
+//@AfterClass
+//public void closethebrowser()
+//{
+//	driver.close();
+//}
+//}
 		

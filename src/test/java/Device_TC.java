@@ -636,7 +636,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
     } finally {
         softAssert.assertAll();          
        
-    }}
+    }}}
 //	public void sample()
 //	{
 //		softAssert= new SoftAssert();
@@ -650,12 +650,12 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 //		}
 //	}
 //	
-	@AfterClass
-	public void closethebrowser()
-	{
-		driver.close();
-	}
-	}
+//	@AfterClass
+//	public void closethebrowser()
+//	{
+//		driver.close();
+//	}
+//	}
 
 
 	

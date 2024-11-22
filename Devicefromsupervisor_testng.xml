@@ -3,11 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     <class name="Test_Orgnization"/>
-      <class name="Test_Orgnization2"/>
-    
-     
-     
-    </classes>
+		<class name="Create_device_from_supervisor"/>
+		<class name="Device_update_from_supervisor"/>
+      <class name="Device_TC_from_from_supervisor"/>
+      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

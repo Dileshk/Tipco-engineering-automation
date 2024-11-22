@@ -3,64 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Device_update_TC">
+      <class name="Edit_profile_from_supervisor">
         <methods>
-          <include name="verify_that_to_update_device_and_take_deviceId_field_blank"/>
-          <include name="verify_that_to_update_device_with_below_range_of_the_vibration"/>
-          <include name="verify_that_to_update_device_with_above_range_of_the_maxpresser"/>
-          <include name="verify_that_to_update_device_with_enter_alphabet_in_temp2_field"/>
-          <include name="verify_that_to_update_device_maxtemp3_with_special_char"/>
-          <include name="verify_that_to_update_device_with_enter_alphabet_in_maxtemp3_field"/>
-          <include name="verify_that_to_update_device_with_maxtemp3_below_the_range"/>
-          <include name="verify_that_to_update_device_with_enter_maxtemp2_below_the_range"/>
-          <include name="verify_that_to_update_device_with_enter_specialchar_in_maxvibration_field"/>
-          <include name="verify_that_to_update_device_with_maxtemp3_above_the_range"/>
-          <include name="verify_that_to_update_device_with_enter_alphabet_in_maxvibration_field"/>
-          <include name="verify_that_to_update_device_and_enter_max_length_of_device_ID"/>
-          <include name="verify_that_to_update_device_with_below_range_of_the_maxpresser"/>
-          <include name="verify_that_to_update_device_and_enter_temp1_below_the_range"/>
-          <include name="verify_that_to_update_device_and_enter_min_length_of_device_ID"/>
-          <include name="verify_that_to_update_device_with0ut_enter_maxtpresser_field"/>
-          <include name="verify_that_to_update_device_with_above_range_of_the_vibration"/>
-          <include name="verify_that_to_clickon_update_device_and_click_on_cross_button_of_the_popup"/>
-          <include name="verify_that_to_update_device_and_enter_alphabet_in_maxtemp1_field"/>
-          <include name="verify_that_to_update_device_with_enter_alphabet_in_maxtpresser_field"/>
-          <include name="verify_that_to_update_device_with_enter_special_char_in_temp1_field"/>
-          <include name="verify_to_check_clickon_update_device_and_check_the_text_ofthe_page"/>
-          <include name="verify_that_to_update_device_without_enter_maxvibration_field"/>
-          <include name="verify_that_to_update_device_with_enter_special_char_in_temp2_field"/>
-          <include name="verify_that_to_update_device_without_enter_temp1"/>
-          <include name="verify_that_to_update_device_without_enter_temp2_field"/>
-          <include name="verify_that_to_update_device_with_enter_specialchar_in_maxtpresser_field"/>
-          <include name="verify_that_to_update_device_without_enter_maxtemp3"/>
-          <include name="verify_that_to_update_device_with_enter_maxtemp2_above_the_range"/>
-          <include name="verify_that_to_update_device_and_enter_maxtemp1_above_the_range"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_valid_NAME"/>
+          <include name="initializebrowser"/>
         </methods>
-      </class> <!-- Device_update_TC -->
-      <class name="Device_TC">
-        <methods>
-          <include name="Verify_to_check_selected_orgnization_should_not_change_in_update"/>
-          <include name="Verify_to_check_devicwID_column_of_the_device_in_device_page"/>
-          <include name="Verify_and_check_to_type_on_timezone_field_and_select_from_list_box"/>
-          <include name="Verify_to_check_click_on_update_and_click_on_submit_button"/>
-          <include name="Verify_to_check_selected_option_of_devicetype_in_update_form_is_visible"/>
-          <include name="Verify_to_check_sr_number_column_of_the_device_in_device_page"/>
-          <include name="Verify_that_the_total_number_of_pages_is_displayed_correctly"/>
-          <include name="closethebrowser"/>
-          <include name="Verify_to_check_clear_all_fields_and_click_on_submit_in_update_form"/>
-          <include name="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox"/>
-          <include name="Verify_to_check_and_click_prvious_pagebutton_of_the_device_page"/>
-          <include name="Verify_to_check_Action_column_of_the_device_in_device_page"/>
-          <include name="Verify_to_check_devicetype_column_of_the_device_in_device_page"/>
-          <include name="Verify_to_check_Organization_Namecolumn_of_the_device_in_device_page"/>
-          <include name="Verify_to_check_selected_option_of_zone_in_update_form_is_visible"/>
-          <include name="Verify_and_check_to_update_devicezone_by_selecting_other_country_from_dropdown"/>
-          <include name="Verify_and_check_orgnization_field_disable_in_update_form"/>
-          <include name="Verify_to_check_and_click_next_page_of_the_device_page"/>
-          <include name="Verify_to_check_click_on_any_intermediate_page_of_device_page"/>
-          <include name="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page"/>
-        </methods>
-      </class> <!-- Device_TC -->
+      </class> <!-- Edit_profile_from_supervisor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
