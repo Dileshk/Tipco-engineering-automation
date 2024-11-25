@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -23,7 +24,6 @@ import tipcologin.Loginpage;
 
 
 public class TesttipcoLogin extends Base_class {
-	
 	  Loginpage log;
 	    SoftAssert softAssert;
 	   
@@ -99,6 +99,8 @@ public class TesttipcoLogin extends Base_class {
 	            String actual = driver.findElement(By.xpath("//div[text()='Incorrect Password']")).getText();
 	            String expected = "Incorrect Password";
 	            softAssert.assertEquals(actual, expected, "The error message for incorrect password is incorrect.");
+	            Thread.sleep(4000);
+	            driver.navigate().refresh();
 	        } catch (Exception e) {
 	            softAssert.fail("Exception occurred: " + e.getMessage());
 	        } finally {
@@ -110,8 +112,7 @@ public class TesttipcoLogin extends Base_class {
 	    public void Verify_that_not_able_to_login_with_unregisterdmail() {
 	        softAssert = new SoftAssert(); 
 	        try {
-	            driver.navigate().refresh();
-	            Thread.sleep(3000);
+	           
 	            log.entermail(UtilityClass.propertiesfile("unregisterdmail"));
 	            log.entpass(UtilityClass.propertiesfile("validpass"));
 	            Thread.sleep(3000);
@@ -125,6 +126,8 @@ public class TesttipcoLogin extends Base_class {
 	            String expected = "We can't find an account with this email. Try another email address, or if you don't have an account, Kindly contact admin.";
 	            String actual = driver.findElement(By.xpath("(//div[@class='Toastify']/div/div/div/div)[2]")).getText();
 	            softAssert.assertEquals(actual, expected, "The error message for unregistered email is incorrect.");
+	            Thread.sleep(5000);
+	            driver.navigate().refresh();
 	        } catch (Exception e) {
 	            softAssert.fail("Exception occurred: " + e.getMessage());
 	        } finally {
@@ -136,12 +139,12 @@ public class TesttipcoLogin extends Base_class {
 	    public void Verify_to_signin_with_blank_mail_and_passwordfield() {
 	        softAssert = new SoftAssert();
 	        try {
-	            Thread.sleep(7000);
-	            driver.navigate().refresh();
+	           
 	            Thread.sleep(9000);
 	            log.clickbutton();
 	            Thread.sleep(3000);
-	            
+	            Thread.sleep(3000);
+	            driver.navigate().refresh();
 	            
 	            
 	        } catch (Exception e) {
@@ -156,8 +159,7 @@ public class TesttipcoLogin extends Base_class {
 	    	int TCID=4;
 	        softAssert = new SoftAssert(); 
 	        try {
-	            Thread.sleep(3000);
-	            driver.navigate().refresh();
+	           
 	            Thread.sleep(3000);
 	            log.entermail(UtilityClass.propertiesfile("validmail"));
 	            log.clickbutton();
@@ -201,8 +203,7 @@ public class TesttipcoLogin extends Base_class {
 	    }
 
  
-	    
-	    
+	  
 	    
 	   
 	    

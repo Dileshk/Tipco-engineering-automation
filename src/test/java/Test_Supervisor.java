@@ -39,7 +39,12 @@ public class Test_Supervisor extends Base_class  {
     	
          softAssert = new SoftAssert();
         try {
-        	
+        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+            Thread.sleep(2000);
+            sup.clicksbtn();
+            Thread.sleep(2000);
+            sup.clicksuper();
         	 String randomEmail = generateRandomEmail();
              String randomPhoneNumber = generateRandomPhoneNumber();
         	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
@@ -52,21 +57,21 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(randomPhoneNumber);
             Thread.sleep(2000);
-         // Retry mechanism for dropdown option selection
+       
             WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]"));
-            boolean isOptionSelected = false; // Flag to track if the option is selected
+            boolean isOptionSelected = false; 
             int maxRetries = 3;
 
             for (int attempt = 1; attempt <= maxRetries; attempt++) {
-                orgDropdown.click(); // Attempt to open the dropdown
-                Thread.sleep(1000); // Adjust sleep duration as necessary
+                orgDropdown.click(); 
+                Thread.sleep(1000); 
 
                 try {
-                    // Try selecting the option directly
+                   
                     driver.findElement(By.xpath("//div[text()='extern labs']")).click();
                     isOptionSelected = true;
                     System.out.println("Option 'extern labs' selected successfully.");
-                    break; // Exit loop if the option is selected successfully
+                    break; 
                 } catch (Exception e) {
                     System.out.println("Retrying to select 'extern labs' (Attempt " + attempt + ")");
                 }
@@ -98,27 +103,23 @@ public class Test_Supervisor extends Base_class  {
 	        return emailPrefix + emailDomain;
 	    }
 
-	    // Method to generate a random 10-digit phone number
-	    private String generateRandomPhoneNumber() {
-	        Random rand = new Random();
-	        StringBuilder phoneNumber = new StringBuilder("9"); // Start with 9
-	        for (int i = 0; i < 10; i++) {
-	            phoneNumber.append(rand.nextInt(10));
-	        }
-	        return phoneNumber.toString();
-	    }
+	   
+	  private String generateRandomPhoneNumber() {
+		    Random rand = new Random();
+		    StringBuilder phoneNumber = new StringBuilder("98"); 
+		    for (int i = 0; i < 8; i++) { 
+		        phoneNumber.append(rand.nextInt(10));  
+		    }
+	        System.out.println("Generated Phone Number: " + phoneNumber);
+		    return phoneNumber.toString();
+		    
+		}
 
 	    @Test(priority = 1)
 	    public void verify_that_createSupervisor_with_invalid_email() throws InterruptedException {
 	        softAssert = new SoftAssert();
 	        try {
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-	            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-	            Thread.sleep(2000);
-	            sup.clicksbtn();
-	            Thread.sleep(2000);
-	            sup.clicksuper();
-
+	          
 	            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
 	            wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 	            Thread.sleep(3000);
@@ -1310,7 +1311,6 @@ public class Test_Supervisor extends Base_class  {
 		        } finally {
 		            softAssert.assertAll();  
 		        }
-	    }
-	     
+		        }
 	        
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>35/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>89/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 22 11:51:07 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 25 15:38:21 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1283 seconds (1283815 ms)</td>
+<tr><td>Total time:</td><td>1445 seconds (1445655 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,74 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_valid_NAME()'><b>Verify_to_check_edit_full_namefield_and_enter_valid_NAME</b><br>Test class: Edit_profile_from_supervisor</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	An exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Full Name &apos;]&quot;}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [208fe297e5abaff789cbf52d26380931, findElement {using=xpath, value=//input[@placeholder=&apos;Full Name &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54640/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 208fe297e5abaff789cbf52d26380931
-	at Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_valid_NAME(Edit_profile_from_supervisor.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1956658133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1956658133'><pre>java.lang.AssertionError: The following asserts failed:
-	An exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Full Name &apos;]&quot;}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [208fe297e5abaff789cbf52d26380931, findElement {using=xpath, value=//input[@placeholder=&apos;Full Name &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54640/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 208fe297e5abaff789cbf52d26380931
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_valid_NAME(Edit_profile_from_supervisor.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>19</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -144,180 +76,450 @@ Session ID: 208fe297e5abaff789cbf52d26380931
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_select_other_country_code_and_enter_invalid_phone()'><b>Verify_to_check_select_other_country_code_and_enter_invalid_phone</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>39</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_that_to_reset_password_with_newpassword_and_confirm_password_does_not_matched()'><b>Verify_that_to_reset_password_with_newpassword_and_confirm_password_does_not_matched</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>32</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_select_other_country_code_and_enter_invalid_phone()'><b>Verify_to_check_select_other_country_code_and_enter_invalid_phone</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>39</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_close_popup_to_click_on_cross_button_of_the_popup()'><b>Verify_to_close_popup_to_click_on_cross_button_of_the_popup</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_that_orgnization_field_is_disabled_in_update_profile_from_supervisor_side()'><b>Verify_that_orgnization_field_is_disabled_in_update_profile_from_supervisor_side</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>33</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_with_invalid_email_formate()'><b>Verify_to_check_edit_profile_with_invalid_email_formate</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>53</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_without_fullname_field()'><b>Verify_to_check_edit_profile_without_fullname_field</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>38</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_without_enter_email_field()'><b>Verify_to_check_edit_profile_without_enter_email_field</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>36</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_fullname_field()'><b>Verify_to_check_edit_profile_without_fullname_field</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_toupdate_profile_with_all_valid_data()'><b>Verify_toupdate_profile_with_all_valid_data</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>35</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>38</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>38</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_that_to_reset_password_without_enter_current_and_comfrim_password_field()'><b>Verify_that_to_reset_password_without_enter_current_and_comfrim_password_field</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>26</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_close_popup_to_click_on_cross_button_of_the_popup()'><b>Verify_to_close_popup_to_click_on_cross_button_of_the_popup</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>33</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_to_enter_invalid_phoneNumber()'><b>Verify_to_check_edit_profile_to_enter_invalid_phoneNumber</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>37</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>18</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_toupdate_profile_with_all_valid_data()'><b>Verify_toupdate_profile_with_all_valid_data</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>34</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char()'><b>Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>37</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_valid_NAME()'><b>Verify_to_check_edit_full_namefield_and_enter_valid_NAME</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>21</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_enter_email_field()'><b>Verify_to_check_edit_profile_without_enter_email_field</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char()'><b>Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off</b><br>Test class: Test_dashboard</td>
 <td></td>
 <td>42</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_without_enter_phone_number()'><b>Verify_to_check_edit_profile_without_enter_phone_number</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>36</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>39</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same()'><b>Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>30</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_using_at_the_ratein_name_field()'><b>Verify_to_check_edit_profile_without_using_at_the_ratein_name_field</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname</b><br>Test class: Test_editprofile</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_to_click_on_notification_and_cancel_the_notification()'><b>Verify_that_to_click_on_notification_and_cancel_the_notification</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>17</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>32</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>17</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>16</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>16</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>18</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>5</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>18</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
 <td></td>
 <td>26</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>27</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_that_reset_password_to_enter_current_pasword_with_space()'><b>Verify_that_reset_password_to_enter_current_pasword_with_space</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>31</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>26</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_without_using_at_the_rate_in_name_field()'><b>Verify_to_check_edit_profile_without_using_at_the_rate_in_name_field</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>36</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_to_enter_invalid_phoneNumber()'><b>Verify_to_check_edit_profile_to_enter_invalid_phoneNumber</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_check_edit_profile_without_enter_phone_number()'><b>Verify_to_check_edit_profile_without_enter_phone_number</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>36</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>38</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Test_editprofile.Verify_to_get_text_of_edit_profile_page()'><b>Verify_to_get_text_of_edit_profile_page</b><br>Test class: Test_editprofile</td>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
 <td></td>
-<td>33</td>
-<td>Test_editprofile@5032714f</td></tr>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_profile_with_invalid_email_formate()'><b>Verify_to_check_edit_profile_with_invalid_email_formate</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>36</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
 <tr>
-<td title='Edit_profile_from_supervisor.Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname()'><b>Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname</b><br>Test class: Edit_profile_from_supervisor</td>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
 <td></td>
-<td>38</td>
-<td>Edit_profile_from_supervisor@5386659f</td></tr>
+<td>5</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>14</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>15</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>15</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off</b><br>Test class: Test_dashboard</td>
+<td></td>
+<td>13</td>
+<td>Test_dashboard@31ea9581</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>13</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<tr>
+<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
+<td></td>
+<td>14</td>
+<td>Dashboard_from_supervisor@4d1c005e</td></tr>
 </table><p>
 </body>
 </html>

@@ -3,12 +3,12 @@
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SequentialTestExecution(failed)">
     <classes>
-      <class name="Test_Orgnization">
+      <class name="Test_Device">
         <methods>
           <include name="initializebrowser"/>
-          <include name="Verify_to_add_orgnization_with_special_charcter_in_org_name_field"/>
+          <include name="Verify_that_temp1_field_take_blank_and_see_the_error_message"/>
         </methods>
-      </class> <!-- Test_Orgnization -->
+      </class> <!-- Test_Device -->
     </classes>
   </test> <!-- SequentialTestExecution(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

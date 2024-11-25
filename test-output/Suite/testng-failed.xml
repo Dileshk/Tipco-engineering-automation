@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Edit_profile_from_supervisor">
+      <class name="Device_TC_from_from_supervisor">
         <methods>
-          <include name="Verify_to_check_edit_full_namefield_and_enter_valid_NAME"/>
+          <include name="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page"/>
           <include name="initializebrowser"/>
         </methods>
-      </class> <!-- Edit_profile_from_supervisor -->
+      </class> <!-- Device_TC_from_from_supervisor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

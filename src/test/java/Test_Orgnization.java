@@ -165,12 +165,15 @@ private String generateRandomEmail() {
 
 private String generateRandomPhoneNumber() {
     Random rand = new Random();
-    StringBuilder phoneNumber = new StringBuilder("9"); 
-    for (int i = 0; i < 9; i++) {
-        phoneNumber.append(rand.nextInt(10)); 
+    StringBuilder phoneNumber = new StringBuilder("98"); 
+    for (int i = 0; i < 8; i++) { 
+        phoneNumber.append(rand.nextInt(10));
     }
+    System.out.println(phoneNumber);
     return phoneNumber.toString();
+    
 }
+
 @Test(priority = 3)
 public void Verify_that_an_organization_cannot_be_created_without_an_organization_name() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
