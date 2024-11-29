@@ -3,31 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Edit_profile_from_supervisor">
+      <class name="TesttipcoLogin">
         <methods>
-          <include name="Verify_that_reset_password_to_enter_current_pasword_with_space"/>
-          <include name="Verify_to_check_edit_full_namefield_and_enter_valid_NAME"/>
-          <include name="Verify_to_check_edit_profile_without_fullname_field"/>
-          <include name="Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname"/>
-          <include name="Verify_that_to_reset_password_with_newpassword_and_confirm_password_does_not_matched"/>
-          <include name="Verify_to_check_edit_profile_with_invalid_email_formate"/>
-          <include name="Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname"/>
-          <include name="Verify_that_to_reset_password_without_enter_current_and_comfrim_password_field"/>
-          <include name="Verify_toupdate_profile_with_all_valid_data"/>
-          <include name="Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same"/>
-          <include name="initializebrowser"/>
-          <include name="Verify_that_orgnization_field_is_disabled_in_update_profile_from_supervisor_side"/>
-          <include name="Verify_to_check_edit_profile_without_enter_email_field"/>
-          <include name="Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname"/>
-          <include name="Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname"/>
-          <include name="Verify_to_check_edit_profile_without_using_at_the_rate_in_name_field"/>
-          <include name="Verify_to_check_edit_profile_without_enter_phone_number"/>
-          <include name="Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char"/>
-          <include name="Verify_to_check_edit_profile_to_enter_invalid_phoneNumber"/>
-          <include name="Verify_to_check_select_other_country_code_and_enter_invalid_phone"/>
-          <include name="Verify_to_close_popup_to_click_on_cross_button_of_the_popup"/>
+          <include name="Verify_to_login_with_validmail_and_blankpass"/>
+          <include name="verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page"/>
+          <include name="verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page"/>
+          <include name="verify_to_check_click_on_password_visibility_button"/>
+          <include name="Verify_that_not_able_to_Login_with_incorrect_password"/>
+          <include name="verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page"/>
+          <include name="initialise"/>
+          <include name="Verify_to_signin_with_blank_mail_and_passwordfield"/>
+          <include name="verify_to_check_mail_field_take_blank_and_see_valid_error_message"/>
+          <include name="verify_to_check_that_Sign_in_text_is_present_at_signin_page"/>
+          <include name="verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page"/>
+          <include name="verify_to_check_click_on_forgot_password_and_then_click_on_cancel"/>
+          <include name="verify_to_validmail_and_space_in_password_field"/>
+          <include name="Verify_that_not_able_to_login_with_unregisterdmail"/>
+          <include name="verify_to_check_and_invalid_mail_in_forgot_password_field"/>
+          <include name="verify_to_login_with_valid_mail_and_Password"/>
+          <include name="verify_to_login_with_blankmail_and_valid_password"/>
+          <include name="Verify_to_login_with_invalidmail_and_password"/>
         </methods>
-      </class> <!-- Edit_profile_from_supervisor -->
+      </class> <!-- TesttipcoLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
