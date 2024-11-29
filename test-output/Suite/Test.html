@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>89/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/17/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 25 15:38:21 IST 2024</td>
+<td>Started on:</td><td>Fri Nov 29 13:11:50 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1445 seconds (1445655 ms)</td>
+<tr><td>Total time:</td><td>92 seconds (92814 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,450 +76,1008 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page()'><b>verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//img[@alt=&apos;logo img&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page(TesttipcoLogin.java:266)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1549840544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549840544'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//img[@alt=&apos;logo img&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page(TesttipcoLogin.java:266)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page()'><b>verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page(TesttipcoLogin.java:301)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace769986276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769986276'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page(TesttipcoLogin.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.Verify_that_not_able_to_login_with_unregisterdmail()'><b>Verify_that_not_able_to_login_with_unregisterdmail</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_that_not_able_to_login_with_unregisterdmail(TesttipcoLogin.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664757401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664757401'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.Verify_that_not_able_to_login_with_unregisterdmail(TesttipcoLogin.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.Verify_that_not_able_to_Login_with_incorrect_password()'><b>Verify_that_not_able_to_Login_with_incorrect_password</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_that_not_able_to_Login_with_incorrect_password(TesttipcoLogin.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace186075763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace186075763'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.Verify_that_not_able_to_Login_with_incorrect_password(TesttipcoLogin.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.verify_to_check_that_Sign_in_text_is_present_at_signin_page()'><b>verify_to_check_that_Sign_in_text_is_present_at_signin_page</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//h2[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_that_Sign_in_text_is_present_at_signin_page(TesttipcoLogin.java:250)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1026001741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1026001741'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//h2[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_that_Sign_in_text_is_present_at_signin_page(TesttipcoLogin.java:250)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>53</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page()'><b>verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page(TesttipcoLogin.java:403)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377957453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377957453'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page(TesttipcoLogin.java:403)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>35</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>18</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_time</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>42</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_weight_is_visible</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor__on_off_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_text_of_high_speed_disperser_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_weight_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_temperature_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_to_click_on_notification_and_cancel_the_notification()'><b>Verify_that_to_click_on_notification_and_cancel_the_notification</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>17</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_twin_shaft_disperser_machine_text_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_vibration_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>32</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_on_off_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>17</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_vibration_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>16</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature3_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>16</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_weight_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off__time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_main_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_scrapper_motor_last_on_off_time_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>18</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_RPM_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
+<td title='TesttipcoLogin.verify_to_login_with_valid_mail_and_Password()'><b>verify_to_login_with_valid_mail_and_Password</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_login_with_valid_mail_and_Password(TesttipcoLogin.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1143135560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1143135560'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_login_with_valid_mail_and_Password(TesttipcoLogin.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>5</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_date</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_check_click_on_password_visibility_button()'><b>verify_to_check_click_on_password_visibility_button</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_password_visibility_button(TesttipcoLogin.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793808700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793808700'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_click_on_password_visibility_button(TesttipcoLogin.java:284)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_twin_saft_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>18</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.verify_to_check_and_invalid_mail_in_forgot_password_field()'><b>verify_to_check_and_invalid_mail_in_forgot_password_field</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_and_invalid_mail_in_forgot_password_field(TesttipcoLogin.java:366)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078517710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078517710'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_and_invalid_mail_in_forgot_password_field(TesttipcoLogin.java:366)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.Verify_to_login_with_invalidmail_and_password()'><b>Verify_to_login_with_invalidmail_and_password</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_login_with_invalidmail_and_password(TesttipcoLogin.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815095837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815095837'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.Verify_to_login_with_invalidmail_and_password(TesttipcoLogin.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_temperature_is_visible</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.verify_to_check_click_on_forgot_password_and_then_click_on_cancel()'><b>verify_to_check_click_on_forgot_password_and_then_click_on_cancel</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_forgot_password_and_then_click_on_cancel(TesttipcoLogin.java:338)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace614335089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace614335089'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_click_on_forgot_password_and_then_click_on_cancel(TesttipcoLogin.java:338)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_validmail_and_space_in_password_field()'><b>verify_to_validmail_and_space_in_password_field</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_validmail_and_space_in_password_field(TesttipcoLogin.java:234)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace145329976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145329976'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_validmail_and_space_in_password_field(TesttipcoLogin.java:234)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page()'><b>verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page(TesttipcoLogin.java:319)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605128733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605128733'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page(TesttipcoLogin.java:319)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible()'><b>Verify_that_select_high_speed_disperser_machine_and_check_the_vibration_is_visible</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.Verify_to_login_with_validmail_and_blankpass()'><b>Verify_to_login_with_validmail_and_blankpass</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_login_with_validmail_and_blankpass(TesttipcoLogin.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1369977147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1369977147'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.Verify_to_login_with_validmail_and_blankpass(TesttipcoLogin.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_Last_on_off_date</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.Verify_to_signin_with_blank_mail_and_passwordfield()'><b>Verify_to_signin_with_blank_mail_and_passwordfield</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//button[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_signin_with_blank_mail_and_passwordfield(TesttipcoLogin.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609116570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609116570'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//button[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.Verify_to_signin_with_blank_mail_and_passwordfield(TesttipcoLogin.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>26</td>
-<td>Test_dashboard@31ea9581</td></tr>
+<td title='TesttipcoLogin.verify_to_check_mail_field_take_blank_and_see_valid_error_message()'><b>verify_to_check_mail_field_take_blank_and_see_valid_error_message</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_mail_field_take_blank_and_see_valid_error_message(TesttipcoLogin.java:386)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7575494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7575494'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_check_mail_field_take_blank_and_see_valid_error_message(TesttipcoLogin.java:386)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 <tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_last_on_off_time</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_main_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>26</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_hydraulic_motor_Last_on_off_date_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature2_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_coolant_motor_on_off</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_milli_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_main_motor_motor_Last_on_off_time_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_on_off_date_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_Milli_motor_Last_on_off_time_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>5</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_Last_of_off_time_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>14</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_pressure_isDisplayed</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>15</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_horizontal_bead_mill_machine_isDisplayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>15</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Test_dashboard.Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off()'><b>Verify_that_select_high_speed_disperser_machine_and_check_hydraulic_motor_on_off</b><br>Test class: Test_dashboard</td>
-<td></td>
-<td>13</td>
-<td>Test_dashboard@31ea9581</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed()'><b>Verify_that_select_twin_shaftdisperser_machine_and_check_temperature1_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>13</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
-<tr>
-<td title='Dashboard_from_supervisor.Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed()'><b>Verify_that_select_Horizontal_bead_mill_machine_and_check_product_pump_motor_RPM_is_displayed</b><br>Test class: Dashboard_from_supervisor</td>
-<td></td>
-<td>14</td>
-<td>Dashboard_from_supervisor@4d1c005e</td></tr>
+<td title='TesttipcoLogin.verify_to_login_with_blankmail_and_valid_password()'><b>verify_to_login_with_blankmail_and_valid_password</b><br>Test class: TesttipcoLogin</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_login_with_blankmail_and_valid_password(TesttipcoLogin.java:200)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1436944861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1436944861'><pre>java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at TesttipcoLogin.verify_to_login_with_blankmail_and_valid_password(TesttipcoLogin.java:200)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TesttipcoLogin@413d1baf</td></tr>
 </table><p>
 </body>
 </html>

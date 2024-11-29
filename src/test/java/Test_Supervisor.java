@@ -39,12 +39,7 @@ public class Test_Supervisor extends Base_class  {
     	
          softAssert = new SoftAssert();
         try {
-        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-            Thread.sleep(2000);
-            sup.clicksbtn();
-            Thread.sleep(2000);
-            sup.clicksuper();
+        	
         	 String randomEmail = generateRandomEmail();
              String randomPhoneNumber = generateRandomPhoneNumber();
         	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
@@ -119,7 +114,12 @@ public class Test_Supervisor extends Base_class  {
 	    public void verify_that_createSupervisor_with_invalid_email() throws InterruptedException {
 	        softAssert = new SoftAssert();
 	        try {
-	          
+	        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+	            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+	            Thread.sleep(2000);
+	            sup.clicksbtn();
+	            Thread.sleep(2000);
+	            sup.clicksuper();
 	            WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
 	            wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 	            Thread.sleep(3000);

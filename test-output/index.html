@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 17 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Extern Labs\AppData\Local\Temp\testng-eclipse--1035685252\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Extern Labs\eclipse-workspace\Tipco_Engineerings\Login_test_casestestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,166 +92,101 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">30 methods,   30 passed</span>
+                    <span class="method-stats">17 methods, 17 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Create_Orgnization_with_invalid_orgnization_name">Create_Orgnization_with_invalid_orgnization_name</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="Verify_that_not_able_to_Login_with_incorrect_password">Verify_that_not_able_to_Login_with_incorrect_password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address">Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="Verify_that_not_able_to_login_with_unregisterdmail">Verify_that_not_able_to_login_with_unregisterdmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield">Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="Verify_to_login_with_invalidmail_and_password">Verify_to_login_with_invalidmail_and_password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field">Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="Verify_to_login_with_validmail_and_blankpass">Verify_to_login_with_validmail_and_blankpass</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field">Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="Verify_to_signin_with_blank_mail_and_passwordfield">Verify_to_signin_with_blank_mail_and_passwordfield</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield">Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_and_invalid_mail_in_forgot_password_field">verify_to_check_and_invalid_mail_in_forgot_password_field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field">Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_click_on_forgot_password_and_then_click_on_cancel">verify_to_check_click_on_forgot_password_and_then_click_on_cancel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing">Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page">verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield">Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_click_on_password_visibility_button">verify_to_check_click_on_password_visibility_button</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists">Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_mail_field_take_blank_and_see_valid_error_message">verify_to_check_mail_field_take_blank_and_see_valid_error_message</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name">Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_that_Sign_in_text_is_present_at_signin_page">verify_to_check_that_Sign_in_text_is_present_at_signin_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format">Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page">verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode">Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page">verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode">Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page">verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field">Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_login_with_blankmail_and_valid_password">verify_to_login_with_blankmail_and_valid_password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number">Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_login_with_valid_mail_and_Password">verify_to_login_with_valid_mail_and_Password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_max_length_of_state">Verify_that_an_organization_cannot_be_created_with_max_length_of_state</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TesttipcoLogin" class="method navigator-link" hash-for-method="verify_to_validmail_and_space_in_password_field">verify_to_validmail_and_space_in_password_field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state">Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field">Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_Address_field">Verify_that_an_organization_cannot_be_created_without_Address_field</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_GST_number">Verify_that_an_organization_cannot_be_created_without_GST_number</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without__pincode">Verify_that_an_organization_cannot_be_created_without__pincode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_an_organization_name">Verify_that_an_organization_cannot_be_created_without_an_organization_name</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_enter_city_field">Verify_that_an_organization_cannot_be_created_without_enter_city_field</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_enter_state">Verify_that_an_organization_cannot_be_created_without_enter_state</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time">Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_to_add_orgnization_with_max_length_of_orgname">Verify_to_add_orgnization_with_max_length_of_orgname</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_to_add_orgnization_with_minimum_length_of_orgname">Verify_to_add_orgnization_with_minimum_length_of_orgname</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="Verify_to_add_orgnization_with_special_charcter_in_org_name_field">Verify_to_add_orgnization_with_special_charcter_in_org_name_field</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Orgnization" class="method navigator-link" hash-for-method="verify_to_create_orgnization_with_all_valid_data_of_orgnization">verify_to_create_orgnization_with_all_valid_data_of_orgnization</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -262,552 +197,629 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test_Orgnization</span>
+              <img src="failed.png"/>
+              <span class="class-name">TesttipcoLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Create_Orgnization_with_invalid_orgnization_name">
-                  </a> <!-- Create_Orgnization_with_invalid_orgnization_name -->
-                  <span class="method-name">Create_Orgnization_with_invalid_orgnization_name</span>
+                  <a name="Verify_that_not_able_to_Login_with_incorrect_password">
+                  </a> <!-- Verify_that_not_able_to_Login_with_incorrect_password -->
+                  <span class="method-name">Verify_that_not_able_to_Login_with_incorrect_password</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_that_not_able_to_Login_with_incorrect_password(TesttipcoLogin.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address">
-                  </a> <!-- Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address -->
-                  <span class="method-name">Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address</span>
+                  <a name="Verify_that_not_able_to_login_with_unregisterdmail">
+                  </a> <!-- Verify_that_not_able_to_login_with_unregisterdmail -->
+                  <span class="method-name">Verify_that_not_able_to_login_with_unregisterdmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_that_not_able_to_login_with_unregisterdmail(TesttipcoLogin.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield</span>
+                  <a name="Verify_to_login_with_invalidmail_and_password">
+                  </a> <!-- Verify_to_login_with_invalidmail_and_password -->
+                  <span class="method-name">Verify_to_login_with_invalidmail_and_password</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_login_with_invalidmail_and_password(TesttipcoLogin.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field</span>
+                  <a name="Verify_to_login_with_validmail_and_blankpass">
+                  </a> <!-- Verify_to_login_with_validmail_and_blankpass -->
+                  <span class="method-name">Verify_to_login_with_validmail_and_blankpass</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_login_with_validmail_and_blankpass(TesttipcoLogin.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field</span>
+                  <a name="Verify_to_signin_with_blank_mail_and_passwordfield">
+                  </a> <!-- Verify_to_signin_with_blank_mail_and_passwordfield -->
+                  <span class="method-name">Verify_to_signin_with_blank_mail_and_passwordfield</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//button[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.Verify_to_signin_with_blank_mail_and_passwordfield(TesttipcoLogin.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield</span>
+                  <a name="verify_to_check_and_invalid_mail_in_forgot_password_field">
+                  </a> <!-- verify_to_check_and_invalid_mail_in_forgot_password_field -->
+                  <span class="method-name">verify_to_check_and_invalid_mail_in_forgot_password_field</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_and_invalid_mail_in_forgot_password_field(TesttipcoLogin.java:366)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field</span>
+                  <a name="verify_to_check_click_on_forgot_password_and_then_click_on_cancel">
+                  </a> <!-- verify_to_check_click_on_forgot_password_and_then_click_on_cancel -->
+                  <span class="method-name">verify_to_check_click_on_forgot_password_and_then_click_on_cancel</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_forgot_password_and_then_click_on_cancel(TesttipcoLogin.java:338)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing">
-                  </a> <!-- Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing</span>
+                  <a name="verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page">
+                  </a> <!-- verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page -->
+                  <span class="method-name">verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page(TesttipcoLogin.java:301)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield">
-                  </a> <!-- Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield -->
-                  <span class="method-name">Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield</span>
+                  <a name="verify_to_check_click_on_password_visibility_button">
+                  </a> <!-- verify_to_check_click_on_password_visibility_button -->
+                  <span class="method-name">verify_to_check_click_on_password_visibility_button</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_click_on_password_visibility_button(TesttipcoLogin.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists</span>
+                  <a name="verify_to_check_mail_field_take_blank_and_see_valid_error_message">
+                  </a> <!-- verify_to_check_mail_field_take_blank_and_see_valid_error_message -->
+                  <span class="method-name">verify_to_check_mail_field_take_blank_and_see_valid_error_message</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_mail_field_take_blank_and_see_valid_error_message(TesttipcoLogin.java:386)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name</span>
+                  <a name="verify_to_check_that_Sign_in_text_is_present_at_signin_page">
+                  </a> <!-- verify_to_check_that_Sign_in_text_is_present_at_signin_page -->
+                  <span class="method-name">verify_to_check_that_Sign_in_text_is_present_at_signin_page</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//h2[text()=&apos;Sign in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_that_Sign_in_text_is_present_at_signin_page(TesttipcoLogin.java:250)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format</span>
+                  <a name="verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page">
+                  </a> <!-- verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page -->
+                  <span class="method-name">verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//img[@alt=&apos;logo img&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page(TesttipcoLogin.java:266)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode</span>
+                  <a name="verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page">
+                  </a> <!-- verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page -->
+                  <span class="method-name">verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page(TesttipcoLogin.java:319)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode</span>
+                  <a name="verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page">
+                  </a> <!-- verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page -->
+                  <span class="method-name">verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//span[text()=&apos;Forgot Password ?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page(TesttipcoLogin.java:403)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field</span>
+                  <a name="verify_to_login_with_blankmail_and_valid_password">
+                  </a> <!-- verify_to_login_with_blankmail_and_valid_password -->
+                  <span class="method-name">verify_to_login_with_blankmail_and_valid_password</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_login_with_blankmail_and_valid_password(TesttipcoLogin.java:200)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number</span>
+                  <a name="verify_to_login_with_valid_mail_and_Password">
+                  </a> <!-- verify_to_login_with_valid_mail_and_Password -->
+                  <span class="method-name">verify_to_login_with_valid_mail_and_Password</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_login_with_valid_mail_and_Password(TesttipcoLogin.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_max_length_of_state">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_max_length_of_state -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_state</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_Address_field">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_Address_field -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_Address_field</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_GST_number">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_GST_number -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_GST_number</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without__pincode">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without__pincode -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without__pincode</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_an_organization_name">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_an_organization_name -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_an_organization_name</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_enter_city_field">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_enter_city_field -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_enter_city_field</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_enter_state">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_enter_state -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_enter_state</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time">
-                  </a> <!-- Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time -->
-                  <span class="method-name">Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_to_add_orgnization_with_max_length_of_orgname">
-                  </a> <!-- Verify_to_add_orgnization_with_max_length_of_orgname -->
-                  <span class="method-name">Verify_to_add_orgnization_with_max_length_of_orgname</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_to_add_orgnization_with_minimum_length_of_orgname">
-                  </a> <!-- Verify_to_add_orgnization_with_minimum_length_of_orgname -->
-                  <span class="method-name">Verify_to_add_orgnization_with_minimum_length_of_orgname</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_to_add_orgnization_with_special_charcter_in_org_name_field">
-                  </a> <!-- Verify_to_add_orgnization_with_special_charcter_in_org_name_field -->
-                  <span class="method-name">Verify_to_add_orgnization_with_special_charcter_in_org_name_field</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_to_create_orgnization_with_all_valid_data_of_orgnization">
-                  </a> <!-- verify_to_create_orgnization_with_all_valid_data_of_orgnization -->
-                  <span class="method-name">verify_to_create_orgnization_with_all_valid_data_of_orgnization</span>
+                  <a name="verify_to_validmail_and_space_in_password_field">
+                  </a> <!-- verify_to_validmail_and_space_in_password_field -->
+                  <span class="method-name">verify_to_validmail_and_space_in_password_field</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Exception occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f51b9778e42e138ded9f1c5417470f, findElement {using=xpath, value=//input[@name=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\EXTERN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57241/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23f51b9778e42e138ded9f1c5417470f
+	at TesttipcoLogin.verify_to_validmail_and_space_in_password_field(TesttipcoLogin.java:234)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Extern Labs\AppData\Local\Temp\testng-eclipse--1035685252\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Extern Labs\eclipse-workspace\Tipco_Engineerings\Login_test_casestestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_Orgnization&quot;/&gt;
+      &lt;class name=&quot;TesttipcoLogin&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(30);
+data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address')
-data.setCell(0, 2, 'Test_Orgnization')
-data.setCell(0, 3, 41335);
+data.setCell(0, 1, 'Verify_that_not_able_to_Login_with_incorrect_password')
+data.setCell(0, 2, 'TesttipcoLogin')
+data.setCell(0, 3, 37476);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Create_Orgnization_with_invalid_orgnization_name')
-data.setCell(1, 2, 'Test_Orgnization')
-data.setCell(1, 3, 34855);
+data.setCell(1, 1, 'Verify_to_signin_with_blank_mail_and_passwordfield')
+data.setCell(1, 2, 'TesttipcoLogin')
+data.setCell(1, 3, 9018);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_to_create_orgnization_with_all_valid_data_of_orgnization')
-data.setCell(2, 2, 'Test_Orgnization')
-data.setCell(2, 3, 24306);
+data.setCell(2, 1, 'Verify_to_login_with_validmail_and_blankpass')
+data.setCell(2, 2, 'TesttipcoLogin')
+data.setCell(2, 3, 6037);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_to_add_orgnization_with_special_charcter_in_org_name_field')
-data.setCell(3, 2, 'Test_Orgnization')
-data.setCell(3, 3, 23729);
+data.setCell(3, 1, 'verify_to_login_with_valid_mail_and_Password')
+data.setCell(3, 2, 'TesttipcoLogin')
+data.setCell(3, 3, 5011);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name')
-data.setCell(4, 2, 'Test_Orgnization')
-data.setCell(4, 3, 23318);
+data.setCell(4, 1, 'verify_to_check_mail_field_take_blank_and_see_valid_error_message')
+data.setCell(4, 2, 'TesttipcoLogin')
+data.setCell(4, 3, 4026);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field')
-data.setCell(5, 2, 'Test_Orgnization')
-data.setCell(5, 3, 22879);
+data.setCell(5, 1, 'verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page')
+data.setCell(5, 2, 'TesttipcoLogin')
+data.setCell(5, 3, 4022);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field')
-data.setCell(6, 2, 'Test_Orgnization')
-data.setCell(6, 3, 22815);
+data.setCell(6, 1, 'verify_to_check_and_invalid_mail_in_forgot_password_field')
+data.setCell(6, 2, 'TesttipcoLogin')
+data.setCell(6, 3, 4019);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode')
-data.setCell(7, 2, 'Test_Orgnization')
-data.setCell(7, 3, 22749);
+data.setCell(7, 1, 'verify_to_validmail_and_space_in_password_field')
+data.setCell(7, 2, 'TesttipcoLogin')
+data.setCell(7, 3, 4014);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Verify_to_add_orgnization_with_max_length_of_orgname')
-data.setCell(8, 2, 'Test_Orgnization')
-data.setCell(8, 3, 22693);
+data.setCell(8, 1, 'verify_to_login_with_blankmail_and_valid_password')
+data.setCell(8, 2, 'TesttipcoLogin')
+data.setCell(8, 3, 4012);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format')
-data.setCell(9, 2, 'Test_Orgnization')
-data.setCell(9, 3, 22615);
+data.setCell(9, 1, 'verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page')
+data.setCell(9, 2, 'TesttipcoLogin')
+data.setCell(9, 3, 4011);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number')
-data.setCell(10, 2, 'Test_Orgnization')
-data.setCell(10, 3, 22605);
+data.setCell(10, 1, 'verify_to_check_click_on_forgot_password_and_then_click_on_cancel')
+data.setCell(10, 2, 'TesttipcoLogin')
+data.setCell(10, 3, 4010);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Verify_that_an_organization_cannot_be_created_with_max_length_of_state')
-data.setCell(11, 2, 'Test_Orgnization')
-data.setCell(11, 3, 22601);
+data.setCell(11, 1, 'Verify_to_login_with_invalidmail_and_password')
+data.setCell(11, 2, 'TesttipcoLogin')
+data.setCell(11, 3, 3018);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Verify_that_an_organization_cannot_be_created_without_GST_number')
-data.setCell(12, 2, 'Test_Orgnization')
-data.setCell(12, 3, 22561);
+data.setCell(12, 1, 'Verify_that_not_able_to_login_with_unregisterdmail')
+data.setCell(12, 2, 'TesttipcoLogin')
+data.setCell(12, 3, 10);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode')
-data.setCell(13, 2, 'Test_Orgnization')
-data.setCell(13, 3, 22530);
+data.setCell(13, 1, 'verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page')
+data.setCell(13, 2, 'TesttipcoLogin')
+data.setCell(13, 3, 5);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'Verify_that_an_organization_cannot_be_created_without_enter_city_field')
-data.setCell(14, 2, 'Test_Orgnization')
-data.setCell(14, 3, 22528);
+data.setCell(14, 1, 'verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page')
+data.setCell(14, 2, 'TesttipcoLogin')
+data.setCell(14, 3, 4);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time')
-data.setCell(15, 2, 'Test_Orgnization')
-data.setCell(15, 3, 22506);
+data.setCell(15, 1, 'verify_to_check_that_Sign_in_text_is_present_at_signin_page')
+data.setCell(15, 2, 'TesttipcoLogin')
+data.setCell(15, 3, 4);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state')
-data.setCell(16, 2, 'Test_Orgnization')
-data.setCell(16, 3, 22462);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'Verify_that_an_organization_cannot_be_created_without__pincode')
-data.setCell(17, 2, 'Test_Orgnization')
-data.setCell(17, 3, 22458);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists')
-data.setCell(18, 2, 'Test_Orgnization')
-data.setCell(18, 3, 22443);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'Verify_to_add_orgnization_with_minimum_length_of_orgname')
-data.setCell(19, 2, 'Test_Orgnization')
-data.setCell(19, 3, 22441);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'Verify_that_an_organization_cannot_be_created_without_Address_field')
-data.setCell(20, 2, 'Test_Orgnization')
-data.setCell(20, 3, 22421);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'Verify_that_an_organization_cannot_be_created_without_enter_state')
-data.setCell(21, 2, 'Test_Orgnization')
-data.setCell(21, 3, 22416);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing')
-data.setCell(22, 2, 'Test_Orgnization')
-data.setCell(22, 3, 22221);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield')
-data.setCell(23, 2, 'Test_Orgnization')
-data.setCell(23, 3, 22197);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field')
-data.setCell(24, 2, 'Test_Orgnization')
-data.setCell(24, 3, 22142);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield')
-data.setCell(25, 2, 'Test_Orgnization')
-data.setCell(25, 3, 22087);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field')
-data.setCell(26, 2, 'Test_Orgnization')
-data.setCell(26, 3, 22063);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field')
-data.setCell(27, 2, 'Test_Orgnization')
-data.setCell(27, 3, 22017);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield')
-data.setCell(28, 2, 'Test_Orgnization')
-data.setCell(28, 3, 21999);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'Verify_that_an_organization_cannot_be_created_without_an_organization_name')
-data.setCell(29, 2, 'Test_Orgnization')
-data.setCell(29, 3, 20513);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(16, 1, 'verify_to_check_click_on_password_visibility_button')
+data.setCell(16, 2, 'TesttipcoLogin')
+data.setCell(16, 3, 4);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_Orgnization</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TesttipcoLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">initializebrowser</span>
+                <span class="method-name">initialise</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Create_Orgnization_with_invalid_orgnization_name</span>
-                <span class="method-start">3386 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_that_not_able_to_Login_with_incorrect_password</span>
+                <span class="method-start">4022 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_an_organization_name</span>
-                <span class="method-start">38247 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_that_not_able_to_login_with_unregisterdmail</span>
+                <span class="method-start">41519 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_to_add_orgnization_with_special_charcter_in_org_name_field</span>
-                <span class="method-start">58763 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_to_signin_with_blank_mail_and_passwordfield</span>
+                <span class="method-start">41531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_to_add_orgnization_with_minimum_length_of_orgname</span>
-                <span class="method-start">82494 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_to_login_with_validmail_and_blankpass</span>
+                <span class="method-start">50553 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_to_add_orgnization_with_max_length_of_orgname</span>
-                <span class="method-start">104942 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_login_with_blankmail_and_valid_password</span>
+                <span class="method-start">56594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_invalid_GST_number_format</span>
-                <span class="method-start">127638 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_validmail_and_space_in_password_field</span>
+                <span class="method-start">60608 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_GST_number</span>
-                <span class="method-start">150257 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_that_Sign_in_text_is_present_at_signin_page</span>
+                <span class="method-start">64625 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_GST_number</span>
-                <span class="method-start">172823 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page</span>
+                <span class="method-start">64632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_Address_field</span>
-                <span class="method-start">195434 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_click_on_password_visibility_button</span>
+                <span class="method-start">64638 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_Address_field</span>
-                <span class="method-start">218314 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page</span>
+                <span class="method-start">64644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_withmax_length_of_city_field</span>
-                <span class="method-start">240737 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page</span>
+                <span class="method-start">64651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_enter_city_field</span>
-                <span class="method-start">263556 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_click_on_forgot_password_and_then_click_on_cancel</span>
+                <span class="method-start">68663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_minimum_length_of_pincode</span>
-                <span class="method-start">286087 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_and_invalid_mail_in_forgot_password_field</span>
+                <span class="method-start">72676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_an_max_length_of_pincode</span>
-                <span class="method-start">308837 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_mail_field_take_blank_and_see_valid_error_message</span>
+                <span class="method-start">76700 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without__pincode</span>
-                <span class="method-start">331368 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page</span>
+                <span class="method-start">80728 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_max_length_of_state</span>
-                <span class="method-start">353830 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_to_login_with_invalidmail_and_password</span>
+                <span class="method-start">84755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_using_undercurse_and_attherate_in_state</span>
-                <span class="method-start">376436 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_enter_state</span>
-                <span class="method-start">398901 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_without_selecting_refresh_time</span>
-                <span class="method-start">421329 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_a_name_that_already_exists</span>
-                <span class="method-start">443837 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Verify_that_an_organization_cannot_be_created_with_a_numeric_city_name</span>
-                <span class="method-start">466284 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_is_successfully_updated_with_valid_inputs_for_organization_name_GST_number_address</span>
-                <span class="method-start">489603 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_the_organization_name_is_missing</span>
-                <span class="method-start">530941 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_special_char_in_orgname_field</span>
-                <span class="method-start">553165 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_min_length_of_orgname_field</span>
-                <span class="method-start">575183 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_max_length_of_orgname_field</span>
-                <span class="method-start">597250 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_special_char_in_GSTnumberfield</span>
-                <span class="method-start">619395 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield</span>
-                <span class="method-start">641594 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Ensure_that_the_organization_update_fails_without_enter_GSTnumberfield</span>
-                <span class="method-start">663683 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verify_to_create_orgnization_with_all_valid_data_of_orgnization</span>
-                <span class="method-start">685684 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_to_login_with_valid_mail_and_Password</span>
+                <span class="method-start">87775 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

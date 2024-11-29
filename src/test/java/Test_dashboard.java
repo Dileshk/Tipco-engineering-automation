@@ -1313,4 +1313,50 @@ catch(Exception e)
 	driver.navigate().refresh();
 }
 	System.out.println();
-}}
+}
+@Test(priority = 46)
+public void Verify_that_to_zoom_In_the_graph() throws InterruptedException
+{ softAssert= new SoftAssert();
+try
+{
+
+
+	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+        
+    	  Thread.sleep(2000);
+	dash.clickonorarrow();
+	
+	WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));
+	 wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+     dash.clickonorgname();
+     Thread.sleep(3000);
+	driver.findElement(By.xpath("//div[text()='THM']")).click();
+     
+	 Thread.sleep(3000);
+	WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
+	
+date.sendKeys("11-11-2024");
+
+
+
+Thread.sleep(5000);
+//	date.click();
+ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+ wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+ driver.findElement(By.xpath("//div[@class='small-screen-icon']")).click();
+ 
+	Thread.sleep(9000);
+}
+catch(Exception e)
+{
+	softAssert.fail("Exceptio"+e.getMessage());
+}finally {
+	softAssert.assertAll();
+	driver.navigate().refresh();
+}
+	
+}
+}
+

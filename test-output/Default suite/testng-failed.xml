@@ -3,12 +3,31 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Orgnization">
+      <class name="Edit_profile_from_supervisor">
         <methods>
+          <include name="Verify_that_reset_password_to_enter_current_pasword_with_space"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_valid_NAME"/>
+          <include name="Verify_to_check_edit_profile_without_fullname_field"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname"/>
+          <include name="Verify_that_to_reset_password_with_newpassword_and_confirm_password_does_not_matched"/>
+          <include name="Verify_to_check_edit_profile_with_invalid_email_formate"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname"/>
+          <include name="Verify_that_to_reset_password_without_enter_current_and_comfrim_password_field"/>
+          <include name="Verify_toupdate_profile_with_all_valid_data"/>
+          <include name="Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same"/>
           <include name="initializebrowser"/>
-          <include name="verify_to_create_orgnization_with_all_valid_data_of_orgnization"/>
+          <include name="Verify_that_orgnization_field_is_disabled_in_update_profile_from_supervisor_side"/>
+          <include name="Verify_to_check_edit_profile_without_enter_email_field"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname"/>
+          <include name="Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname"/>
+          <include name="Verify_to_check_edit_profile_without_using_at_the_rate_in_name_field"/>
+          <include name="Verify_to_check_edit_profile_without_enter_phone_number"/>
+          <include name="Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char"/>
+          <include name="Verify_to_check_edit_profile_to_enter_invalid_phoneNumber"/>
+          <include name="Verify_to_check_select_other_country_code_and_enter_invalid_phone"/>
+          <include name="Verify_to_close_popup_to_click_on_cross_button_of_the_popup"/>
         </methods>
-      </class> <!-- Test_Orgnization -->
+      </class> <!-- Edit_profile_from_supervisor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

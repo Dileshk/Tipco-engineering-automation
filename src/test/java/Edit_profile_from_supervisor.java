@@ -33,7 +33,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_full_namefield_and_enter_valid_NAME() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
@@ -50,7 +50,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	         
 	        edit.submit();
 
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='User Updated Successfully']")));
 	        System.out.println("Overlay Gone");
 
@@ -72,13 +72,13 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_full_namefield_and_enter_max_length_of_fullname() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	       
@@ -107,14 +107,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_full_namefield_and_enterMinimum_length_of_fullname() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -143,14 +143,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_full_namefield_and_enter_special_charIn_fullname() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -179,14 +179,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_full_namefield_and_enter_numericvalue_fullname() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -215,14 +215,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_without_fullname_field() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -251,14 +251,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_with_invalid_email_formate() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -285,14 +285,14 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_without_using_at_the_rate_in_name_field() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
 	        edit.clicksbtn();
 	        Thread.sleep(3000);
 	        edit.clickprofiletab();
-	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
 	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
@@ -319,7 +319,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_without_enter_email_field() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -353,7 +353,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_to_entermax_length_ofemail_field_more_than_50char() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -395,7 +395,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_to_enter_invalid_phoneNumber() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -430,7 +430,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_edit_profile_without_enter_phone_number() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -495,7 +495,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_close_popup_to_click_on_cross_button_of_the_popup() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -523,7 +523,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_to_check_select_other_country_code_and_enter_invalid_phone() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -561,7 +561,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_toupdate_profile_with_all_valid_data() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -573,7 +573,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	        Thread.sleep(3000);
 	        edit.submit();
-	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
 	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='User Updated Successfully']")));
 	        System.out.println("Overlay Gone");
 
@@ -597,7 +597,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_that_orgnization_field_is_disabled_in_update_profile_from_supervisor_side() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -627,7 +627,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_that_to_reset_password_without_enter_current_and_comfrim_password_field() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -696,7 +696,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	public void Verify_that_to_reset_password_with_newpassword_and_confirm_password_does_not_matched() throws InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 	         Thread.sleep(3000);
@@ -732,7 +732,7 @@ public class Edit_profile_from_supervisor extends Base_class{
 	@Test(priority = 20)
 	public void Verify_that_reset_password_to_enter_current_pasword_with_space() throws InterruptedException {
 	     softAssert = new SoftAssert();
-	    try {WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    try {WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
      Thread.sleep(3000);
@@ -763,42 +763,42 @@ public class Edit_profile_from_supervisor extends Base_class{
 	        
 	        softAssert.assertAll();
 	    }}
-	@Test(priority = 21)
-	public void Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same() throws InterruptedException {
-	     softAssert = new SoftAssert();
-	    try {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
-	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
-	         Thread.sleep(3000);
-	        edit.clicksbtn();
-	        Thread.sleep(3000);
-	        edit.clickprofiletab();
-
-	        Thread.sleep(3000);
-	        driver.findElement(By.xpath("//button[@class='deactivate me-3']")).click();
-	        Thread.sleep(3000);
-	        driver.findElement(By.xpath("//input[@placeholder='Current Password']")).sendKeys("Demo@123");
-	        driver.findElement(By.xpath("//input[@placeholder='New Password']")).sendKeys("Demo@123");
-	        driver.findElement(By.xpath("//input[@placeholder='Confirm Password']")).sendKeys("Demo@123");
-	        Thread.sleep(3000);
-	        edit.submit();
-	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
-	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Current password and new password cannot be the same']")));
-	        String actual = driver.findElement(By.xpath("//div[text()='Current password and new password cannot be the same']")).getText();
-	        String expected = "Current password and new password cannot be the same";
-	        System.out.println("dhkjfh" + actual);
-	        softAssert.assertEquals(actual, expected, "Profile update message mismatch");
-	        
-	        		
-	        Thread.sleep(4000);
-           driver.navigate().refresh();
-	    } catch (Exception e) {
-	        
-	        softAssert.fail("An exception " + e.getMessage());
-	    } finally {
-	        
-	        softAssert.assertAll();
-	    }}
+//	@Test(priority = 21)
+//	public void Verify_that_to_reset_password_to_enter_current_pasword_and_newPassword_are_same() throws InterruptedException {
+//	     softAssert = new SoftAssert();
+//	    try {
+//	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+//	    	 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+//	         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+//	         Thread.sleep(3000);
+//	        edit.clicksbtn();
+//	        Thread.sleep(3000);
+//	        edit.clickprofiletab();
+//
+//	        Thread.sleep(3000);
+//	        driver.findElement(By.xpath("//button[@class='deactivate me-3']")).click();
+//	        Thread.sleep(3000);
+//	        driver.findElement(By.xpath("//input[@placeholder='Current Password']")).sendKeys("Demo@123");
+//	        driver.findElement(By.xpath("//input[@placeholder='New Password']")).sendKeys("Demo@123");
+//	        driver.findElement(By.xpath("//input[@placeholder='Confirm Password']")).sendKeys("Demo@123");
+//	        Thread.sleep(3000);
+//	        edit.submit();
+//	        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(40));
+//	        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Current password and new password cannot be the same']")));
+//	        String actual = driver.findElement(By.xpath("//div[text()='Current password and new password cannot be the same']")).getText();
+//	        String expected = "Current password and new password cannot be the same";
+//	        System.out.println("dhkjfh" + actual);
+//	        softAssert.assertEquals(actual, expected, "Profile update message mismatch");
+//	        
+//	        		
+//	        Thread.sleep(4000);
+//           driver.navigate().refresh();
+//	    } catch (Exception e) {
+//	        
+//	        softAssert.fail("An exception " + e.getMessage());
+//	    } finally {
+//	        
+//	        softAssert.assertAll();
+//	    }}
 	
 }

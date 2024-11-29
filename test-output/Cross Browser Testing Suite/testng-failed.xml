@@ -56,13 +56,16 @@
           <include name="Verify_that_the_full_name_field_is_mandatory_and_displays_an_error_message_when_left_empty"/>
           <include name="Verify_to_update_superviosr_with_invalid_number"/>
           <include name="Verify_that_the_organization_name_can_be_selected_from_a_dropdown_menu"/>
+          <include name="Verify_that_the_full_name_field_does_not_accept_numeric_or_special_characters_accept_only_character"/>
           <include name="check_to_update_supervisor_without_enter_mandatory_field"/>
           <include name="Verify_that_the_mobile_number_field_does_not_accept_alphabetic_or_special_characters"/>
           <include name="Verify_that_click_on_tipco_Logo_from_supervisor_page_and_redirect_on_dashborad"/>
           <include name="Verify_to_check_and_click_on_next_page_button_of_supervisor"/>
           <include name="Verify_that_to_select_orgnization_from_filter_and_see_supervisor"/>
           <include name="check_and_update_superviaor_without_using_attherate"/>
+          <include name="verify_that_createSupervisor_with_invalid_email"/>
           <include name="Verify_that_the_mobile_number_field_accepts_different_formats_based_on_the_selected_country_code"/>
+          <include name="Verify_that_the_email_field_is_mandatory_and_displays_an_error_message_when_left_empty"/>
           <include name="Create_Supervisor_with_valid_email"/>
           <include name="Verify_to_check_action_column_is_present_in_supervisor_page"/>
           <include name="Verify_to_check_orgnizationname_column_is_present_in_supervisor_page"/>
