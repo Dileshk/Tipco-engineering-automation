@@ -23,8 +23,8 @@ public class Base_class {
 	public void openbrowser() throws IOException
 	{
 //		WebDriverManager.chromedriver().clearDriverCache().setup();
-		ChromeOptions options = new ChromeOptions();
-options.addArguments("--start-maximized", "--disable-gpu");
+		ChromeOptions op= new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*");
 		driver= new ChromeDriver();
 		//driver= new ChromeDriver();
 		driver.get(UtilityClass.propertiesfile("URL"));
