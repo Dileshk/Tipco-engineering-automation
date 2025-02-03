@@ -3,12 +3,46 @@
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SequentialTestExecution(failed)">
     <classes>
+      <class name="TesttipcoLogin">
+        <methods>
+          <include name="initialise"/>
+          <include name="verify_to_login_with_valid_mail_and_Password"/>
+        </methods>
+      </class> <!-- TesttipcoLogin -->
+      <class name="Device_TC">
+        <methods>
+          <include name="Verify_and_check_to_type_on_timezone_field_but_the_country_are_not_present_in_dropbox"/>
+          <include name="Verify_to_check_and_click_prvious_pagebutton_of_the_device_page"/>
+          <include name="Verify_and_check_to_type_on_timezone_field_and_select_from_list_box"/>
+          <include name="Verify_to_check_click_on_update_and_click_on_submit_button"/>
+          <include name="Verify_to_check_sr_number_column_of_the_device_in_device_page"/>
+          <include name="Verify_and_check_to_update_devicezone_by_selecting_other_country_from_dropdown"/>
+          <include name="Verify_and_check_orgnization_field_disable_in_update_form"/>
+          <include name="Verify_to_check_and_click_next_page_of_the_device_page"/>
+          <include name="Verify_to_check_tipco_logo_is_visible_or_not_in_device_create_page"/>
+          <include name="Verify_to_check_clear_all_fields_and_click_on_submit_in_update_form"/>
+          <include name="initializebrowser"/>
+        </methods>
+      </class> <!-- Device_TC -->
+      <class name="Test_Supervisor">
+        <methods>
+          <include name="Verify_to_check_click_on_previous_page_button_of_supervisor_page"/>
+          <include name="initializebrowser"/>
+        </methods>
+      </class> <!-- Test_Supervisor -->
       <class name="Test_Device">
         <methods>
+          <include name="verify_to_create_twinsaftdisperser"/>
           <include name="initializebrowser"/>
-          <include name="Verify_that_temp1_field_take_blank_and_see_the_error_message"/>
+          <include name="Verify_to_create_Horizontalbead_mill_machine"/>
         </methods>
       </class> <!-- Test_Device -->
+      <class name="Test_Orgnization">
+        <methods>
+          <include name="initializebrowser"/>
+          <include name="Ensure_that_the_organization_update_fails_when_enter_invalidGSTnumberfield"/>
+        </methods>
+      </class> <!-- Test_Orgnization -->
     </classes>
   </test> <!-- SequentialTestExecution(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

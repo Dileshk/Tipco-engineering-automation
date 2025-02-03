@@ -303,7 +303,7 @@ driver.findElement(By.xpath("//h5[text()=' X ']")).click();
 	         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='actionIcon']/span")));
      Thread.sleep(3000);
-		WebElement logo = driver.findElement(By.xpath("//span[@class='mainLogo']"));
+		WebElement logo = driver.findElement(By.xpath("//div[@class='logo']"));
 		softAssert.assertTrue(logo.isDisplayed());
 
 

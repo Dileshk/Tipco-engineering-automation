@@ -31,7 +31,7 @@ public class Test_Device extends Base_class{
 		device.entpass(UtilityClass.propertiesfile("validpass"));
 		device.clickbuttonsubmit();
 	}
-	@Test(priority = 31)
+	@Test(priority = 42)
 	public void Verify_to_create_Horizontalbead_mill_machine() throws IOException, InterruptedException {
 	     softAssert = new SoftAssert();
 	    try {
@@ -49,12 +49,15 @@ public class Test_Device extends Base_class{
 
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-	         
-
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+		      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+		     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+		       
+		        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+		        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+		        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+		        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	      device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
@@ -99,7 +102,7 @@ public class Test_Device extends Base_class{
 	    }
 	}
 
-	@Test(priority = 32)
+	@Test(priority = 43)
 	public void verify_to_create_twinsaftdisperser() throws InterruptedException, IOException {
 	     softAssert = new SoftAssert();
 	    try {String deviceId = generateDeviceId();
@@ -114,9 +117,10 @@ public class Test_Device extends Base_class{
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+//	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
 	        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
 	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
 	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
@@ -163,7 +167,7 @@ public class Test_Device extends Base_class{
 	    }
 	}
 
-	@Test(priority = 33)
+	@Test(priority = 44)
 	public void Verify_to_create_highspeed_disperser_machine() throws InterruptedException, IOException {
 	     softAssert = new SoftAssert();
 	    try {String deviceId = generateDeviceId();
@@ -179,10 +183,11 @@ public class Test_Device extends Base_class{
 	        device.clickondevicetypelistbox();
 	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
 	        
-
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-	        
+//	        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
 	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
 	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 	       
@@ -277,8 +282,9 @@ public void Verify_that_the_Device_ID_field_is_unique_and_does_not_allow_duplica
         
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
        
@@ -355,14 +361,12 @@ public void Verify_to_check__Device_ID_Field_with_special_characters() throws In
         driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
          
 
-       
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
-       
-
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
@@ -405,21 +409,21 @@ driver.navigate().refresh();
 
     }
 }
-
-//public void waitForPageLoad() {
-//    JavascriptExecutor js = (JavascriptExecutor) driver;
-//    for (int i = 0; i < 30; i++) { // Retry up to 30 times (adjust if needed)
-//        try {
-//            Thread.sleep(1000); // Wait 1 second between checks
-//            if (js.executeScript("return document.readyState").toString().equals("complete")) {
-//                break;
-//            }
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//}
-//}
+//
+////public void waitForPageLoad() {
+////    JavascriptExecutor js = (JavascriptExecutor) driver;
+////    for (int i = 0; i < 30; i++) { // Retry up to 30 times (adjust if needed)
+////        try {
+////            Thread.sleep(1000); // Wait 1 second between checks
+////            if (js.executeScript("return document.readyState").toString().equals("complete")) {
+////                break;
+////            }
+////        } catch (InterruptedException e) {
+////            e.printStackTrace();
+////        }
+////    }
+////}
+////}
 	@Test(priority = 6)
 	public void Verify_to_check__Device_IDfield_with_spaces() throws InterruptedException, IOException {
 	    softAssert = new SoftAssert();
@@ -439,11 +443,13 @@ driver.navigate().refresh();
 	        driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
 
 	        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
 	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
 	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
 	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        
 	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
-
 	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
 	        boolean isOptionSelected = false; 
 	        int maxRetries = 3;
@@ -512,14 +518,15 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_minimum_length
         driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
          
 
-       
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
-       
 
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+        
+        
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
@@ -591,16 +598,16 @@ public void  Verify_that_the_Device_ID_field_does_not_accept_with_max_length() t
       
         driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
          
-
-       
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
-       
+
 
        
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
         WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
         boolean isOptionSelected = false; 
@@ -642,7 +649,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 9)
-public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_between_1_to_100 () throws InterruptedException, IOException {
+public void  Verify_that_the_Max_Product_temp_field_accepts_numeric_values_between_1_to_100 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
     	
@@ -673,12 +680,14 @@ public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_betw
        
         device.maxtemp1(UtilityClass.propertiesfile("maxvalueoftemp1"));
         
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
-       
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
         WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
@@ -705,8 +714,8 @@ public void  Verify_that_the_Max_Temperature_1_field_accepts_numeric_values_betw
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
-        String expected = "Temperature must be between 1 and 100";
+        String actual = driver.findElement(By.xpath("//p[text()='Product Temperature must be between 1 and 100']")).getText();
+        String expected = "Product Temperature must be between 1 and 100";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -721,7 +730,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 10)
-public void  Verify_that_temp1_field_should_not_accept_alphabet() throws InterruptedException, IOException {
+public void  Verify_that_Max_Product_temp_field_should_not_accept_alphabet() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
     	
@@ -754,12 +763,11 @@ public void  Verify_that_temp1_field_should_not_accept_alphabet() throws Interru
        
         device.maxtemp1(UtilityClass.propertiesfile("alphabetintemp1"));
         
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
-        
-
-       
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
         WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
@@ -786,8 +794,8 @@ public void  Verify_that_temp1_field_should_not_accept_alphabet() throws Interru
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
-        String expected = "Temperature must be a whole number";
+        String actual = driver.findElement(By.xpath("//p[text()='Product Temperature must be a whole number']")).getText();
+        String expected = "Product Temperature must be a whole number";
         Thread.sleep(5000);
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -803,7 +811,7 @@ driver.navigate().refresh();
 }
 
 @Test(priority = 11)
-public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() throws InterruptedException, IOException {
+public void  Verify_that_Max_Product_temp_field_take_blank_and_see_the_error_message() throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
     	
@@ -831,16 +839,16 @@ public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() thro
 
       
         driver.findElement(By.xpath("//div[text()='High Speed Disperser']")).click();
-         
+        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
 
-       
-       
+        
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
-       
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
 
         WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
@@ -868,8 +876,8 @@ public void  Verify_that_temp1_field_take_blank_and_see_the_error_message() thro
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Max temperature is required']")).getText();
-        String expected = "Max temperature is required";
+        String actual = driver.findElement(By.xpath("//p[text()='Max Product Temperature is required']")).getText();
+        String expected = "Max Product Temperature is required";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -884,11 +892,11 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 12)
-public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_or_any_special_characters
+public void  Verify_that_the_Max_coolant_temp_field_does_not_accept_alphabetic_or_any_special_characters
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
-    	
+       
          
        
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -912,13 +920,15 @@ public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_
       
 
       
-        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         device.maxtemp2(UtilityClass.propertiesfile("alphaandspeintemp2"));
        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -950,8 +960,8 @@ public void  Verify_that_the_Max_Temperature_2_field_does_not_accept_alphabetic_
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
-        String expected = "Temperature must be a whole number";
+        String actual = driver.findElement(By.xpath("//p[text()='Coolant Temperature must be a whole number']")).getText();
+        String expected = "Coolant Temperature must be a whole number";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -966,7 +976,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 13)
-public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100 
+public void   Verify_that_the_Max_coolant_temp_field_does_not_greater_than_100 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
@@ -994,13 +1004,15 @@ public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100
       
 
       
-        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         device.maxtemp2(UtilityClass.propertiesfile("maxvalueoftemp2"));
        device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+       device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+       device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+       device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -1032,8 +1044,8 @@ public void   Verify_that_the_Max_Temperature_2_field_does_not_greater_than_100
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
-        String expected = "Temperature must be between 1 and 100";
+        String actual = driver.findElement(By.xpath("//p[text()='Coolant Temperature must be between 1 and 100']")).getText();
+        String expected = "Coolant Temperature must be between 1 and 100";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1048,7 +1060,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 14)
-public void  check_maxtemp3_field_does_not_accept_special_char
+public void  check_max_chill_water_temp__does_not_accept_special_char
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
@@ -1076,13 +1088,15 @@ public void  check_maxtemp3_field_does_not_accept_special_char
       
 
       
-        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
        device.maxtemp3(UtilityClass.propertiesfile("alphaandspeintemp3"));
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -1114,8 +1128,8 @@ public void  check_maxtemp3_field_does_not_accept_special_char
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be a whole number']")).getText();
-        String expected = "Temperature must be a whole number";
+        String actual = driver.findElement(By.xpath("//p[text()='Chill Water Temperature must be a whole number']")).getText();
+        String expected = "Chill Water Temperature must be a whole number";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1130,7 +1144,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 15)
-public void  check_maxtepm3_does_not_accept_greater_than_100
+public void  check_maxchill_water_temp_does_not_accept_greater_than_100
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
@@ -1158,13 +1172,15 @@ public void  check_maxtepm3_does_not_accept_greater_than_100
       
 
       
-        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
        device.maxtemp3(UtilityClass.propertiesfile("maxvalueoftemp3"));
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -1196,8 +1212,8 @@ public void  check_maxtepm3_does_not_accept_greater_than_100
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Temperature must be between 1 and 100']")).getText();
-        String expected = "Temperature must be between 1 and 100";
+        String actual = driver.findElement(By.xpath("//p[text()='Chill Water Temperature must be between 1 and 100']")).getText();
+        String expected = "Chill Water Temperature must be between 1 and 100";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1212,7 +1228,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 16)
-public void  check_to_create_device_with_maxtepm3_field_is_blank
+public void  check_to_create_device_with_chill_water_temperature_is_blank
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
@@ -1240,13 +1256,15 @@ public void  check_to_create_device_with_maxtepm3_field_is_blank
       
 
       
-        driver.findElement(By.xpath("//div[text()='Twin Shaft Disperser']")).click();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
        
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -1279,8 +1297,8 @@ public void  check_to_create_device_with_maxtepm3_field_is_blank
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Max temperature is required']")).getText();
-        String expected = "Max temperature is required";
+        String actual = driver.findElement(By.xpath("//p[text()='Max Chill Water Temperature is required']")).getText();
+        String expected = "Max Chill Water Temperature is required";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1295,12 +1313,12 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 17)
-public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_any_speecial_characters
+public void  Verify_that_the_Max_product_presser_field_does_not_accept_alphabetic_or_any_speecial_characters
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
-    	
+
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
         wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
@@ -1325,10 +1343,14 @@ public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_
         driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         
+      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
        
         device.entermaxpresser(UtilityClass.propertiesfile("maxpressoralphaspechar"));
+      device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+      device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
         device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
@@ -1360,8 +1382,8 @@ public void  Verify_that_the_Max_Pressure_1_field_does_not_accept_alphabetic_or_
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Pressure must be a whole number']")).getText();
-        String expected = "Pressure must be a whole number";
+        String actual = driver.findElement(By.xpath("//p[text()='Product Pressure must be a whole number']")).getText();
+        String expected = "Product Pressure must be a whole number";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1375,8 +1397,9 @@ driver.navigate().refresh();
 
     }
 }
+
 @Test(priority = 18)
-public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_than_10
+public void  Verify_that_the_Max_product_pressure_field_does_not_accept_values__greater_than_10
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -1407,11 +1430,14 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_
          
 
         device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("maxpresservalue"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
+        device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+       device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+         
+          device.entermaxpresser(UtilityClass.propertiesfile("aboverangepresser"));
+        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+          device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+          device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
        
@@ -1441,8 +1467,8 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values__greater_
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Pressure must be between 1 and 10']")).getText();
-        String expected = "Pressure must be between 1 and 10";
+        String actual = driver.findElement(By.xpath("//p[text()='Product Pressure must be between 1 and 10']")).getText();
+        String expected = "Product Pressure must be between 1 and 10";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1457,7 +1483,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 19)
-public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than_1
+public void  Verify_that_the_product_pressure_field_does_not_accept_values_less_than_1
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -1487,12 +1513,16 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than
         driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("lesspressvalue"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
+device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+ 
+  device.entermaxpresser(UtilityClass.propertiesfile("lesspressvalue"));
+device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+  device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+  device.entertimezone(UtilityClass.propertiesfile("zone"));
+
         
 
        
@@ -1522,8 +1552,8 @@ public void  Verify_that_the_Max_pressure_field_does_not_accept_values_less_than
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Pressure must be between 1 and 10']")).getText();
-        String expected = "Pressure must be between 1 and 10";
+        String actual = driver.findElement(By.xpath("//p[text()='Product Pressure must be between 1 and 10']")).getText();
+        String expected = "Product Pressure must be between 1 and 10";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1538,7 +1568,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 20)
-public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
+public void  Verify_that_the_Max_product_pressure__field_take_blnak_and_see_error
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -1568,12 +1598,15 @@ public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
         driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-       
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
+       device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+      device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+ 
+ 
+     device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+     device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+     device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+     device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
        
@@ -1603,8 +1636,8 @@ public void  Verify_that_the_Max_pressure__field_take_blnak_and_see_error
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 
         
-        String actual = driver.findElement(By.xpath("//p[text()='Max Pressure is required']")).getText();
-        String expected = "Max Pressure is required";
+        String actual = driver.findElement(By.xpath("//p[text()='Max Product Pressure is required']")).getText();
+        String expected = "Max Product Pressure is required";
         
         System.out.println("Message: " + actual);
         softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
@@ -1619,8 +1652,7 @@ driver.navigate().refresh();
     }
 }
 @Test(priority = 21)
-public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters
-
+public void  Verify_that_the_Max_coolant_presser_field_does_not_accept_alphabetic_or_any_speecial_characters
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
@@ -1650,12 +1682,691 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_a
         driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
          
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
         
+      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
        
         device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("maxvibrationwithalphaandspechar"));
+      device.maxpre2(UtilityClass.propertiesfile("alpahamaxpre2"));
+      device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
+        
+
+       
+        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+        boolean isOptionSelected = false; 
+        int maxRetries = 3;
+
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            orgDropdown.click();
+            Thread.sleep(1000); 
+
+            try {
+               
+                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+                isOptionSelected = true;
+                break; 
+            } catch (Exception e) {
+                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+            }
+        }
+
+        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+        
+        String actual = driver.findElement(By.xpath("//p[text()='Coolant Pressure must be a whole number']")).getText();
+        String expected = "Coolant Pressure must be a whole number";
+        
+        System.out.println("Message: " + actual);
+        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+        
+        Thread.sleep(4000);
+driver.navigate().refresh();
+    } catch (Exception e) {
+        softAssert.fail("Exception: " + e.getMessage());
+    } finally {
+        softAssert.assertAll();          
+
+    }
+}
+
+@Test(priority = 22)
+public void  Verify_that_the_Max_coolant_pressure_field_does_not_accept_values__greater_than_10
+
+() throws InterruptedException, IOException {
+  softAssert = new SoftAssert();
+  try {
+  	
+      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+      System.out.println("Overlay Gone");
+
+      
+      device.clickonadddevice();
+      
+
+      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+       
+
+    
+      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+      dropDownIcon.click();
+       
+      
+   //   dropDownIcon.click();
+    
+
+    
+      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+       
+
+      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+       
+        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+      device.maxpre2(UtilityClass.propertiesfile("abovetenpre2"));
+      device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+      
+
+     
+      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+      boolean isOptionSelected = false; 
+      int maxRetries = 3;
+
+      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+          orgDropdown.click();
+          Thread.sleep(1000); 
+
+          try {
+              
+              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+              isOptionSelected = true;
+              break; 
+          } catch (Exception e) {
+              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+          }
+      }
+
+      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+      Thread.sleep(4000);
+      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+      
+      String actual = driver.findElement(By.xpath("//p[text()='Coolant Pressure must be between 1 and 10']")).getText();
+      String expected = "Coolant Pressure must be between 1 and 10";
+      
+      System.out.println("Message: " + actual);
+      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+      
+      Thread.sleep(4000);
+driver.navigate().refresh();
+  } catch (Exception e) {
+      softAssert.fail("Exception: " + e.getMessage());
+  } finally {
+      softAssert.assertAll();          
+
+  }
+}
+@Test(priority = 23)
+public void  Verify_that_the_Max_coolant_pressure_field_does_not_accept_values__less_than_10
+
+() throws InterruptedException, IOException {
+  softAssert = new SoftAssert();
+  try {
+  	
+      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+      System.out.println("Overlay Gone");
+
+      
+      device.clickonadddevice();
+      
+
+      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+       
+
+    
+      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+      dropDownIcon.click();
+       
+      
+   //   dropDownIcon.click();
+    
+
+    
+      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+       
+
+      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+       
+        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+      device.maxpre2(UtilityClass.propertiesfile("lesspre2"));
+      device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+      
+
+     
+      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+      boolean isOptionSelected = false; 
+      int maxRetries = 3;
+
+      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+          orgDropdown.click();
+          Thread.sleep(1000); 
+
+          try {
+              
+              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+              isOptionSelected = true;
+              break; 
+          } catch (Exception e) {
+              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+          }
+      }
+
+      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+      Thread.sleep(4000);
+      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+      
+      String actual = driver.findElement(By.xpath("//p[text()='Coolant Pressure must be between 1 and 10']")).getText();
+      String expected = "Coolant Pressure must be between 1 and 10";
+      
+      System.out.println("Message: " + actual);
+      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+      
+      Thread.sleep(4000);
+driver.navigate().refresh();
+  } catch (Exception e) {
+      softAssert.fail("Exception: " + e.getMessage());
+  } finally {
+      softAssert.assertAll();          
+
+  }
+}@Test(priority = 24)
+public void  Verify_that_the_Max_coolant_pressure_field_take_blank_and_see_error_message
+
+() throws InterruptedException, IOException {
+  softAssert = new SoftAssert();
+  try {
+  	
+      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+      System.out.println("Overlay Gone");
+
+      
+      device.clickonadddevice();
+      
+
+      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+       
+
+    
+      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+      dropDownIcon.click();
+       
+      
+   //   dropDownIcon.click();
+    
+
+    
+      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+       
+
+      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+       
+        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+     
+      device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+        device.entertimezone(UtilityClass.propertiesfile("zone"));
+      
+
+     
+      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+      boolean isOptionSelected = false; 
+      int maxRetries = 3;
+
+      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+          orgDropdown.click();
+          Thread.sleep(1000); 
+
+          try {
+              
+              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+              isOptionSelected = true;
+              break; 
+          } catch (Exception e) {
+              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+          }
+      }
+
+      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+      Thread.sleep(4000);
+      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+      
+      String actual = driver.findElement(By.xpath("//p[text()='Max Coolant Pressure is required']")).getText();
+      String expected = "Max Coolant Pressure is required";
+      
+      System.out.println("Message: " + actual);
+      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+      
+      Thread.sleep(4000);
+driver.navigate().refresh();
+  } catch (Exception e) {
+      softAssert.fail("Exception: " + e.getMessage());
+  } finally {
+      softAssert.assertAll();          
+
+  }
+}
+	@Test(priority = 25)
+	public void  Verify_that_the_Max_chill_water_presser_field_does_not_accept_alphabetic_or_any_speecial_characters
+
+	() throws InterruptedException, IOException {
+	    softAssert = new SoftAssert();
+	    try {
+	    	
+	        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+	        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	        System.out.println("Overlay Gone");
+
+	        
+	        device.clickonadddevice();
+	        
+
+	        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	         
+
+	      
+	        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	        dropDownIcon.click();
+	         
+	        
+	     //   dropDownIcon.click();
+	      
+
+	      
+	        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	         
+
+	        
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	      device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	      device.maxpresser3(UtilityClass.propertiesfile("alphamapre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	        
+
+	       
+	        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+	        WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	        boolean isOptionSelected = false; 
+	        int maxRetries = 3;
+
+	        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	            orgDropdown.click();
+	            Thread.sleep(1000); 
+
+	            try {
+	               
+	                driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	                isOptionSelected = true;
+	                break; 
+	            } catch (Exception e) {
+	                System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	            }
+	        }
+
+	        softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+	        Thread.sleep(4000);
+	        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	        
+	        String actual = driver.findElement(By.xpath("//p[text()='Chill Water Pressure must be a whole number']")).getText();
+	        String expected = "Chill Water Pressure must be a whole number";
+	        
+	        System.out.println("Message: " + actual);
+	        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	        
+	        Thread.sleep(4000);
+	driver.navigate().refresh();
+	    } catch (Exception e) {
+	        softAssert.fail("Exception: " + e.getMessage());
+	    } finally {
+	        softAssert.assertAll();          
+
+	    }
+	}
+
+	@Test(priority = 26)
+	public void  Verify_that_the_Max_chill_water_pressure_field_does_not_accept_values__greater_than_10
+
+	() throws InterruptedException, IOException {
+	  softAssert = new SoftAssert();
+	  try {
+	  	
+	      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+	      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	      System.out.println("Overlay Gone");
+
+	      
+	      device.clickonadddevice();
+	      
+
+	      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	       
+
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
+
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
+
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	      device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	      device.maxpresser3(UtilityClass.propertiesfile("abovetenpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	      
+
+	     
+	      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+	      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	      boolean isOptionSelected = false; 
+	      int maxRetries = 3;
+
+	      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	          orgDropdown.click();
+	          Thread.sleep(1000); 
+
+	          try {
+	              
+	              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	              isOptionSelected = true;
+	              break; 
+	          } catch (Exception e) {
+	              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	          }
+	      }
+
+	      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+	      Thread.sleep(4000);
+	      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	      
+	      String actual = driver.findElement(By.xpath("//p[text()='Chill Water Pressure must be between 1 and 10']")).getText();
+	      String expected = "Chill Water Pressure must be between 1 and 10";
+	      
+	      System.out.println("Message: " + actual);
+	      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	      
+	      Thread.sleep(4000);
+	driver.navigate().refresh();
+	  } catch (Exception e) {
+	      softAssert.fail("Exception: " + e.getMessage());
+	  } finally {
+	      softAssert.assertAll();          
+
+	  }
+	}
+	@Test(priority = 27)
+	public void  Verify_that_the_Max_chill_water_pressure_field_does_not_accept_values__less_than_10
+
+	() throws InterruptedException, IOException {
+	  softAssert = new SoftAssert();
+	  try {
+	  	
+	      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+	      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	      System.out.println("Overlay Gone");
+
+	      
+	      device.clickonadddevice();
+	      
+
+	      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	       
+
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
+
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
+
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	      device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	      device.maxpresser3(UtilityClass.propertiesfile("lesspre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	      
+
+	     
+	      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+	      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	      boolean isOptionSelected = false; 
+	      int maxRetries = 3;
+
+	      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	          orgDropdown.click();
+	          Thread.sleep(1000); 
+
+	          try {
+	              
+	              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	              isOptionSelected = true;
+	              break; 
+	          } catch (Exception e) {
+	              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	          }
+	      }
+
+	      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+	      Thread.sleep(4000);
+	      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	      
+	      String actual = driver.findElement(By.xpath("//p[text()='Chill Water Pressure must be between 1 and 10']")).getText();
+	      String expected = "Chill Water Pressure must be between 1 and 10";
+	      
+	      System.out.println("Message: " + actual);
+	      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	      
+	      Thread.sleep(4000);
+	driver.navigate().refresh();
+	  } catch (Exception e) {
+	      softAssert.fail("Exception: " + e.getMessage());
+	  } finally {
+	      softAssert.assertAll();          
+
+	  }
+	}@Test(priority = 28)
+	public void  Verify_that_the_Max_chill_water_pressure_field_take_blank_and_see_error_message
+
+	() throws InterruptedException, IOException {
+	  softAssert = new SoftAssert();
+	  try {
+	  	
+	      WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+	      wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+	      wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+	      System.out.println("Overlay Gone");
+
+	      
+	      device.clickonadddevice();
+	      
+
+	      device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	       
+
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
+
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
+
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	     
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	      
+
+	     
+	      driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+
+	      WebElement orgDropdown = driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[3]"));
+	      boolean isOptionSelected = false; 
+	      int maxRetries = 3;
+
+	      for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	          orgDropdown.click();
+	          Thread.sleep(1000); 
+
+	          try {
+	              
+	              driver.findElement(By.xpath("//div[text()='TechNova Solutions']")).click();
+	              isOptionSelected = true;
+	              break; 
+	          } catch (Exception e) {
+	              System.out.println("Retrying to select 'TechNova Solutions' (Attempt " + attempt + ")");
+	          }
+	      }
+
+	      softAssert.assertTrue(isOptionSelected, "'TechNova Solutions' was not selected in the dropdown!");
+
+	      Thread.sleep(4000);
+	      driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+	      
+	      String actual = driver.findElement(By.xpath("//p[text()='Max Chill Water Pressure is required']")).getText();
+	      String expected = "Max Chill Water Pressure is required";
+	      
+	      System.out.println("Message: " + actual);
+	      softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+	      
+	      Thread.sleep(4000);
+	driver.navigate().refresh();
+	  } catch (Exception e) {
+	      softAssert.fail("Exception: " + e.getMessage());
+	  } finally {
+	      softAssert.assertAll();          
+
+	  }
+	}
+@Test(priority = 29)
+public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_any_special_characters
+
+
+() throws InterruptedException, IOException {
+    softAssert = new SoftAssert();
+    try {
+    	 
+	     
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+        System.out.println("Overlay Gone");
+
+        
+        device.clickonadddevice();
+        
+
+        device.enterdeviceId(UtilityClass.propertiesfile("HID"));
+	       
+
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
+
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
+
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("alphainmaxvibration"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
        
@@ -1700,7 +2411,7 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_alphabetic_or_a
         
     }
 }
-@Test(priority = 22)
+@Test(priority = 30)
 public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_than_10000
 
 
@@ -1718,27 +2429,29 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_t
         
 
         device.enterdeviceId(UtilityClass.propertiesfile("HID"));
-         
+	       
 
-      
-        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
-        dropDownIcon.click();
-         
-        
-     //   dropDownIcon.click();
-      
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
 
-      
-        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-         
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibrationaboverange"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
-        
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibrationaboverange"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
 
        
         driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
@@ -1783,7 +2496,7 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_greater_t
        
     }
 }
-@Test(priority = 23)
+@Test(priority = 31)
 public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than_1
 
 
@@ -1803,26 +2516,29 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than
         
 
         device.enterdeviceId(UtilityClass.propertiesfile("HID"));
-         
+	       
 
-      
-        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
-        dropDownIcon.click();
-         
-        
-     //   dropDownIcon.click();
-      
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
 
-      
-        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-         
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibrationbelowrange"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibrationbelowrange"));
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
        
@@ -1867,7 +2583,8 @@ public void  Verify_that_the_Max_vibration_field_does_not_accept_value_less_than
        
     }
 }
-@Test(priority = 24)
+
+@Test(priority = 32)
 public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_message
 
 
@@ -1887,26 +2604,29 @@ public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_messag
         
 
         device.enterdeviceId(UtilityClass.propertiesfile("HID"));
-         
+	       
 
-      
-        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
-        dropDownIcon.click();
-         
-        
-     //   dropDownIcon.click();
-      
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
 
-      
-        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-         
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-//        device.entermaxvibration(UtilityClass.propertiesfile("vibrationbelowrange"));
-        device.entertimezone(UtilityClass.propertiesfile("zone"));
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	       
+	        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
        
@@ -1952,13 +2672,14 @@ public void  Verify_that_the_Max_vibration_field_take_blank_and_see_error_messag
        
     }
 }
-@Test(priority = 25)
+@Test(priority = 34)
 public void  Verify_that_the_Time_Zone_field_displays_a_dropdown_menu
 
 
 () throws InterruptedException, IOException {
     softAssert = new SoftAssert();
     try {
+    	
 //    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 //         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
 //        
@@ -1966,7 +2687,7 @@ public void  Verify_that_the_Time_Zone_field_displays_a_dropdown_menu
 //        
 //        
 //        device.clickondevicetab();
-//         
+        
          
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
@@ -1978,25 +2699,28 @@ public void  Verify_that_the_Time_Zone_field_displays_a_dropdown_menu
         
 
         device.enterdeviceId(UtilityClass.propertiesfile("HID"));
-         
+	       
 
-      
-        WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
-        dropDownIcon.click();
-         
-        
-     //   dropDownIcon.click();
-      
+	    
+	      WebElement dropDownIcon = driver.findElement(By.xpath("//span[@class='dropDownIcon']"));
+	      dropDownIcon.click();
+	       
+	      
+	   //   dropDownIcon.click();
+	    
 
-      
-        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-         
+	    
+	      driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+	       
 
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
 //        device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 //
@@ -2029,7 +2753,7 @@ public void  Verify_that_the_Time_Zone_field_displays_a_dropdown_menu
         driver.navigate().refresh();
     }
 }
-@Test(priority = 26)
+@Test(priority = 35)
 public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_errormessage
 
 
@@ -2057,17 +2781,17 @@ public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_erro
          
         dropDownIcon.click();
      //   dropDownIcon.click();
-      
-
-      
         driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
-         
-       
-        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
-        
-       
-        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
-        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+	       
+
+	      device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
         device.entertimezone(UtilityClass.propertiesfile("zone"));
         
 
@@ -2113,7 +2837,7 @@ public void Verify_the_empty_field_of_Device_ID_is_not_saved_and_gets_valid_erro
        
     }
 } 
-    @Test(priority = 27)
+    @Test(priority = 36)
 public void Verify_that_click_on_cross_button_and_close_the_popup() throws InterruptedException
 {
      
@@ -2132,7 +2856,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
         
 }
 
-  @Test(priority = 28)
+  @Test(priority = 37)
   public void Verify_that_the_text_of_Device_page
   
   
@@ -2159,7 +2883,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
          
       }
   } 
-  @Test(priority = 29)
+  @Test(priority = 38)
   public void Verify_that_clickon_submit_button_when_all_the_fields_are_blank
   
   
@@ -2194,7 +2918,7 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
          
       }
   } 
-  @Test(priority = 30)
+  @Test(priority = 39)
   public void Verify_the_deice_text_on_add_device_page
   
   
@@ -2226,7 +2950,60 @@ public void Verify_that_click_on_cross_button_and_close_the_popup() throws Inter
           softAssert.assertAll();          
          
       }
-  } }
+  } 
+@Test(priority = 40)
+public void Verify_to_create_device_without_select_orgnization() throws IOException, InterruptedException {
+     softAssert = new SoftAssert();
+    try {
+  
+    	String deviceId = generateDeviceId();
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(40));
+        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Device']")));
+        System.out.println("Overlay Gone");
+        
+       
+        device.clickonadddevice();
+        
+        device.enterdeviceId(deviceId);
+
+        device.clickondevicetypelistbox();
+        driver.findElement(By.xpath("//div[text()='Horizontal Bead Mill']")).click();
+        device.maxtemp1(UtilityClass.propertiesfile("maxtemp1"));
+	      device.maxtemp2(UtilityClass.propertiesfile("maxtemp2"));
+	     device.maxtemp3(UtilityClass.propertiesfile("maxtemp3"));
+	       
+	        device.entermaxpresser(UtilityClass.propertiesfile("presser"));
+	        device.maxpre2(UtilityClass.propertiesfile("maxpre2"));
+	        device.maxpresser3(UtilityClass.propertiesfile("maxpre3"));
+	        device.entermaxvibration(UtilityClass.propertiesfile("vibration"));
+      device.entertimezone(UtilityClass.propertiesfile("zone"));
+        driver.findElement(By.xpath("//div[text()='Asia/Calcutta']")).click();
+       
+
+
+        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+        Thread.sleep(4000);
+        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));//hamne is xpath ke liye wait kar rahe ye nahi mila toh sab fail hojayege
+        wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='Please Select Organization']")));
+        System.out.println("Overlay Gone");
+  
+
+        
+        String actual = driver.findElement(By.xpath("//p[text()='Please Select Organization']")).getText();
+        String expected = "Please Select Organization";
+        System.out.println("dhkjfh" + actual);
+        softAssert.assertEquals(actual, expected, "Device creation message mismatch!");
+
+    } catch (Exception e) {
+        softAssert.fail("Exception " + e.getMessage()); 
+    } finally {
+        softAssert.assertAll(); 
+ 
+    }
+    Thread.sleep(5000);
+driver.navigate().refresh(); 
+}}
 //@AfterClass
 //public void closethebrowser()
 //{

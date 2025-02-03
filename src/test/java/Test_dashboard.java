@@ -84,24 +84,25 @@ public class Test_dashboard extends Base_class {
 		
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));
 		 wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
-	     dash.clickonorgname();
+//	     dash.clickonorgname();
+		 driver.findElement(By.xpath("//div[text()='Down Up & Down Associates. Pvt, Ltd.']")).click();
 	     Thread.sleep(3000);
-		driver.findElement(By.xpath("//div[text()='THM']")).click();
+		driver.findElement(By.xpath("//div[text()='DEMO001BEAD']")).click();
 	     
 		 Thread.sleep(3000);
 		WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
 		
-	date.sendKeys("11-11-2024");
+	date.sendKeys("05-12-2024");
 	
 	
 	
-	Thread.sleep(5000);
+	
 //		date.click();
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
      
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='statuscheck uppercase-text']")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[1]")));
      System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("//div[@class='statuscheck uppercase-text']"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[1]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -208,9 +209,9 @@ public class Test_dashboard extends Base_class {
     
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
      
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[2]")));
      System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[2]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -317,9 +318,9 @@ public class Test_dashboard extends Base_class {
     
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
      
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[3]")));
      System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[3]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -532,12 +533,12 @@ public class Test_dashboard extends Base_class {
 	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
     driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
     Thread.sleep(2000);
-    driver.findElement(By.xpath("//div[text()='TSD']")).click();
+    driver.findElement(By.xpath("//div[text()='DEMO002TWIN']")).click();
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
      
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='statuscheck uppercase-text']")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[1]")));
      System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("//div[@class='statuscheck uppercase-text']"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[1]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -640,9 +641,9 @@ public class Test_dashboard extends Base_class {
   
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
     
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]")));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[2]")));
     System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[2]"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[2]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -744,9 +745,9 @@ public class Test_dashboard extends Base_class {
   
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
     
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]")));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[2]")));
     System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statuscheck uppercase-text'])[3]"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[2]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -979,12 +980,12 @@ public class Test_dashboard extends Base_class {
 	        driver.findElement(By.xpath("(//span[@class='dropDownIcon'])[2]")).click();
     Thread.sleep(4000);
    
-    driver.findElement(By.xpath("//div[text()='HSD']")).click();
+    driver.findElement(By.xpath("//div[text()='DEMO123HIGH']")).click();
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
      
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='statuscheck uppercase-text']")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[1]")));
      System.out.println("Overlay Gone");
-		WebElement nodata = driver.findElement(By.xpath("//div[@class='statuscheck uppercase-text']"));
+		WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[1]"));
 		softAssert.assertTrue(nodata.isDisplayed());
 		Thread.sleep(3000);
 	
@@ -1038,9 +1039,9 @@ try
      
  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
  
- wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h3[@class='pump-box-titles'])[2]")));
+ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='statusToggle '])[1]")));
  System.out.println("Overlay Gone");
-	WebElement nodata = driver.findElement(By.xpath("(//h3[@class='pump-box-titles'])[2]"));
+	WebElement nodata = driver.findElement(By.xpath("(//div[@class='statusToggle '])[1]"));
 	softAssert.assertTrue(nodata.isDisplayed());
 	Thread.sleep(3000);
 
@@ -1330,14 +1331,15 @@ try
 	
 	WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(80));
 	 wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
-     dash.clickonorgname();
+//     dash.clickonorgname();
+	 driver.findElement(By.xpath("//div[text()='Down Up & Down Associates. Pvt, Ltd.']")).click();
      Thread.sleep(3000);
-	driver.findElement(By.xpath("//div[text()='THM']")).click();
+	driver.findElement(By.xpath("//div[text()='DEMO001BEAD']")).click();
      
 	 Thread.sleep(3000);
 	WebElement date = driver.findElement(By.xpath("//input[@type='date']"));
 	
-date.sendKeys("11-11-2024");
+date.sendKeys("09-12-2024");
 
 
 

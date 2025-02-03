@@ -580,9 +580,9 @@ public class Test_Supervisor extends Base_class  {
             sup.entername(UtilityClass.propertiesfile("namesupervisor"));
             sup.enterphonenumber(UtilityClass.propertiesfile("numsuperviosr"));
             driver.findElement(By.xpath("//input[@placeholder='Please Select Organization']")).sendKeys("xxxx");
-           
-            String expected = "No data found";
-            String actual = driver.findElement(By.xpath("//p[text()='No data found']")).getText();
+            sup.clickonsubmitbutton();
+            String expected = "Please Select Organization";
+            String actual = driver.findElement(By.xpath("//p[text()='Please Select Organization']")).getText();
             
             softAssert.assertEquals(actual, expected);
             Thread.sleep(5000);
@@ -929,6 +929,13 @@ public class Test_Supervisor extends Base_class  {
 	  {
 		  softAssert = new SoftAssert();
 	    try {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='toggle-id']")));
+            Thread.sleep(2000);
+            sup.clicksbtn();
+            Thread.sleep(2000);
+            sup.clicksuper();
+          
 	    	 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(100));
 	    	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
   	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
@@ -942,9 +949,9 @@ public class Test_Supervisor extends Base_class  {
 	    sup.enterphonenumber(UtilityClass.propertiesfile("minlengthofphon"));
 	    Thread.sleep(2000);
 	     sup.clickonsubmitbutton();
-	       
+	     String actual = driver.findElement(By.xpath("//span[text()='Invalid Mobile No.']")).getText();
 	        String expected = "Invalid Mobile No.";
-	        String actual = driver.findElement(By.xpath("//span[text()='Invalid Mobile No.']")).getText();
+	       
 	        
 	        softAssert.assertEquals(actual, expected);
 	        Thread.sleep(5000);
@@ -1295,7 +1302,7 @@ public class Test_Supervisor extends Base_class  {
 		        	 wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
 		     	        wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Supervisor']")));
 		            Thread.sleep(3000);
-		           driver.findElement(By.xpath("//span[@class='mainLogo']")).click();
+		           driver.findElement(By.xpath("//div[@class='logo']")).click();
 		             Thread.sleep(3000);
 		            
 //		            String actual = driver.findElement(By.xpath("//a[text()='Previous']")).getText();

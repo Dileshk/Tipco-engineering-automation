@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.Test;
@@ -17,8 +17,9 @@ import org.testng.asserts.SoftAssert;
 
 import Liberaryfiles.Base_class;
 import Liberaryfiles.UtilityClass;
-
 import tipcologin.Loginpage;
+
+
 
 
 
@@ -404,3 +405,4 @@ public class TesttipcoLogin extends Base_class {
 	        }
 	    }}
 	    
+

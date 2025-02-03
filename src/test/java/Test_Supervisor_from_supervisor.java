@@ -79,13 +79,14 @@ public class Test_Supervisor_from_supervisor extends Base_class{
 	    }
 
 	    
-	    private String generateRandomPhoneNumber() {
-	        Random rand = new Random();
-	        StringBuilder phoneNumber = new StringBuilder("9"); 
-	        for (int i = 0; i <= 9; i++) {
-	            phoneNumber.append(rand.nextInt(10));
-	        }
-	        return phoneNumber.toString();
+	 private String generateRandomPhoneNumber() {
+		    Random rand = new Random();
+		    StringBuilder phoneNumber = new StringBuilder("98"); 
+		    for (int i = 0; i < 8; i++) { 
+		        phoneNumber.append(rand.nextInt(10));
+		    }
+		    System.out.println(phoneNumber);
+		    return phoneNumber.toString();
 	    }
     @Test(priority = 1)
     public void verify_that_createSupervisor_with_invalid_email() {

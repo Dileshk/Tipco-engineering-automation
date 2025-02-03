@@ -19,6 +19,8 @@ public class Device_create {
 	@FindBy(xpath = "//span[@class='dropDownIcon']")private WebElement devicetype;
 	@FindBy(xpath = "//input[@name='max_temp1_value']")private WebElement maxtemp1;
 	@FindBy(xpath = "//input[@name='max_pressure1_value']")private WebElement maxpre;
+	@FindBy(xpath = "//input[@name='max_pressure3_value']")private WebElement maxpre2;
+	@FindBy(xpath = "//input[@name='max_pressure2_value']")private WebElement maxpre3;
 	@FindBy(xpath = "//input[@name='max_vibration_value']")private WebElement maxvib;
 	@FindBy(xpath = "//input[@name='max_temp2_value']")private WebElement maxtemp2;
 	@FindBy(xpath = "//input[@name='max_temp3_value']") private WebElement maxtemp3;
@@ -88,6 +90,14 @@ public class Device_create {
 	public void enterorgname(String entorg)
 	{
 		orgname.sendKeys(entorg);
+	}
+	public void maxpresser3(String pre2)
+	{
+		maxpre2.sendKeys(pre2);
+	}
+	public void maxpre2(String pre3)
+	{
+		maxpre3.sendKeys(pre3);
 	}
 	
 	

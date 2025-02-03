@@ -3,28 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TesttipcoLogin">
+      <class name="Device_update_TC">
         <methods>
-          <include name="Verify_to_login_with_validmail_and_blankpass"/>
-          <include name="verify_to_check_the_forgot_password_text_is_present_on_forgot_password_page"/>
-          <include name="verify_to_check_that_the_tipcoengineeing_logo_is_present_at_signin_page"/>
-          <include name="verify_to_check_click_on_password_visibility_button"/>
-          <include name="Verify_that_not_able_to_Login_with_incorrect_password"/>
-          <include name="verify_to_check_click_on_forgott_password_button_and_redirect_on_foergott_password_page"/>
-          <include name="initialise"/>
-          <include name="Verify_to_signin_with_blank_mail_and_passwordfield"/>
-          <include name="verify_to_check_mail_field_take_blank_and_see_valid_error_message"/>
-          <include name="verify_to_check_that_Sign_in_text_is_present_at_signin_page"/>
-          <include name="verify_to_check_tipco_enginnering_logo_is_present_at_forgot_password_page"/>
-          <include name="verify_to_check_click_on_forgot_password_and_then_click_on_cancel"/>
-          <include name="verify_to_validmail_and_space_in_password_field"/>
-          <include name="Verify_that_not_able_to_login_with_unregisterdmail"/>
-          <include name="verify_to_check_and_invalid_mail_in_forgot_password_field"/>
-          <include name="verify_to_login_with_valid_mail_and_Password"/>
-          <include name="verify_to_login_with_blankmail_and_valid_password"/>
-          <include name="Verify_to_login_with_invalidmail_and_password"/>
+          <include name="verify_that_to_update_device_with_below_range_of_the_vibration"/>
+          <include name="initializebrowser"/>
+          <include name="verify_that_to_update_device_with_above_range_of_the_vibration"/>
         </methods>
-      </class> <!-- TesttipcoLogin -->
+      </class> <!-- Device_update_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

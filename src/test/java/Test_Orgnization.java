@@ -18,6 +18,7 @@ import Orgnization.Create_Orgnization;
 
 
 
+
 public class Test_Orgnization extends Base_class{
 	
 	Create_Orgnization org;
@@ -1308,4 +1309,52 @@ public void Ensure_that_the_organization_update_fails_without_enter_GSTnumberfie
         softAssert.assertAll(); 
         driver.navigate().refresh();
     }}
+@Test(priority = 33)
+public void verify_and_check_to_create_orgnization_with_upload_Logo() throws InterruptedException, IOException {
+    softAssert = new SoftAssert();
+    
+    try {
+    	 String randomOrgName = generateRandomOrganizationName();
+         String randomGST = generateRandomGSTNumber();
+         String randomEmail = generateRandomEmail();
+         String randomPhoneNumber = generateRandomPhoneNumber();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
+         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Add Organization']")));
+       Thread.sleep(2000);
+        org.addorgnization();
+        org.enterorgname(randomOrgName);
+        org.entergst(randomGST);
+        org.enteraddress(UtilityClass.propertiesfile("validaddress"));
+        org.entercity(UtilityClass.propertiesfile("validcity"));
+        org.enterstate(UtilityClass.propertiesfile("validstate"));
+        org.enterpin(UtilityClass.propertiesfile("validpin"));
+
+        WebElement time = driver.findElement(By.xpath("//select[@name='refresh_time']"));
+        org.openqa.selenium.support.ui.Select s = new org.openqa.selenium.support.ui.Select(time);
+        s.selectByValue("1");
+
+        org.entersupervisormail(randomEmail);
+        org.enternameofsupername(UtilityClass.propertiesfile("namesupervisor"));
+        org.enterphone(randomPhoneNumber);
+        
+        
+        Thread.sleep(5000);
+        org.clickonsubmit();
+        
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Organization Created Successfully']")));
+        
+        String actual = driver.findElement(By.xpath("//div[text()='Organization Created Successfully']")).getText();
+        String expected = "Organization Created Successfully";
+        softAssert.assertEquals(actual, expected, "Organization creation success message does not match.");
+        Thread.sleep(5000);
+    } catch (Exception e) {
+        softAssert.fail("An exception " + e.getMessage());
+    } finally {
+        softAssert.assertAll();  
+        driver.navigate().refresh();
+    }}
+
+
 }
